@@ -54,6 +54,15 @@ const highlights = [
   },
 ];
 
+/* Centered container used by every section */
+function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div className={`w-[90%] max-w-[1200px] mx-auto ${className}`}>
+      {children}
+    </div>
+  );
+}
+
 function SectionSeparator() {
   return <div className="section-separator" />;
 }
@@ -61,9 +70,7 @@ function SectionSeparator() {
 export default function Home() {
   return (
     <>
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 1 — HERO
-          ═══════════════════════════════════════════════════════ */}
+      {/* ══════════ SECTION 1 — HERO ══════════ */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -78,8 +85,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/50" />
         </div>
 
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="py-32 lg:py-40 max-w-3xl">
+        <Container className="relative z-10">
+          <div className="py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -129,7 +136,7 @@ export default function Home() {
               </CTAButton>
             </motion.div>
           </div>
-        </div>
+        </Container>
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -149,12 +156,10 @@ export default function Home() {
 
       <SectionSeparator />
 
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 2 — ABOUT
-          ═══════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-[#0d0d0d] border-y border-white/[0.04]">
-        <div className="max-w-[1400px] mx-auto px-8 lg:px-16 xl:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* ══════════ SECTION 2 — ABOUT ══════════ */}
+      <section className="py-28 md:py-36 bg-[#0d0d0d]">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
                 About the Program
@@ -181,8 +186,10 @@ export default function Home() {
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
-              <div className="relative">
-                <div className="aspect-[4/5] rounded-lg overflow-hidden border border-gold/10">
+              <div className="relative mx-auto max-w-md lg:max-w-none">
+                {/* Gold accent frame */}
+                <div className="absolute -top-3 -right-3 w-full h-full border-2 border-gold/30 rounded-lg" />
+                <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-gold/10">
                   <Image
                     src={images.aboutTraining}
                     alt="Personal training session"
@@ -195,43 +202,35 @@ export default function Home() {
                     <div className="bg-dark/80 backdrop-blur-sm rounded-lg p-6 border border-gold/20">
                       <div className="flex items-center gap-4">
                         <div className="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center bg-gold/10">
-                          <span className="text-2xl font-bold text-gradient-gold">
-                            90
-                          </span>
+                          <span className="text-2xl font-bold text-gradient-gold">90</span>
                         </div>
                         <div>
                           <p className="text-white font-semibold">Day Cycles</p>
-                          <p className="text-sm text-white/50">
-                            Structured transformation
-                          </p>
+                          <p className="text-sm text-white/50">Structured transformation</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="absolute -top-4 -right-4 w-28 h-28 border-t-2 border-r-2 border-gold/20 rounded-tr-lg" />
-                <div className="absolute -bottom-4 -left-4 w-28 h-28 border-b-2 border-l-2 border-gold/20 rounded-bl-lg" />
               </div>
             </AnimatedSection>
           </div>
-        </div>
+        </Container>
       </section>
 
       <SectionSeparator />
 
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 3 — WHY RESET90
-          ═══════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-[#080808] border-y border-white/[0.04]">
-        <div className="max-w-[1400px] mx-auto px-8 lg:px-16 xl:px-20">
+      {/* ══════════ SECTION 3 — WHY RESET90 ══════════ */}
+      <section className="py-28 md:py-36 bg-[#080808]">
+        <Container>
           <SectionHeading
             title="Why RESET90"
             subtitle="Four pillars that define every program we deliver."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {highlights.map((item, i) => (
-              <AnimatedSection key={i} direction="up" delay={i * 0.15}>
+              <AnimatedSection key={i} direction="up" delay={i * 0.15} className="w-full max-w-sm">
                 <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full hover:-translate-y-1 overflow-hidden shadow-lg shadow-black/30">
                   <div className="relative h-48 overflow-hidden">
                     <Image
@@ -247,27 +246,21 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-6 bg-[#111]">
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-white/50 leading-relaxed">
-                      {item.description}
-                    </p>
+                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                    <p className="text-sm text-white/50 leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       <SectionSeparator />
 
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 4 — CHOOSE YOUR PATH
-          ═══════════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-[#0d0d0d] border-y border-white/[0.04]">
-        <div className="max-w-[1400px] mx-auto px-8 lg:px-16 xl:px-20">
+      {/* ══════════ SECTION 4 — CHOOSE YOUR PATH ══════════ */}
+      <section className="py-28 md:py-36 bg-[#0d0d0d]">
+        <Container>
           <SectionHeading
             title="Choose Your Path"
             subtitle="Two distinct pathways — one shared commitment to transformation."
@@ -287,30 +280,17 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent" />
                   <div className="absolute bottom-6 left-6">
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">
-                      Online
-                    </p>
+                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Online</p>
                   </div>
                 </div>
                 <div className="flex-1 p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                    RESET90 Online
-                  </h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">RESET90 Online</h3>
                   <p className="text-white/50 text-lg leading-relaxed mb-8">
-                    Six tailored bundles — from Standard to Post-Pregnancy and
-                    Reduced Mobility. Train from anywhere, with precision.
+                    Six tailored bundles — from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.
                   </p>
                   <ul className="space-y-4 mb-10">
-                    {[
-                      "6 specialized bundles",
-                      "Video consultations included",
-                      "Equipment kit provided",
-                      "24/7 email support",
-                    ].map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-center gap-3 text-white/60"
-                      >
+                    {["6 specialized bundles", "Video consultations included", "Equipment kit provided", "24/7 email support"].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
@@ -334,51 +314,34 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent" />
                   <div className="absolute bottom-6 left-6">
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">
-                      Professional
-                    </p>
+                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Professional</p>
                   </div>
                 </div>
                 <div className="flex-1 p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                    RESET90 Professional
-                  </h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">RESET90 Professional</h3>
                   <p className="text-white/50 text-lg leading-relaxed mb-8">
-                    In-person coaching in Belgium for athletes, teams, and
-                    dedicated individuals with advanced testing.
+                    In-person coaching in Belgium for athletes, teams, and dedicated individuals with advanced testing.
                   </p>
                   <ul className="space-y-4 mb-10">
-                    {[
-                      "Premium Individuals",
-                      "Athletes & Fight Prep",
-                      "Team Sports Programs",
-                      "DEXA & metabolic testing",
-                    ].map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-center gap-3 text-white/60"
-                      >
+                    {["Premium Individuals", "Athletes & Fight Prep", "Team Sports Programs", "DEXA & metabolic testing"].map((item, i) => (
+                      <li key={i} className="flex items-center gap-3 text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <CTAButton href="/professional" variant="outline">
-                    Explore Professional
-                  </CTAButton>
+                  <CTAButton href="/professional" variant="outline">Explore Professional</CTAButton>
                 </div>
               </div>
             </AnimatedSection>
           </div>
-        </div>
+        </Container>
       </section>
 
       <SectionSeparator />
 
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 5 — CTA BANNER
-          ═══════════════════════════════════════════════════════ */}
-      <section className="relative py-28 md:py-36 overflow-hidden border-y border-white/[0.04]">
+      {/* ══════════ SECTION 5 — CTA BANNER ══════════ */}
+      <section className="relative py-28 md:py-36 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={images.transformation}
@@ -390,22 +353,24 @@ export default function Home() {
           <div className="absolute inset-0 bg-dark/85" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,168,78,0.1)_0%,_transparent_60%)]" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
-          <AnimatedSection direction="up">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Start Your{" "}
-              <span className="text-gradient-gold">Transformation</span>?
-            </h2>
-            <p className="text-white/50 text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
-              Request your free introduction meeting. No commitment, no
-              pressure — just a conversation about your goals and how RESET90
-              can help you achieve them.
-            </p>
-            <CTAButton href="/contact" size="large">
-              Schedule Your Free Consultation
-            </CTAButton>
-          </AnimatedSection>
-        </div>
+        <Container className="relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <AnimatedSection direction="up">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Start Your{" "}
+                <span className="text-gradient-gold">Transformation</span>?
+              </h2>
+              <p className="text-white/50 text-lg md:text-xl leading-relaxed mb-12">
+                Request your free introduction meeting. No commitment, no
+                pressure — just a conversation about your goals and how RESET90
+                can help you achieve them.
+              </p>
+              <CTAButton href="/contact" size="large">
+                Schedule Your Free Consultation
+              </CTAButton>
+            </AnimatedSection>
+          </div>
+        </Container>
       </section>
     </>
   );
