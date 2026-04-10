@@ -32,10 +32,10 @@ export default function Navbar() {
           : "bg-dark/80 backdrop-blur-sm"
       }`}
     >
-      <div className="w-full px-10 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
+      <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className="w-11 h-11 xl:w-12 xl:h-12 rounded-full border border-gold/40 flex items-center justify-center">
+        <Link href="/" className="flex items-center gap-2 xl:gap-3 group flex-shrink-0">
+          <div className="w-10 h-10 xl:w-12 xl:h-12 rounded-full border border-gold/40 flex items-center justify-center">
             <svg
               className="w-5 h-5 xl:w-6 xl:h-6 text-gold"
               fill="currentColor"
@@ -44,19 +44,19 @@ export default function Navbar() {
               <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7" />
             </svg>
           </div>
-          <span className="text-2xl xl:text-3xl font-bold tracking-[0.15em] text-gold group-hover:text-gold-light transition-colors">
+          <span className="text-xl xl:text-3xl font-bold tracking-[0.15em] text-gold group-hover:text-gold-light transition-colors">
             RESET90
           </span>
         </Link>
 
-        {/* Desktop Nav — centered absolute so it's truly centered on the page */}
-        <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="flex items-center gap-8 xl:gap-12">
+        {/* Desktop Nav — flex centered between logo and CTA */}
+        <div className="hidden lg:flex flex-1 justify-center mx-4 xl:mx-8">
+          <div className="flex items-center gap-4 xl:gap-8 2xl:gap-12">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[15px] xl:text-base font-medium tracking-wider uppercase text-white/80 hover:text-gold transition-colors duration-300 relative group whitespace-nowrap"
+                className="text-xs xl:text-[15px] 2xl:text-base font-medium tracking-wider uppercase text-white/80 hover:text-gold transition-colors duration-300 relative group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute -bottom-1.5 left-0 w-0 h-[2px] bg-gold transition-all duration-300 group-hover:w-full" />
@@ -68,7 +68,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <Link
           href="/contact"
-          className="hidden lg:inline-flex btn-gold bg-gold text-dark font-bold text-[15px] xl:text-base px-8 xl:px-10 py-3.5 xl:py-4 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all flex-shrink-0"
+          className="hidden lg:inline-flex btn-gold bg-gold text-dark font-bold text-xs xl:text-[15px] 2xl:text-base px-5 xl:px-8 2xl:px-10 py-3 xl:py-3.5 2xl:py-4 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all flex-shrink-0 whitespace-nowrap"
         >
           Book A Free Consultation
         </Link>
