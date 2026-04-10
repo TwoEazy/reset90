@@ -12,44 +12,24 @@ const highlights = [
     title: "90-Day Cycles",
     description:
       "Every program runs on a structured 90-day cycle, designed for measurable transformation and sustainable results.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-      </svg>
-    ),
     image: images.gymInterior,
   },
   {
     title: "Precision Coaching",
     description:
       "Tailored training, nutrition, and lifestyle optimization — no generic plans. Every detail is built around you.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-      </svg>
-    ),
     image: images.strengthTraining,
   },
   {
     title: "Lifestyle Optimization",
     description:
       "Beyond training. We integrate stress management, sleep, habits, and mindset into every program.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-      </svg>
-    ),
     image: images.nutrition,
   },
   {
     title: "Measurable Results",
     description:
       "Advanced testing, body composition scans, and continuous monitoring ensure every step forward is tracked.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-      </svg>
-    ),
     image: images.cardio,
   },
 ];
@@ -231,8 +211,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {highlights.map((item, i) => (
               <AnimatedSection key={i} direction="up" delay={i * 0.15} className="w-full max-w-sm">
-                <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full hover:-translate-y-1 overflow-hidden shadow-lg shadow-black/30">
-                  <div className="relative h-48 overflow-hidden">
+                <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full hover:-translate-y-1 overflow-hidden shadow-lg shadow-black/30 flex flex-col">
+                  <div className="relative h-48 overflow-hidden flex-shrink-0">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -241,11 +221,8 @@ export default function Home() {
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent" />
-                    <div className="absolute bottom-4 left-4 w-12 h-12 rounded-lg bg-gold/20 backdrop-blur-sm flex items-center justify-center text-gold border border-gold/20">
-                      {item.icon}
-                    </div>
                   </div>
-                  <div className="p-6 bg-[#111]">
+                  <div className="p-6 bg-[#111] flex-1">
                     <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
                     <p className="text-sm text-white/50 leading-relaxed">{item.description}</p>
                   </div>
