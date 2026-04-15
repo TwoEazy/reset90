@@ -104,12 +104,12 @@ export default function OnlinePage() {
           <div className="absolute inset-0 bg-dark/80" />
           <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               Online Programs
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               RESET90 <span className="text-gradient-gold">Online</span>
             </h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
@@ -122,9 +122,9 @@ export default function OnlinePage() {
       </section>
 
       {/* Bundles Grid */}
-      <section className="py-24 bg-dark-light">
-        <div className="max-w-[1200px] mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {bundles.map((bundle, i) => (
               <AnimatedSection key={bundle.slug} direction="up" delay={i * 0.1}>
                 <div
@@ -186,7 +186,7 @@ export default function OnlinePage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-14 sm:py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={images.lifestyle}
@@ -197,7 +197,7 @@ export default function OnlinePage() {
           />
           <div className="absolute inset-0 bg-dark/85" />
         </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-8 text-center">
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Not Sure Which Bundle?

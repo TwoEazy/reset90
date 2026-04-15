@@ -10,7 +10,7 @@ export default function PoliciesPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(200,168,78,0.06)_0%,_transparent_60%)]" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection direction="up">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               Policies
             </h1>
             <p className="text-gray">Privacy Policy & Terms of Service</p>
@@ -19,7 +19,7 @@ export default function PoliciesPage() {
       </section>
 
       {/* Content */}
-      <section className="py-24 bg-dark-light">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
         <div className="max-w-3xl mx-auto px-6 space-y-16">
           <AnimatedSection direction="up">
             <div className="bg-dark-card rounded-lg border border-white/5 p-8 md:p-12">

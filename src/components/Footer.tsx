@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="bg-dark border-t border-gold/10">
       <div className="w-[90%] max-w-[1200px] mx-auto py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <h3 className="text-2xl font-bold tracking-widest text-gold mb-4">
               RESET90
             </h3>
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           {/* CTA */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-sm font-semibold tracking-wider uppercase text-white mb-4">
               Ready to Begin?
             </h4>

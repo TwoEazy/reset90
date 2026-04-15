@@ -95,7 +95,7 @@ export default function FAQPage() {
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               FAQ
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Frequently Asked{" "}
               <span className="text-gradient-gold">Questions</span>
             </h1>
@@ -104,7 +104,7 @@ export default function FAQPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-24 bg-dark-light">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
         <div className="max-w-3xl mx-auto px-6">
           <AnimatedSection direction="up">
             <div className="bg-dark-card rounded-lg border border-white/5 p-8 md:p-12">
@@ -117,7 +117,7 @@ export default function FAQPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-dark">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl font-bold text-white mb-6">

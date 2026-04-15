@@ -136,7 +136,7 @@ export default function BundleDetailPage() {
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               Online Program
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               {bundle.title}
             </h1>
             <p className="text-xl text-gold/80 tracking-wide">
@@ -147,7 +147,7 @@ export default function BundleDetailPage() {
       </section>
 
       {/* Details */}
-      <section className="py-20 bg-dark-light">
+      <section className="py-14 sm:py-16 md:py-20 bg-dark-light">
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection direction="up">
             <p className="text-gray text-lg leading-relaxed mb-12">

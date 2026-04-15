@@ -66,13 +66,13 @@ export default function Home() {
         </div>
 
         <Container className="relative z-10">
-          <div className="py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
+          <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-gold font-semibold tracking-[0.25em] uppercase text-sm md:text-base mb-6">
+              <p className="text-gold font-semibold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-xs sm:text-sm md:text-base mb-4 sm:mb-6">
                 Premium Transformation System
               </p>
             </motion.div>
@@ -81,7 +81,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight mb-8"
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight mb-6 sm:mb-8"
             >
               <span className="text-white">Precision</span>
               <br />
@@ -96,7 +96,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mb-10"
+              className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mb-8 sm:mb-10"
             >
               Personalized 90-Day Training & Nutrition Cycles That Deliver
               Lasting Transformation
@@ -137,23 +137,23 @@ export default function Home() {
       <SectionSeparator />
 
       {/* ══════════ SECTION 2 — ABOUT ══════════ */}
-      <section className="py-28 md:py-36 bg-[#0d0d0d]">
+      <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d]">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
-              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-3 sm:mb-4">
                 About the Program
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                 Precision Transformation in{" "}
                 <span className="text-gradient-gold">90 Days</span>
               </h2>
-              <p className="text-white/50 text-lg leading-relaxed mb-6">
+              <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
                 RESET90 is not a generic fitness program. It is a precision
                 system that combines physical training, nutrition, and lifestyle
                 optimization into measurable 90-day cycles.
               </p>
-              <p className="text-white/50 text-lg leading-relaxed mb-10">
+              <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
                 Whether online or professional, RESET90 is designed for people
                 who value commitment, clarity, and transformation above all
                 else. Each program integrates our signature Lifestyle
@@ -166,9 +166,9 @@ export default function Home() {
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
-              <div className="relative mx-auto max-w-md lg:max-w-none">
+              <div className="relative mx-auto max-w-md lg:max-w-none pt-3 pr-3">
                 {/* Gold accent frame */}
-                <div className="absolute -top-3 -right-3 w-full h-full border-2 border-gold/30 rounded-lg" />
+                <div className="absolute top-0 right-0 w-[calc(100%-0.75rem)] h-[calc(100%-0.75rem)] border-2 border-gold/30 rounded-lg" />
                 <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-gold/10">
                   <Image
                     src={images.aboutTraining}
@@ -201,18 +201,18 @@ export default function Home() {
       <SectionSeparator />
 
       {/* ══════════ SECTION 3 — WHY RESET90 ══════════ */}
-      <section className="py-28 md:py-36 bg-[#080808]">
+      <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#080808]">
         <Container>
           <SectionHeading
             title="Why RESET90"
             subtitle="Four pillars that define every program we deliver."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
             {highlights.map((item, i) => (
               <AnimatedSection key={i} direction="up" delay={i * 0.15} className="w-full max-w-sm">
                 <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full hover:-translate-y-1 overflow-hidden shadow-lg shadow-black/30 flex flex-col">
-                  <div className="relative h-48 overflow-hidden flex-shrink-0">
+                  <div className="relative h-28 sm:h-48 overflow-hidden flex-shrink-0">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -222,9 +222,9 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent" />
                   </div>
-                  <div className="p-6 bg-[#111] flex-1">
-                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                    <p className="text-sm text-white/50 leading-relaxed">{item.description}</p>
+                  <div className="p-4 sm:p-6 bg-[#111] flex-1">
+                    <h3 className="text-base sm:text-xl font-bold text-white mb-1.5 sm:mb-3">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-white/50 leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -236,18 +236,18 @@ export default function Home() {
       <SectionSeparator />
 
       {/* ══════════ SECTION 4 — CHOOSE YOUR PATH ══════════ */}
-      <section className="py-28 md:py-36 bg-[#0d0d0d]">
+      <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d]">
         <Container>
           <SectionHeading
             title="Choose Your Path"
             subtitle="Two distinct pathways — one shared commitment to transformation."
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
             {/* Online */}
             <AnimatedSection direction="left" delay={0.1}>
               <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full flex flex-col overflow-hidden hover:-translate-y-1 shadow-lg shadow-black/30">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-48 sm:h-64 overflow-hidden">
                   <Image
                     src={images.cardio}
                     alt="Online training"
@@ -260,14 +260,14 @@ export default function Home() {
                     <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Online</p>
                   </div>
                 </div>
-                <div className="flex-1 p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">RESET90 Online</h3>
-                  <p className="text-white/50 text-lg leading-relaxed mb-8">
+                <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Online</h3>
+                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
                     Six tailored bundles — from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.
                   </p>
-                  <ul className="space-y-4 mb-10">
+                  <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
                     {["6 specialized bundles", "Video consultations included", "Equipment kit provided", "24/7 email support"].map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 text-white/60">
+                      <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
@@ -281,7 +281,7 @@ export default function Home() {
             {/* Professional */}
             <AnimatedSection direction="right" delay={0.2}>
               <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full flex flex-col overflow-hidden hover:-translate-y-1 shadow-lg shadow-black/30">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-48 sm:h-64 overflow-hidden">
                   <Image
                     src={images.boxing}
                     alt="Professional coaching"
@@ -294,14 +294,14 @@ export default function Home() {
                     <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Professional</p>
                   </div>
                 </div>
-                <div className="flex-1 p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-5">RESET90 Professional</h3>
-                  <p className="text-white/50 text-lg leading-relaxed mb-8">
+                <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Professional</h3>
+                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
                     In-person coaching in Belgium for athletes, teams, and dedicated individuals with advanced testing.
                   </p>
-                  <ul className="space-y-4 mb-10">
+                  <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
                     {["Premium Individuals", "Athletes & Fight Prep", "Team Sports Programs", "DEXA & metabolic testing"].map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 text-white/60">
+                      <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
@@ -318,7 +318,7 @@ export default function Home() {
       <SectionSeparator />
 
       {/* ══════════ SECTION 5 — CTA BANNER ══════════ */}
-      <section className="relative py-28 md:py-36 overflow-hidden">
+      <section className="relative py-16 sm:py-20 md:py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={images.transformation}
@@ -333,11 +333,11 @@ export default function Home() {
         <Container className="relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <AnimatedSection direction="up">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
                 Ready to Start Your{" "}
                 <span className="text-gradient-gold">Transformation</span>?
               </h2>
-              <p className="text-white/50 text-lg md:text-xl leading-relaxed mb-12">
+              <p className="text-white/50 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12">
                 Request your free introduction meeting. No commitment, no
                 pressure — just a conversation about your goals and how RESET90
                 can help you achieve them.

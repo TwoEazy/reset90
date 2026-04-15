@@ -18,8 +18,8 @@ export default function CTAButton({
   const base =
     "btn-gold inline-block font-bold tracking-wider uppercase transition-all duration-400 text-center";
   const sizes = {
-    default: "text-sm px-10 py-4 rounded-md",
-    large: "text-base md:text-lg px-12 md:px-16 py-5 md:py-6 rounded-md",
+    default: "text-xs sm:text-sm px-7 sm:px-10 py-3 sm:py-4 rounded-md",
+    large: "text-sm sm:text-base md:text-lg px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 rounded-md",
   };
   const variants = {
     primary:

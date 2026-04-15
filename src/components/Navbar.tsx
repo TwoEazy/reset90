@@ -120,7 +120,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="btn-gold bg-gold text-dark font-bold text-base px-10 py-4 rounded-md tracking-wider uppercase mt-2"
+                className="btn-gold bg-gold text-dark font-bold text-sm px-8 py-4 rounded-md tracking-wider uppercase mt-2 w-[80%] text-center"
               >
                 Book A Free Consultation
               </Link>

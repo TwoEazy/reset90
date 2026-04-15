@@ -24,7 +24,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               About
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               The RESET90 <span className="text-gradient-gold">Philosophy</span>
             </h1>
             <p className="text-gray text-lg max-w-2xl mx-auto leading-relaxed">
@@ -36,7 +36,7 @@ export default function AboutPage() {
       </section>
 
       {/* Philosophy */}
-      <section className="py-24 bg-dark-light">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
         <div className="max-w-4xl mx-auto px-6">
           <div className="space-y-12">
             <AnimatedSection direction="up">
@@ -114,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-dark">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl font-bold text-white mb-6">

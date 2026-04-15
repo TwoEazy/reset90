@@ -16,7 +16,7 @@ export default function ContactPage() {
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               Contact
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Request Your{" "}
               <span className="text-gradient-gold">Introduction</span>
             </h1>
@@ -29,7 +29,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form */}
-      <section className="py-24 bg-dark-light">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
         <div className="max-w-2xl mx-auto px-6">
           <AnimatedSection direction="up">
             {submitted ? (
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   e.preventDefault();
                   setSubmitted(true);
                 }}
-                className="bg-dark-card rounded-lg border border-white/5 p-8 md:p-12 space-y-6"
+                className="bg-dark-card rounded-lg border border-white/5 p-5 sm:p-8 md:p-12 space-y-6"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>

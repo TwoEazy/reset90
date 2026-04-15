@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(powershell -Command '\\(Get-Content __TRACKED_VAR__\\) -replace '\\\\''py-24 bg-dark-light'\\\\'', '\\\\''py-14 sm:py-20 md:py-24 bg-dark-light'\\\\'' -replace '\\\\''py-24 bg-dark'\\\\'', '\\\\''py-14 sm:py-20 md:py-24 bg-dark'\\\\'' -replace '\\\\''relative py-24 overflow-hidden'\\\\'', '\\\\''relative py-14 sm:py-20 md:py-24 overflow-hidden'\\\\'' | Set-Content __TRACKED_VAR__')",
+      "Bash(powershell -Command '\\(Get-Content __TRACKED_VAR__\\) -replace '\\\\''py-20 bg-dark-light'\\\\'', '\\\\''py-14 sm:py-16 md:py-20 bg-dark-light'\\\\'' | Set-Content __TRACKED_VAR__')",
+      "Bash(powershell -Command '\\(Get-Content __TRACKED_VAR__\\) -replace '\\\\''text-4xl md:text-5xl lg:text-6xl'\\\\'', '\\\\''text-3xl sm:text-4xl md:text-5xl lg:text-6xl'\\\\'' -replace '\\\\''text-4xl md:text-5xl'\\\\'', '\\\\''text-3xl sm:text-4xl md:text-5xl'\\\\'' | Set-Content __TRACKED_VAR__')"
+    ]
+  }
+}

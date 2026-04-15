@@ -67,12 +67,12 @@ export default function ProfessionalPage() {
           <div className="absolute inset-0 bg-dark/80" />
           <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
               In-Person Coaching — Belgium
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               RESET90{" "}
               <span className="text-gradient-gold">Professional</span>
             </h1>
@@ -86,8 +86,8 @@ export default function ProfessionalPage() {
       </section>
 
       {/* Segments */}
-      <section className="py-24 bg-dark-light">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <div className="space-y-16">
             {segments.map((seg, i) => (
               <AnimatedSection
@@ -108,7 +108,7 @@ export default function ProfessionalPage() {
                     <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-dark-card/80 to-transparent" />
                   </div>
                   {/* Content */}
-                  <div className={`p-8 md:p-12 bg-dark-card ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <div className={`p-6 sm:p-8 md:p-12 bg-dark-card ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                     <p className="text-sm font-semibold tracking-[0.15em] uppercase text-gold mb-2">
                       {seg.subtitle}
                     </p>
@@ -141,7 +141,7 @@ export default function ProfessionalPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-14 sm:py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={images.strengthTraining}
@@ -152,7 +152,7 @@ export default function ProfessionalPage() {
           />
           <div className="absolute inset-0 bg-dark/85" />
         </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-8 text-center">
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Begin Your Professional Journey
