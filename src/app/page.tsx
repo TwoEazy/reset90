@@ -57,55 +57,54 @@ export default function Home() {
             src={images.heroMain}
             alt="Gym training"
             fill
-            className="object-cover"
+            className="object-cover scale-105"
             priority
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-dark/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/60" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,_rgba(200,168,78,0.06)_0%,_transparent_50%)]" />
+          {/* Noise grain overlay */}
+          <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")", backgroundRepeat: "repeat", backgroundSize: "128px 128px" }} />
         </div>
 
         <Container className="relative z-10">
           <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2.5 border border-gold/25 bg-gold/[0.06] backdrop-blur-sm rounded-full px-4 py-2 mb-6 sm:mb-8"
             >
-              <p className="text-gold font-semibold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-xs sm:text-sm md:text-base mb-4 sm:mb-6">
-                Premium Transformation System
-              </p>
+              <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+              <span className="text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold/90">
+                Structured 90-Day Cycles
+              </span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight mb-6 sm:mb-8"
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight mb-6 sm:mb-8"
             >
-              <span className="text-white">Precision</span>
-              <br />
-              <span className="text-white">Fitness &</span>
-              <br />
-              <span className="text-white">Coaching for</span>
-              <br />
-              <span className="text-gradient-gold">Real Results</span>
+              A data-driven system for{" "}
+              <span className="text-gradient-gold">performance optimization</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-base sm:text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mb-8 sm:mb-10"
+              transition={{ duration: 0.8, delay: 0.35 }}
+              className="text-base sm:text-lg md:text-xl text-white/60 leading-relaxed max-w-xl mb-8 sm:mb-10"
             >
-              Personalized 90-Day Training & Nutrition Cycles That Deliver
-              Lasting Transformation
+              Most athletes train harder. We make athletes perform better when it matters.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.55 }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <CTAButton href="/online" size="large">
@@ -118,18 +117,46 @@ export default function Home() {
           </div>
         </Container>
 
+        {/* Floating stats — desktop only */}
+        <div className="hidden xl:block absolute right-[8%] top-1/2 -translate-y-1/2 z-10">
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+            className="flex flex-col gap-6"
+          >
+            {[
+              { value: "90", label: "Day Cycles" },
+              { value: "3", label: "Phase System" },
+              { value: "100%", label: "Data-Driven" },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1 + i * 0.15 }}
+                className="bg-dark/50 backdrop-blur-md border border-gold/15 rounded-lg px-6 py-4 text-right"
+              >
+                <p className="text-2xl font-bold text-gradient-gold">{stat.value}</p>
+                <p className="text-[11px] tracking-[0.15em] uppercase text-white/40 mt-0.5">{stat.label}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
+          <span className="text-[10px] tracking-[0.25em] uppercase text-white/25">Scroll</span>
           <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-7 h-12 rounded-full border-2 border-gold/30 flex items-start justify-center p-2"
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-5 h-9 rounded-full border border-gold/20 flex items-start justify-center pt-1.5"
           >
-            <div className="w-1.5 h-2.5 rounded-full bg-gold/60" />
+            <div className="w-1 h-2 rounded-full bg-gold/50" />
           </motion.div>
         </motion.div>
       </section>
@@ -137,29 +164,46 @@ export default function Home() {
       <SectionSeparator />
 
       {/* ══════════ SECTION 2 — ABOUT ══════════ */}
-      <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d]">
-        <Container>
+      <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d] relative overflow-hidden">
+        {/* Subtle background accent */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_right,_rgba(200,168,78,0.03)_0%,_transparent_60%)]" />
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
               <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-3 sm:mb-4">
-                About the Program
+                Not a training program — a performance system
               </p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Precision Transformation in{" "}
-                <span className="text-gradient-gold">90 Days</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-7 leading-tight">
+                Performance is not random.{" "}
+                <span className="text-gradient-gold">It is engineered.</span>
               </h2>
-              <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
-                RESET90 is not a generic fitness program. It is a precision
-                system that combines physical training, nutrition, and lifestyle
-                optimization into measurable 90-day cycles.
-              </p>
-              <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
-                Whether online or professional, RESET90 is designed for people
-                who value commitment, clarity, and transformation above all
-                else. Each program integrates our signature Lifestyle
-                Optimization System — covering stress management, sleep, habits,
-                and mindset.
-              </p>
+              <div className="space-y-4 text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
+                <p>
+                  RESET90 is a structured performance system designed to optimize output at both the individual and team level. By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, it identifies inefficiencies that directly impact availability, resilience, and repeat performance.
+                 </p> <p>Over a structured 90-day cycle, athletes are assessed, analyzed, and systematically optimized across the key drivers of performance — energy production, force generation, and resilience under fatigue.
+                </p>
+                <p>
+                  By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, RESET90 identifies inefficiencies that directly impact availability, recovery, and repeat performance. Each phase follows a clear process: diagnose, correct, and re-measure.
+                </p>
+                <p className="text-white/65 font-medium">
+                  The result is not temporary improvement — it is controlled, repeatable performance under competitive conditions.
+                </p>
+              </div>
+
+              {/* Inline stats */}
+              <div className="grid grid-cols-3 gap-4 mb-8 sm:mb-10">
+                {[
+                  { value: "Diagnose", desc: "Phase 1" },
+                  { value: "Correct", desc: "Phase 2" },
+                  { value: "Prove", desc: "Phase 3" },
+                ].map((s, i) => (
+                  <div key={i} className="border-t border-gold/20 pt-3">
+                    <p className="text-sm sm:text-base font-bold text-white">{s.value}</p>
+                    <p className="text-[11px] sm:text-xs text-white/35 tracking-wider uppercase mt-0.5">{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+
               <CTAButton href="/contact">
                 Request Introduction Meeting
               </CTAButton>
@@ -168,7 +212,7 @@ export default function Home() {
             <AnimatedSection direction="right" delay={0.2}>
               <div className="relative mx-auto max-w-md lg:max-w-none pt-3 pr-3">
                 {/* Gold accent frame */}
-                <div className="absolute top-0 right-0 w-[calc(100%-0.75rem)] h-[calc(100%-0.75rem)] border-2 border-gold/30 rounded-lg" />
+                <div className="absolute top-0 right-0 w-[calc(100%-0.75rem)] h-[calc(100%-0.75rem)] border-2 border-gold/20 rounded-lg" />
                 <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-gold/10">
                   <Image
                     src={images.aboutTraining}
@@ -177,16 +221,16 @@ export default function Home() {
                     className="object-cover"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent" />
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <div className="bg-dark/80 backdrop-blur-sm rounded-lg p-6 border border-gold/20">
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
+                    <div className="bg-dark/80 backdrop-blur-md rounded-lg p-4 sm:p-6 border border-gold/15">
                       <div className="flex items-center gap-4">
-                        <div className="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center bg-gold/10">
-                          <span className="text-2xl font-bold text-gradient-gold">90</span>
+                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-gold/30 flex items-center justify-center bg-gold/10">
+                          <span className="text-xl sm:text-2xl font-bold text-gradient-gold">90</span>
                         </div>
                         <div>
-                          <p className="text-white font-semibold">Day Cycles</p>
-                          <p className="text-sm text-white/50">Structured transformation</p>
+                          <p className="text-white font-semibold text-sm sm:text-base">Day Cycles</p>
+                          <p className="text-xs sm:text-sm text-white/40">Structured transformation</p>
                         </div>
                       </div>
                     </div>

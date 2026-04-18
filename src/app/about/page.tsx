@@ -1,134 +1,282 @@
 "use client";
 
+import Image from "next/image";
+import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
-import SectionHeading from "@/components/SectionHeading";
+import { images } from "@/lib/images";
 
 const bundles = [
-  "Standard",
-  "Advanced",
-  "Premium",
-  "Post-Pregnancy",
-  "Post-Operations",
-  "Reduced Mobility",
+  { name: "Standard", desc: "Foundation fitness and body recomposition", image: images.standard },
+  { name: "Advanced", desc: "High-performance training protocols", image: images.advanced },
+  { name: "Premium", desc: "Full-spectrum coaching and testing", image: images.premium },
+  { name: "Post-Pregnancy", desc: "Safe, progressive return to strength", image: images.postPregnancy },
+  { name: "Post-Operations", desc: "Structured rehabilitation and rebuilding", image: images.postOperations },
+  { name: "Reduced Mobility", desc: "Adaptive training for all abilities", image: images.reducedMobility },
 ];
+
+const pillars = [
+  {
+    label: "01",
+    title: "Stress Management",
+    desc: "Recovery protocols calibrated to your nervous system and training load.",
+  },
+  {
+    label: "02",
+    title: "Sleep Optimization",
+    desc: "Data-informed strategies to maximize restorative sleep for performance.",
+  },
+  {
+    label: "03",
+    title: "Habit Architecture",
+    desc: "Building routines that compound — systematic behavior design that sticks.",
+  },
+  {
+    label: "04",
+    title: "Mindset Coaching",
+    desc: "Discipline, resilience, and mental frameworks for sustained progress.",
+  },
+];
+
+function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div className={`w-[90%] max-w-[1200px] mx-auto ${className}`}>
+      {children}
+    </div>
+  );
+}
 
 export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-dark relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(200,168,78,0.06)_0%,_transparent_60%)]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection direction="up">
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
-              About
-            </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              The RESET90 <span className="text-gradient-gold">Philosophy</span>
-            </h1>
-            <p className="text-gray text-lg max-w-2xl mx-auto leading-relaxed">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={images.lifestyle}
+            alt="RESET90 lifestyle"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-dark/88" />
+          <div className="absolute inset-0 bg-gradient-to-b from-dark via-transparent to-dark" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(200,168,78,0.08)_0%,_transparent_50%)]" />
+        </div>
+        <Container className="relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2.5 border border-gold/25 bg-gold/[0.06] backdrop-blur-sm rounded-full px-4 py-2 mb-5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
+              <span className="text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold/90">
+                Our Philosophy
+              </span>
+            </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+            >
+              The RESET90{" "}
+              <span className="text-gradient-gold">Philosophy</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
+            >
               A precision system that combines physical training, nutrition, and
               lifestyle optimization into measurable 90-day cycles.
-            </p>
-          </AnimatedSection>
-        </div>
+            </motion.p>
+          </div>
+        </Container>
       </section>
 
-      {/* Philosophy */}
-      <section className="py-14 sm:py-20 md:py-24 bg-dark-light">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="space-y-12">
-            <AnimatedSection direction="up">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Why 90 Days?
+      {/* Why 90 Days */}
+      <section className="py-16 sm:py-20 md:py-28 bg-[#0d0d0d] relative overflow-hidden">
+        <div className="absolute left-0 top-0 w-1/3 h-full bg-[radial-gradient(ellipse_at_left,_rgba(200,168,78,0.03)_0%,_transparent_60%)]" />
+        <Container className="relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 xl:gap-24 items-center">
+            <AnimatedSection direction="left">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
+                The Framework
+              </p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                Why <span className="text-gradient-gold">90 Days</span>?
               </h2>
-              <p className="text-gray text-lg leading-relaxed mb-4">
-                Research shows that meaningful, lasting transformation — both
-                physical and mental — requires sustained effort over time. The
-                90-day cycle is our proven framework for achieving real,
-                measurable change.
-              </p>
-              <p className="text-gray text-lg leading-relaxed">
-                Every RESET90 program is structured around this cycle: assess,
-                plan, execute, measure, and evolve. Whether you&apos;re training
-                online or with our professional team in Belgium, the 90-day
-                structure ensures accountability, progression, and results.
-              </p>
-            </AnimatedSection>
-
-            <div className="section-divider" />
-
-            <AnimatedSection direction="up" delay={0.1}>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Lifestyle Optimization System
-              </h2>
-              <p className="text-gray text-lg leading-relaxed mb-4">
-                RESET90 goes beyond training and nutrition. Every program
-                includes our Lifestyle Optimization System, a holistic framework
-                that addresses the full picture of transformation:
-              </p>
-              <ul className="space-y-3 mt-6">
-                {[
-                  "Stress management and recovery protocols",
-                  "Sleep optimization for performance and health",
-                  "Habit architecture — building routines that stick",
-                  "Mindset coaching for discipline and resilience",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/70"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-2" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </AnimatedSection>
-
-            <div className="section-divider" />
-
-            <AnimatedSection direction="up" delay={0.2}>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Online Bundles
-              </h2>
-              <p className="text-gray text-lg leading-relaxed mb-6">
-                Six specialized programs, each designed for specific needs and
-                goals:
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {bundles.map((b, i) => (
-                  <div
-                    key={i}
-                    className="p-4 bg-dark-card rounded-lg border border-white/5 text-center"
-                  >
-                    <p className="text-sm font-medium text-white">
-                      RESET90 {b}
-                    </p>
+              <div className="space-y-4 text-white/50 text-base sm:text-lg leading-relaxed">
+                <p>
+                  Research shows that meaningful, lasting transformation — both
+                  physical and mental — requires sustained effort over time. The
+                  90-day cycle is our proven framework for achieving real,
+                  measurable change.
+                </p>
+                <p>
+                  Every RESET90 program is structured around this cycle: assess,
+                  plan, execute, measure, and evolve. Whether you&apos;re training
+                  online or with our professional team in Belgium, the 90-day
+                  structure ensures accountability, progression, and results.
+                </p>
+              </div>
+              {/* Phase steps */}
+              <div className="grid grid-cols-5 gap-2 mt-8">
+                {["Assess", "Plan", "Execute", "Measure", "Evolve"].map((step, i) => (
+                  <div key={i} className="text-center">
+                    <div className="w-full h-1 bg-gold/20 rounded-full mb-2 relative overflow-hidden">
+                      <motion.div
+                        className="absolute inset-y-0 left-0 bg-gold rounded-full"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: "100%" }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 + i * 0.12 }}
+                      />
+                    </div>
+                    <p className="text-[10px] sm:text-xs tracking-wider uppercase text-white/40">{step}</p>
                   </div>
                 ))}
               </div>
             </AnimatedSection>
+
+            <AnimatedSection direction="right" delay={0.2}>
+              <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-gold/10">
+                <Image
+                  src={images.strengthTraining}
+                  alt="Strength training"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="bg-dark/70 backdrop-blur-md rounded-lg p-5 border border-gold/15">
+                    <p className="text-3xl font-bold text-gradient-gold mb-1">90</p>
+                    <p className="text-xs tracking-[0.15em] uppercase text-white/40">Days to measurable change</p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
-        </div>
+        </Container>
       </section>
 
-      {/* CTA */}
-      <section className="py-14 sm:py-20 md:py-24 bg-dark">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <AnimatedSection direction="up">
-            <h2 className="text-3xl font-bold text-white mb-6">
-              Start Your Journey
-            </h2>
-            <p className="text-gray text-lg mb-10">
-              Request an introduction meeting to learn more about how RESET90
-              can work for you.
+      <div className="section-separator" />
+
+      {/* Lifestyle Optimization */}
+      <section className="py-16 sm:py-20 md:py-28 bg-[#080808]">
+        <Container>
+          <AnimatedSection direction="up" className="text-center mb-12 md:mb-16">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
+              Beyond Training
             </p>
-            <CTAButton href="/contact">
-              Request Introduction Meeting
-            </CTAButton>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
+              Lifestyle Optimization <span className="text-gradient-gold">System</span>
+            </h2>
+            <div className="gold-line mx-auto mb-5" />
+            <p className="text-white/45 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              RESET90 goes beyond training and nutrition. Every program includes
+              our holistic framework that addresses the full picture of
+              transformation.
+            </p>
           </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            {pillars.map((pillar, i) => (
+              <AnimatedSection key={i} direction="up" delay={i * 0.1}>
+                <div className="group h-full rounded-lg border border-gold/10 hover:border-gold/25 bg-[#0d0d0d] p-6 sm:p-7 transition-all duration-500 hover:-translate-y-1">
+                  <span className="text-3xl font-bold text-gold/15 block mb-4 transition-colors duration-500 group-hover:text-gold/30">{pillar.label}</span>
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-2">{pillar.title}</h3>
+                  <p className="text-xs sm:text-sm text-white/40 leading-relaxed">{pillar.desc}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <div className="section-separator" />
+
+      {/* Online Bundles */}
+      <section className="py-16 sm:py-20 md:py-28 bg-[#0d0d0d]">
+        <Container>
+          <AnimatedSection direction="up" className="text-center mb-12 md:mb-16">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
+              Programs
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
+              Online <span className="text-gradient-gold">Bundles</span>
+            </h2>
+            <div className="gold-line mx-auto mb-5" />
+            <p className="text-white/45 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              Six specialized programs, each designed for specific needs and goals.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {bundles.map((b, i) => (
+              <AnimatedSection key={i} direction="up" delay={i * 0.08}>
+                <div className="group relative rounded-lg border border-gold/10 hover:border-gold/25 overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-lg shadow-black/20">
+                  <div className="relative h-40 sm:h-48 overflow-hidden">
+                    <Image
+                      src={b.image}
+                      alt={b.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/50 to-transparent" />
+                  </div>
+                  <div className="p-5 sm:p-6 bg-[#111]">
+                    <p className="text-sm sm:text-base font-bold text-white mb-1">
+                      RESET90 {b.name}
+                    </p>
+                    <p className="text-xs text-white/40 leading-relaxed">{b.desc}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <div className="section-separator" />
+
+      {/* CTA */}
+      <section className="relative py-16 sm:py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={images.transformation}
+            alt="Transformation"
+            fill
+            className="object-cover"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-dark/85" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,168,78,0.08)_0%,_transparent_50%)]" />
         </div>
+        <Container className="relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <AnimatedSection direction="up">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                Start Your{" "}
+                <span className="text-gradient-gold">Journey</span>
+              </h2>
+              <p className="text-white/45 text-base sm:text-lg md:text-xl leading-relaxed mb-10">
+                Request an introduction meeting to learn how RESET90
+                can work for you. No commitment — just a conversation about your goals.
+              </p>
+              <CTAButton href="/contact" size="large">
+                Request Introduction Meeting
+              </CTAButton>
+            </AnimatedSection>
+          </div>
+        </Container>
       </section>
     </>
   );
