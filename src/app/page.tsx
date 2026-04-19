@@ -12,21 +12,21 @@ const highlights = [
     label: "The Problem",
     title: "Performance breaks down under pressure.",
     description:
-      "Most athletes and teams don't fail because of lack of effort — they fail because of hidden inefficiencies. Late-game drop-offs, recurring injuries, and inconsistent performance are not random. They are the result of unresolved gaps in how the body produces energy, generates force, and responds under fatigue.",
+      "Most athletes and teams don't fail because of lack of effort. They fail because of hidden inefficiencies. Late-game drop-offs, recurring injuries, and inconsistent performance are not random. They are the result of unresolved gaps in how the body produces energy, generates force, and responds under fatigue.",
     image: images.gymInterior,
   },
   {
     label: "The System",
     title: "RESET90 replaces guesswork with structure.",
     description:
-      "RESET90 is built as a 90-day performance cycle that connects diagnostics, intervention, and re-measurement into one continuous system. By integrating metabolic profiling, neuromuscular analysis, and performance feedback, it identifies exactly where performance breaks down — and corrects it with precision.",
+      "RESET90 is built as a 90-day performance cycle that connects diagnostics, intervention, and re-measurement into one continuous system. By integrating metabolic profiling, neuromuscular analysis, and performance feedback, it identifies exactly where performance breaks down and corrects it with precision.",
     image: images.strengthTraining,
   },
   {
     label: "The Difference",
     title: "Most train harder. Few train smarter.",
     description:
-      "Traditional training focuses on volume. RESET90 focuses on efficiency. Instead of adding more workload, the system targets what actually limits performance — energy inefficiency, force imbalances, and fatigue-related decline. This creates measurable improvements in availability, repeat performance, and resilience.",
+      "Traditional training focuses on volume. RESET90 focuses on efficiency. Instead of adding more workload, the system targets what actually limits performance: energy inefficiency, force imbalances, and fatigue-related decline. This creates measurable improvements in availability, repeat performance, and resilience.",
     image: images.nutrition,
   },
   {
@@ -80,7 +80,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight mb-6 sm:mb-8"
             >
-              A data-driven system for{" "}
+              A Data-Driven system for{" "}
               <span className="text-gradient-gold">performance optimization</span>
             </motion.h1>
 
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
               <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-3 sm:mb-4">
-                Not a training program — a performance system
+                Not a training program. A performance system.
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-7 leading-tight">
                 Performance is not random.{" "}
@@ -127,13 +127,13 @@ export default function Home() {
               <div className="space-y-4 text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
                 <p>
                   RESET90 is a structured performance system designed to optimize output at both the individual and team level. By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, it identifies inefficiencies that directly impact availability, resilience, and repeat performance.
-                 </p> <p>Over a structured 90-day cycle, athletes are assessed, analyzed, and systematically optimized across the key drivers of performance — energy production, force generation, and resilience under fatigue.
+                 </p> <p>Over a structured 90-day cycle, athletes are assessed, analyzed, and systematically optimized across the key drivers of performance: energy production, force generation, and resilience under fatigue.
                 </p>
                 <p>
                   By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, RESET90 identifies inefficiencies that directly impact availability, recovery, and repeat performance. Each phase follows a clear process: diagnose, correct, and re-measure.
                 </p>
                 <p className="text-white/65 font-medium">
-                  The result is not temporary improvement — it is controlled, repeatable performance under competitive conditions.
+                  The result is not temporary improvement. It is controlled, repeatable performance under competitive conditions.
                 </p>
               </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             title="Choose Your Path"
-            subtitle="Two distinct pathways — one shared commitment to transformation."
+            subtitle="Two distinct pathways. One shared commitment to transformation."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
@@ -242,7 +242,7 @@ export default function Home() {
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Online</h3>
                   <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
-                    Six tailored bundles — from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.
+                    Six tailored bundles, from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.
                   </p>
                   <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
                     {["6 specialized bundles", "Video consultations included", "Equipment kit provided", "24/7 email support"].map((item, i) => (
@@ -318,7 +318,7 @@ export default function Home() {
               </h2>
               <p className="text-white/50 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12">
                 Request your free introduction meeting. No commitment, no
-                pressure — just a conversation about your goals and how RESET90
+                pressure. Just a conversation about your goals and how RESET90
                 can help you achieve them.
               </p>
               <CTAButton href="/contact" size="large">
