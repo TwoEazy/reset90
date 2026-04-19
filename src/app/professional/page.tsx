@@ -7,20 +7,6 @@ import { images } from "@/lib/images";
 
 const segments = [
   {
-    slug: "premium-individuals",
-    title: "Premium Individuals",
-    subtitle: "For those who demand the highest level",
-    description:
-      "Built for dedicated individuals who treat personal progress with the same discipline as professionals treat their sport. Includes body transformations, post-injury comebacks, and peak lifestyle training.",
-    features: [
-      "Tailored physical training based on advanced assessments",
-      "Comprehensive nutrition and metabolic strategy",
-      "Stress and mental resilience coaching",
-      "Structured tracking and ongoing adaptation",
-    ],
-    image: images.premiumIndividual,
-  },
-  {
     slug: "athletes",
     title: "Athletes",
     subtitle: "Compete at the highest level",

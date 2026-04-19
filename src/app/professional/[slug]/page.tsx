@@ -14,26 +14,6 @@ const segmentData: Record<
     examples: string[];
   }
 > = {
-  "premium-individuals": {
-    title: "RESET90 Premium Individuals",
-    tagline: "Personal transformation at the professional level",
-    description: [
-      "RESET90 Premium Individuals is built for those who demand the highest level of personal transformation and attention — not as athletes or teams, but as dedicated individuals.",
-      "We begin with a video consultation to define your personal goals: strength, physique, post-injury rebuild, or complete lifestyle overhaul. Using professional-grade testing and coaching methods, we deliver a fully integrated 90-day plan.",
-    ],
-    methodology: [
-      "Tailored physical training based on advanced assessments",
-      "Comprehensive nutrition and metabolic strategy",
-      "Stress and mental resilience coaching",
-      "Structured tracking and ongoing adaptation",
-    ],
-    examples: [
-      "Body transformation programs",
-      "Post-injury comeback plans",
-      "Peak lifestyle and fitness optimization",
-      "Executive performance programs",
-    ],
-  },
   athletes: {
     title: "RESET90 Athletes",
     tagline: "Compete. Perform. Dominate.",
