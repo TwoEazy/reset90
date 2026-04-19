@@ -9,27 +9,31 @@ import { images } from "@/lib/images";
 
 const highlights = [
   {
-    title: "90-Day Cycles",
+    label: "The Problem",
+    title: "Performance breaks down under pressure.",
     description:
-      "Every program runs on a structured 90-day cycle, designed for measurable transformation and sustainable results.",
+      "Most athletes and teams don't fail because of lack of effort — they fail because of hidden inefficiencies. Late-game drop-offs, recurring injuries, and inconsistent performance are not random. They are the result of unresolved gaps in how the body produces energy, generates force, and responds under fatigue.",
     image: images.gymInterior,
   },
   {
-    title: "Precision Coaching",
+    label: "The System",
+    title: "RESET90 replaces guesswork with structure.",
     description:
-      "Tailored training, nutrition, and lifestyle optimization — no generic plans. Every detail is built around you.",
+      "RESET90 is built as a 90-day performance cycle that connects diagnostics, intervention, and re-measurement into one continuous system. By integrating metabolic profiling, neuromuscular analysis, and performance feedback, it identifies exactly where performance breaks down — and corrects it with precision.",
     image: images.strengthTraining,
   },
   {
-    title: "Lifestyle Optimization",
+    label: "The Difference",
+    title: "Most train harder. Few train smarter.",
     description:
-      "Beyond training. We integrate stress management, sleep, habits, and mindset into every program.",
+      "Traditional training focuses on volume. RESET90 focuses on efficiency. Instead of adding more workload, the system targets what actually limits performance — energy inefficiency, force imbalances, and fatigue-related decline. This creates measurable improvements in availability, repeat performance, and resilience.",
     image: images.nutrition,
   },
   {
-    title: "Measurable Results",
+    label: "The Outcome",
+    title: "Performance you can rely on.",
     description:
-      "Advanced testing, body composition scans, and continuous monitoring ensure every step forward is tracked.",
+      "RESET90 delivers measurable, repeatable performance under real competitive demands. Athletes sustain higher output, recover faster, and maintain efficiency under fatigue. Teams operate with greater availability, reduced non-contact injuries, and consistent physical performance across the season.",
     image: images.cardio,
   },
 ];
@@ -70,18 +74,6 @@ export default function Home() {
 
         <Container className="relative z-10">
           <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2.5 border border-gold/25 bg-gold/[0.06] backdrop-blur-sm rounded-full px-4 py-2 mb-6 sm:mb-8"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-              <span className="text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold/90">
-                Structured 90-Day Cycles
-              </span>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -116,52 +108,7 @@ export default function Home() {
             </motion.div>
           </div>
         </Container>
-
-        {/* Floating stats — desktop only */}
-        <div className="hidden xl:block absolute right-[8%] top-1/2 -translate-y-1/2 z-10">
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
-            className="flex flex-col gap-6"
-          >
-            {[
-              { value: "90", label: "Day Cycles" },
-              { value: "3", label: "Phase System" },
-              { value: "100%", label: "Data-Driven" },
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 1 + i * 0.15 }}
-                className="bg-dark/50 backdrop-blur-md border border-gold/15 rounded-lg px-6 py-4 text-right"
-              >
-                <p className="text-2xl font-bold text-gradient-gold">{stat.value}</p>
-                <p className="text-[11px] tracking-[0.15em] uppercase text-white/40 mt-0.5">{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        >
-          <span className="text-[10px] tracking-[0.25em] uppercase text-white/25">Scroll</span>
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-5 h-9 rounded-full border border-gold/20 flex items-start justify-center pt-1.5"
-          >
-            <div className="w-1 h-2 rounded-full bg-gold/50" />
-          </motion.div>
-        </motion.div>
-      </section>
-
-      <SectionSeparator />
+        </section>
 
       {/* ══════════ SECTION 2 — ABOUT ══════════ */}
       <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d] relative overflow-hidden">
@@ -222,19 +169,6 @@ export default function Home() {
                     unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
-                    <div className="bg-dark/80 backdrop-blur-md rounded-lg p-4 sm:p-6 border border-gold/15">
-                      <div className="flex items-center gap-4">
-                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-gold/30 flex items-center justify-center bg-gold/10">
-                          <span className="text-xl sm:text-2xl font-bold text-gradient-gold">90</span>
-                        </div>
-                        <div>
-                          <p className="text-white font-semibold text-sm sm:text-base">Day Cycles</p>
-                          <p className="text-xs sm:text-sm text-white/40">Structured transformation</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </AnimatedSection>
@@ -249,7 +183,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             title="Why RESET90"
-            subtitle="Four pillars that define every program we deliver."
+            subtitle="The gap between training and performance is where RESET90 operates."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
@@ -267,7 +201,8 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent" />
                   </div>
                   <div className="p-4 sm:p-6 bg-[#111] flex-1">
-                    <h3 className="text-base sm:text-xl font-bold text-white mb-1.5 sm:mb-3">{item.title}</h3>
+                    <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-1.5 sm:mb-2">{item.label}</p>
+                    <h3 className="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-3 leading-snug">{item.title}</h3>
                     <p className="text-xs sm:text-sm text-white/50 leading-relaxed">{item.description}</p>
                   </div>
                 </div>

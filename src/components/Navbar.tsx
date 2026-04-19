@@ -34,16 +34,7 @@ export default function Navbar() {
     >
       <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 xl:gap-3 group flex-shrink-0">
-          <div className="w-10 h-10 xl:w-12 xl:h-12 rounded-full border border-gold/40 flex items-center justify-center">
-            <svg
-              className="w-5 h-5 xl:w-6 xl:h-6 text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7" />
-            </svg>
-          </div>
+        <Link href="/" className="flex items-center group flex-shrink-0">
           <span className="text-xl xl:text-3xl font-bold tracking-[0.15em] text-gold group-hover:text-gold-light transition-colors">
             RESET90
           </span>
