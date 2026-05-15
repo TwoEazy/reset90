@@ -9,7 +9,6 @@ const navLinks = [
   { href: "/online", label: "Online" },
   { href: "/professional", label: "Professional" },
   { href: "/about", label: "About" },
-  { href: "/team", label: "Team" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];

@@ -61,12 +61,12 @@ export default function Home() {
             src={images.heroMain}
             alt="Gym training"
             fill
-            className="object-cover scale-105"
+            className="object-cover scale-[1]"
             priority
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-dark/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark/60 via-dark/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/30" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,_rgba(200,168,78,0.06)_0%,_transparent_50%)]" />
           {/* Noise grain overlay */}
           <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")", backgroundRepeat: "repeat", backgroundSize: "128px 128px" }} />
