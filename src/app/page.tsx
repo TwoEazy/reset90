@@ -84,15 +84,6 @@ export default function Home() {
               <span className="text-gradient-gold">performance optimization</span>
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.35 }}
-              className="text-base sm:text-lg md:text-xl text-white/60 leading-relaxed max-w-xl mb-8 sm:mb-10"
-            >
-              Most athletes train harder. We make athletes perform better when it matters.
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

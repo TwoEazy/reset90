@@ -15,29 +15,6 @@ const bundles = [
   { name: "Reduced Mobility", desc: "Adaptive training for all abilities", image: images.reducedMobility },
 ];
 
-const pillars = [
-  {
-    label: "01",
-    title: "Stress Management",
-    desc: "Recovery protocols calibrated to your nervous system and training load.",
-  },
-  {
-    label: "02",
-    title: "Sleep Optimization",
-    desc: "Data-informed strategies to maximize restorative sleep for performance.",
-  },
-  {
-    label: "03",
-    title: "Habit Architecture",
-    desc: "Building routines that compound — systematic behavior design that sticks.",
-  },
-  {
-    label: "04",
-    title: "Mindset Coaching",
-    desc: "Discipline, resilience, and mental frameworks for sustained progress.",
-  },
-];
-
 function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <div className={`w-[90%] max-w-[1200px] mx-auto ${className}`}>
@@ -125,23 +102,6 @@ export default function AboutPage() {
                   structure ensures accountability, progression, and results.
                 </p>
               </div>
-              {/* Phase steps */}
-              <div className="grid grid-cols-5 gap-2 mt-8">
-                {["Assess", "Plan", "Execute", "Measure", "Evolve"].map((step, i) => (
-                  <div key={i} className="text-center">
-                    <div className="w-full h-1 bg-gold/20 rounded-full mb-2 relative overflow-hidden">
-                      <motion.div
-                        className="absolute inset-y-0 left-0 bg-gold rounded-full"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: "100%" }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.3 + i * 0.12 }}
-                      />
-                    </div>
-                    <p className="text-[10px] sm:text-xs tracking-wider uppercase text-white/40">{step}</p>
-                  </div>
-                ))}
-              </div>
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
@@ -154,48 +114,8 @@ export default function AboutPage() {
                   unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/20 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-dark/70 backdrop-blur-md rounded-lg p-5 border border-gold/15">
-                    <p className="text-3xl font-bold text-gradient-gold mb-1">90</p>
-                    <p className="text-xs tracking-[0.15em] uppercase text-white/40">Days to measurable change</p>
-                  </div>
-                </div>
               </div>
             </AnimatedSection>
-          </div>
-        </Container>
-      </section>
-
-      <div className="section-separator" />
-
-      {/* Lifestyle Optimization */}
-      <section className="py-16 sm:py-20 md:py-28 bg-[#080808]">
-        <Container>
-          <AnimatedSection direction="up" className="text-center mb-12 md:mb-16">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
-              Beyond Training
-            </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-              Lifestyle Optimization <span className="text-gradient-gold">System</span>
-            </h2>
-            <div className="gold-line mx-auto mb-5" />
-            <p className="text-white/45 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              RESET90 goes beyond training and nutrition. Every program includes
-              our holistic framework that addresses the full picture of
-              transformation.
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {pillars.map((pillar, i) => (
-              <AnimatedSection key={i} direction="up" delay={i * 0.1}>
-                <div className="group h-full rounded-lg border border-gold/10 hover:border-gold/25 bg-[#0d0d0d] p-6 sm:p-7 transition-all duration-500 hover:-translate-y-1">
-                  <span className="text-3xl font-bold text-gold/15 block mb-4 transition-colors duration-500 group-hover:text-gold/30">{pillar.label}</span>
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-2">{pillar.title}</h3>
-                  <p className="text-xs sm:text-sm text-white/40 leading-relaxed">{pillar.desc}</p>
-                </div>
-              </AnimatedSection>
-            ))}
           </div>
         </Container>
       </section>

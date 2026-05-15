@@ -1,8 +1,10 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
+import { images } from "@/lib/images";
 
 const segmentData: Record<
   string,
@@ -80,6 +82,17 @@ export default function SegmentDetailPage() {
     <>
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-dark relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={slug === "teams" ? images.teamSport : images.athlete}
+            alt={segment.title}
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-dark/70" />
+        </div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(200,168,78,0.06)_0%,_transparent_60%)]" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection direction="up">

@@ -5,26 +5,26 @@ export const images = {
   heroOnline: "/reset90jump.png",
 
   // About / general
-  aboutTraining: "/preformace.png",
-  gymInterior: "/reset90padman.png",
+  aboutTraining: "/about.png",
+  gymInterior: "/advanced.png",
   nutrition: "/healthtracking.png",
 
   // Training types
-  strengthTraining: "/reset90hero.png",
+  strengthTraining: "/riyad.png",
   cardio: "/walking pad.png",
   stretching: "/preformance.png",
   boxing: "/riyad.png",
 
   // Bundles
-  standard: "/reset90preformance.png",
-  advanced: "/reset90jump.png",
+  standard: "/standardcard.jpeg",
+  advanced: "/advanced.png",
   premium: "/premiumindv.png",
   postPregnancy: "/postpregnancy.png",
-  postOperations: "/postpregnancyy.png",
+  postOperations: "/postop.jpeg",
   reducedMobility: "/walking pad.png",
 
   // Professional segments
-  athlete: "/riyad.png",
+  athlete: "/reset90jump.png",
   teamSport: "/team sports.png",
   premiumIndividual: "/premiumindv.png",
 

@@ -11,7 +11,7 @@ export default function Footer() {
               RESET90
             </h3>
             <p className="text-sm text-gray leading-relaxed">
-              The Shift Begins. A precision transformation system built on
+              A precision transformation system built on
               structured 90-day cycles.
             </p>
           </div>

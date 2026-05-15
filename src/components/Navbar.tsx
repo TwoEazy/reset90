@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -34,9 +35,14 @@ export default function Navbar() {
       <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
         {/* Logo */}
         <Link href="/" className="flex items-center group flex-shrink-0">
-          <span className="text-xl xl:text-3xl font-bold tracking-[0.15em] text-gold group-hover:text-gold-light transition-colors">
-            RESET90
-          </span>
+          <Image
+            src="/logoreset90.png"
+            alt="RESET90 Logo"
+            width={320}
+            height={120}
+            className="xl:w-[380px] xl:h-[140px] object-contain"
+            unoptimized
+          />
         </Link>
 
         {/* Desktop Nav — flex centered between logo and CTA */}
