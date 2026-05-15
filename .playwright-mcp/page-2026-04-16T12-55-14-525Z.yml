@@ -1,0 +1,168 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "RESET90" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e8]: RESET90
+      - generic [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - text: Home
+        - link "Online" [ref=e12] [cursor=pointer]:
+          - /url: /online
+          - text: Online
+        - link "Professional" [ref=e13] [cursor=pointer]:
+          - /url: /professional
+          - text: Professional
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /about
+          - text: About
+        - link "Team" [ref=e15] [cursor=pointer]:
+          - /url: /team
+          - text: Team
+        - link "FAQ" [ref=e16] [cursor=pointer]:
+          - /url: /faq
+          - text: FAQ
+        - link "Contact" [ref=e17] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact
+      - link "Book A Free Consultation" [ref=e18] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - img "RESET90 lifestyle" [ref=e22]
+      - generic [ref=e27]:
+        - generic [ref=e30]: Our Philosophy
+        - heading "The RESET90 Philosophy" [level=1] [ref=e31]
+        - paragraph [ref=e32]: A precision system that combines physical training, nutrition, and lifestyle optimization into measurable 90-day cycles.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: The Framework
+        - heading "Why 90 Days?" [level=2] [ref=e39]
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: Research shows that meaningful, lasting transformation — both physical and mental — requires sustained effort over time. The 90-day cycle is our proven framework for achieving real, measurable change.
+          - paragraph [ref=e42]: "Every RESET90 program is structured around this cycle: assess, plan, execute, measure, and evolve. Whether you're training online or with our professional team in Belgium, the 90-day structure ensures accountability, progression, and results."
+        - generic [ref=e43]:
+          - paragraph [ref=e46]: Assess
+          - paragraph [ref=e49]: Plan
+          - paragraph [ref=e52]: Execute
+          - paragraph [ref=e55]: Measure
+          - paragraph [ref=e58]: Evolve
+      - generic [ref=e60]:
+        - img "Strength training" [ref=e61]
+        - generic [ref=e64]:
+          - paragraph [ref=e65]: "90"
+          - paragraph [ref=e66]: Days to measurable change
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: Beyond Training
+        - heading "Lifestyle Optimization System" [level=2] [ref=e72]
+        - paragraph [ref=e74]: RESET90 goes beyond training and nutrition. Every program includes our holistic framework that addresses the full picture of transformation.
+      - generic [ref=e75]:
+        - generic [ref=e77]:
+          - generic [ref=e78]: "01"
+          - heading "Stress Management" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Recovery protocols calibrated to your nervous system and training load.
+        - generic [ref=e82]:
+          - generic [ref=e83]: "02"
+          - heading "Sleep Optimization" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Data-informed strategies to maximize restorative sleep for performance.
+        - generic [ref=e87]:
+          - generic [ref=e88]: "03"
+          - heading "Habit Architecture" [level=3] [ref=e89]
+          - paragraph [ref=e90]: Building routines that compound — systematic behavior design that sticks.
+        - generic [ref=e92]:
+          - generic [ref=e93]: "04"
+          - heading "Mindset Coaching" [level=3] [ref=e94]
+          - paragraph [ref=e95]: Discipline, resilience, and mental frameworks for sustained progress.
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - paragraph [ref=e100]: Programs
+        - heading "Online Bundles" [level=2] [ref=e101]
+        - paragraph [ref=e103]: Six specialized programs, each designed for specific needs and goals.
+      - generic [ref=e104]:
+        - generic [ref=e106]:
+          - img "Standard" [ref=e108]
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: RESET90 Standard
+            - paragraph [ref=e112]: Foundation fitness and body recomposition
+        - generic [ref=e114]:
+          - img "Advanced" [ref=e116]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: RESET90 Advanced
+            - paragraph [ref=e120]: High-performance training protocols
+        - generic [ref=e122]:
+          - img "Premium" [ref=e124]
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: RESET90 Premium
+            - paragraph [ref=e128]: Full-spectrum coaching and testing
+        - generic [ref=e130]:
+          - img "Post-Pregnancy" [ref=e132]
+          - generic [ref=e134]:
+            - paragraph [ref=e135]: RESET90 Post-Pregnancy
+            - paragraph [ref=e136]: Safe, progressive return to strength
+        - generic [ref=e138]:
+          - img "Post-Operations" [ref=e140]
+          - generic [ref=e142]:
+            - paragraph [ref=e143]: RESET90 Post-Operations
+            - paragraph [ref=e144]: Structured rehabilitation and rebuilding
+        - generic [ref=e146]:
+          - img "Reduced Mobility" [ref=e148]
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: RESET90 Reduced Mobility
+            - paragraph [ref=e152]: Adaptive training for all abilities
+    - generic [ref=e154]:
+      - img "Transformation" [ref=e156]
+      - generic [ref=e161]:
+        - heading "Start Your Journey" [level=2] [ref=e162]
+        - paragraph [ref=e163]: Request an introduction meeting to learn how RESET90 can work for you. No commitment — just a conversation about your goals.
+        - link "Request Introduction Meeting" [ref=e164] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e165]:
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - heading "RESET90" [level=3] [ref=e169]
+          - paragraph [ref=e170]: The Shift Begins. A precision transformation system built on structured 90-day cycles.
+        - generic [ref=e171]:
+          - heading "Programs" [level=4] [ref=e172]
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "RESET90 Online" [ref=e175] [cursor=pointer]:
+                - /url: /online
+            - listitem [ref=e176]:
+              - link "RESET90 Professional" [ref=e177] [cursor=pointer]:
+                - /url: /professional
+        - generic [ref=e178]:
+          - heading "Company" [level=4] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "About" [ref=e182] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e183]:
+              - link "Team" [ref=e184] [cursor=pointer]:
+                - /url: /team
+            - listitem [ref=e185]:
+              - link "FAQ" [ref=e186] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e187]:
+              - link "Contact" [ref=e188] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e189]:
+              - link "Policies" [ref=e190] [cursor=pointer]:
+                - /url: /policies
+        - generic [ref=e191]:
+          - heading "Ready to Begin?" [level=4] [ref=e192]
+          - paragraph [ref=e193]: Request your introduction meeting and start your transformation.
+          - link "Get Started" [ref=e194] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e196]:
+        - paragraph [ref=e197]: © 2026 RESET90. All rights reserved.
+        - generic [ref=e198]:
+          - link "Privacy Policy" [ref=e199] [cursor=pointer]:
+            - /url: /policies
+          - link "Terms of Service" [ref=e200] [cursor=pointer]:
+            - /url: /policies
+  - button "Open Next.js Dev Tools" [ref=e206] [cursor=pointer]:
+    - img [ref=e207]
