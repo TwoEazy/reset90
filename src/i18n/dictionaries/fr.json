@@ -1,196 +1,495 @@
 {
   "nav": {
-    "home": "Home",
-    "online": "Online",
-    "professional": "Professionale",
-    "about": "Chi siamo",
+    "home": "Accueil",
+    "online": "En ligne",
+    "professional": "Professionnel",
+    "about": "À propos",
     "faq": "FAQ",
-    "contact": "Contatti",
-    "bookConsultation": "Prenota una consulenza gratuita"
+    "contact": "Contact",
+    "bookConsultation": "Réserver une consultation gratuite"
   },
   "footer": {
-    "tagline": "Un sistema di trasformazione di precisione costruito su cicli strutturati di 90 giorni.",
-    "programs": "Programmi",
-    "onlineLink": "RESET90 Online",
-    "professionalLink": "RESET90 Professionale",
-    "company": "Azienda",
-    "readyToBegin": "Pronto per iniziare?",
-    "readyDesc": "Richiedi il tuo incontro introduttivo e inizia la tua trasformazione.",
-    "getStarted": "Inizia",
-    "copyright": "RESET90. Tutti i diritti riservati.",
-    "privacyPolicy": "Informativa sulla privacy",
-    "termsOfService": "Termini di servizio"
+    "tagline": "Un système de transformation de précision basé sur des cycles structurés de 90 jours.",
+    "programs": "Programmes",
+    "onlineLink": "RESET90 En ligne",
+    "professionalLink": "RESET90 Professionnel",
+    "company": "Entreprise",
+    "readyToBegin": "Prêt à commencer ?",
+    "readyDesc": "Demandez votre réunion d’introduction et commencez votre transformation.",
+    "getStarted": "Commencer",
+    "copyright": "RESET90. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d’utilisation"
   },
   "home": {
-    "heroTitle": "Un sistema basato sui dati per",
-    "heroTitleHighlight": "l’ottimizzazione delle prestazioni",
-    "onlineCta": "RESET90 Online",
-    "professionalCta": "RESET90 Professionale",
-    "aboutLabel": "Non un programma di allenamento. Un sistema di performance.",
-    "aboutTitle": "La performance non è casuale.",
-    "aboutTitleHighlight": "È progettata.",
-    "aboutP1": "RESET90 è un sistema di performance strutturato progettato per ottimizzare i risultati sia a livello individuale che di squadra. Integrando profilazione metabolica, analisi neuromuscolare e cicli di intervento mirati, identifica le inefficienze che influenzano direttamente disponibilità, resilienza e continuità delle prestazioni.",
-    "aboutP2": "Nel corso di un ciclo strutturato di 90 giorni, gli atleti vengono valutati, analizzati e ottimizzati sistematicamente nei fattori chiave della performance: produzione di energia, generazione di forza e resistenza sotto fatica.",
-    "aboutP3": "Integrando profilazione metabolica, analisi neuromuscolare e cicli di intervento mirati, RESET90 identifica le inefficienze che influenzano direttamente disponibilità, recupero e continuità delle prestazioni. Ogni fase segue un processo chiaro: diagnosticare, correggere e misurare nuovamente.",
-    "aboutP4": "Il risultato non è un miglioramento temporaneo. È una performance controllata e ripetibile in condizioni competitive.",
-    "diagnose": "Diagnosticare",
-    "correct": "Correggere",
-    "prove": "Dimostrare",
-    "phase1": "Fase 1",
-    "phase2": "Fase 2",
-    "phase3": "Fase 3",
-    "requestIntro": "Richiedi un incontro introduttivo",
-    "whyTitle": "Perché RESET90",
-    "whySubtitle": "Il divario tra allenamento e performance è dove opera RESET90.",
+    "heroTitle": "Un système basé sur les données pour",
+    "heroTitleHighlight": "l’optimisation des performances",
+    "onlineCta": "RESET90 En ligne",
+    "professionalCta": "RESET90 Professionnel",
+    "aboutLabel": "Pas un programme d’entraînement. Un système de performance.",
+    "aboutTitle": "La performance n’est pas aléatoire.",
+    "aboutTitleHighlight": "Elle est conçue.",
+    "aboutP1": "RESET90 est un système de performance structuré conçu pour optimiser les résultats tant au niveau individuel qu’au niveau des équipes. En intégrant le profilage métabolique, l’analyse neuromusculaire et des cycles d’intervention ciblés, il identifie les inefficacités qui impactent directement la disponibilité, la résilience et la répétition des performances.",
+    "aboutP2": "Sur un cycle structuré de 90 jours, les athlètes sont évalués, analysés et optimisés de manière systématique sur les facteurs clés de la performance : production d’énergie, génération de force et résistance à la fatigue.",
+    "aboutP3": "En intégrant le profilage métabolique, l’analyse neuromusculaire et des cycles d’intervention ciblés, RESET90 identifie les inefficacités qui impactent directement la disponibilité, la récupération et la répétition des performances. Chaque phase suit un processus clair : diagnostiquer, corriger et mesurer à nouveau.",
+    "aboutP4": "Le résultat n’est pas une amélioration temporaire. C’est une performance contrôlée et reproductible dans des conditions compétitives.",
+    "diagnose": "Diagnostiquer",
+    "correct": "Corriger",
+    "prove": "Prouver",
+    "phase1": "Phase 1",
+    "phase2": "Phase 2",
+    "phase3": "Phase 3",
+    "requestIntro": "Demander une réunion d’introduction",
+    "whyTitle": "Pourquoi RESET90",
+    "whySubtitle": "L’écart entre l’entraînement et la performance est là où RESET90 intervient.",
     "highlights": [
       {
-        "label": "Il problema",
-        "title": "La performance crolla sotto pressione.",
-        "description": "La maggior parte degli atleti e delle squadre non fallisce per mancanza di impegno. Fallisce a causa di inefficienze nascoste. Cali di rendimento nel finale, infortuni ricorrenti e prestazioni incoerenti non sono casuali. Sono il risultato di lacune irrisolte nel modo in cui il corpo produce energia, genera forza e reagisce sotto fatica."
+        "label": "Le problème",
+        "title": "La performance s’effondre sous pression.",
+        "description": "La plupart des athlètes et des équipes n’échouent pas par manque d’effort. Ils échouent à cause d’inefficacités cachées. Les baisses de performance en fin de match, les blessures récurrentes et l’irrégularité ne sont pas aléatoires. Elles sont le résultat de lacunes non résolues dans la manière dont le corps produit de l’énergie, génère de la force et réagit sous fatigue."
       },
       {
-        "label": "Il sistema",
-        "title": "RESET90 sostituisce le supposizioni con una struttura.",
-        "description": "RESET90 è costruito come un ciclo di performance di 90 giorni che collega diagnostica, intervento e rivalutazione in un unico sistema continuo. Integrando profilazione metabolica, analisi neuromuscolare e feedback sulle prestazioni, identifica esattamente dove la performance si interrompe e la corregge con precisione."
+        "label": "Le système",
+        "title": "RESET90 remplace les suppositions par une structure.",
+        "description": "RESET90 est construit comme un cycle de performance de 90 jours reliant diagnostic, intervention et réévaluation dans un seul système continu. En intégrant le profilage métabolique, l’analyse neuromusculaire et les retours de performance, il identifie précisément où la performance se dégrade et la corrige avec précision."
       },
       {
-        "label": "La differenza",
-        "title": "Molti si allenano più duramente. Pochi si allenano in modo più intelligente.",
-        "description": "L’allenamento tradizionale si concentra sul volume. RESET90 si concentra sull’efficienza. Invece di aggiungere più carico di lavoro, il sistema mira a ciò che limita realmente la performance: inefficienza energetica, squilibri di forza e calo legato alla fatica. Questo crea miglioramenti misurabili nella disponibilità, nella continuità delle prestazioni e nella resilienza."
+        "label": "La différence",
+        "title": "La plupart s’entraînent plus dur. Peu s’entraînent plus intelligemment.",
+        "description": "L’entraînement traditionnel se concentre sur le volume. RESET90 se concentre sur l’efficacité. Au lieu d’ajouter davantage de charge de travail, le système cible ce qui limite réellement la performance : inefficacité énergétique, déséquilibres de force et baisse liée à la fatigue. Cela crée des améliorations mesurables en disponibilité, répétition des performances et résilience."
       },
       {
-        "label": "Il risultato",
-        "title": "Prestazioni su cui puoi contare.",
-        "description": "RESET90 offre prestazioni misurabili e ripetibili sotto reali esigenze competitive. Gli atleti mantengono una produzione più elevata, recuperano più velocemente e preservano l’efficienza sotto fatica. Le squadre operano con maggiore disponibilità, meno infortuni non da contatto e una performance fisica costante durante tutta la stagione."
+        "label": "Le résultat",
+        "title": "Une performance sur laquelle vous pouvez compter.",
+        "description": "RESET90 offre des performances mesurables et reproductibles sous de véritables exigences compétitives. Les athlètes maintiennent un niveau de performance plus élevé, récupèrent plus rapidement et conservent leur efficacité sous fatigue. Les équipes bénéficient d’une meilleure disponibilité, de moins de blessures sans contact et d’une performance physique constante tout au long de la saison."
       }
     ],
-    "chooseTitle": "Scegli il tuo percorso",
-    "chooseSubtitle": "Due percorsi distinti. Un unico impegno condiviso verso la trasformazione.",
-    "onlineLabel": "Online",
-    "onlineTitle": "RESET90 Online",
-    "onlineDesc": "Sei pacchetti personalizzati, da Standard a Post-Gravidanza e Mobilità Ridotta. Allenati ovunque con precisione.",
+    "chooseTitle": "Choisissez votre parcours",
+    "chooseSubtitle": "Deux parcours distincts. Un engagement commun envers la transformation.",
+    "onlineLabel": "En ligne",
+    "onlineTitle": "RESET90 En ligne",
+    "onlineDesc": "Six offres sur mesure, du Standard au Post-Grossesse et Mobilité Réduite. Entraînez-vous de n’importe où avec précision.",
     "onlineFeatures": [
-      "6 pacchetti specializzati",
-      "Consulenze video incluse",
-      "Kit attrezzature incluso",
-      "Supporto email 24/7"
+      "6 offres spécialisées",
+      "Consultations vidéo incluses",
+      "Kit d’équipement fourni",
+      "Support email 24h/24 et 7j/7"
     ],
-    "exploreOnline": "Esplora i programmi online",
-    "proLabel": "Professionale",
-    "proTitle": "RESET90 Professionale",
-    "proDesc": "Coaching in presenza per atleti, squadre e persone dedicate con test avanzati.",
+    "exploreOnline": "Explorer les programmes en ligne",
+    "proLabel": "Professionnel",
+    "proTitle": "RESET90 Professionnel",
+    "proDesc": "Coaching en présentiel pour athlètes, équipes et individus engagés avec tests avancés.",
     "proFeatures": [
-      "Programmi premium individuali",
-      "Atleti e preparazione ai combattimenti",
-      "Programmi per sport di squadra",
-      "Test DEXA e metabolici"
+      "Programmes premium pour individus",
+      "Athlètes & préparation aux combats",
+      "Programmes de sports d’équipe",
+      "Tests DEXA et métaboliques"
     ],
-    "explorePro": "Esplora il programma professionale",
-    "ctaTitle": "Pronto per iniziare la tua",
-    "ctaTitleHighlight": "Trasformazione",
-    "ctaDesc": "Richiedi il tuo incontro introduttivo gratuito. Nessun impegno, nessuna pressione. Solo una conversazione sui tuoi obiettivi e su come RESET90 può aiutarti a raggiungerli.",
-    "ctaButton": "Prenota la tua consulenza gratuita"
+    "explorePro": "Explorer le programme professionnel",
+    "ctaTitle": "Prêt à commencer votre",
+    "ctaTitleHighlight": "Transformation",
+    "ctaDesc": "Demandez votre réunion d’introduction gratuite. Sans engagement, sans pression. Juste une conversation sur vos objectifs et la manière dont RESET90 peut vous aider à les atteindre.",
+    "ctaButton": "Planifiez votre consultation gratuite"
   },
   "about": {
-    "label": "La nostra filosofia",
-    "heroTitle": "La filosofia",
-    "heroTitleHighlight": "RESET90",
-    "heroDesc": "Un sistema di precisione che combina allenamento fisico, nutrizione e ottimizzazione dello stile di vita in cicli misurabili di 90 giorni.",
-    "frameworkLabel": "Il framework",
-    "why90Title": "Perché",
-    "why90Highlight": "90 giorni",
-    "why90P1": "La ricerca dimostra che una trasformazione significativa e duratura — sia fisica che mentale — richiede uno sforzo costante nel tempo. Il ciclo di 90 giorni è il nostro framework collaudato per ottenere cambiamenti reali e misurabili.",
-    "why90P2": "Ogni programma RESET90 è strutturato attorno a questo ciclo: valutare, pianificare, eseguire, misurare ed evolvere. Che tu ti alleni online o con il nostro team professionale, la struttura di 90 giorni garantisce responsabilità, progressione e risultati.",
-    "programsLabel": "Programmi",
-    "bundlesTitle": "Pacchetti",
-    "bundlesTitleHighlight": "Online",
-    "bundlesDesc": "Sei programmi specializzati, ciascuno progettato per esigenze e obiettivi specifici.",
+    "label": "Our Philosophy",
+    "heroTitle": "The RESET90",
+    "heroTitleHighlight": "Philosophy",
+    "heroDesc": "A precision system that combines physical training, nutrition, and lifestyle optimization into measurable 90-day cycles.",
+    "frameworkLabel": "The Framework",
+    "why90Title": "Why",
+    "why90Highlight": "90 Days",
+    "why90P1": "Research shows that meaningful, lasting transformation — both physical and mental — requires sustained effort over time. The 90-day cycle is our proven framework for achieving real, measurable change.",
+    "why90P2": "Every RESET90 program is structured around this cycle: assess, plan, execute, measure, and evolve. Whether you're training online or with our professional team, the 90-day structure ensures accountability, progression, and results.",
+    "programsLabel": "Programs",
+    "bundlesTitle": "Online",
+    "bundlesTitleHighlight": "Bundles",
+    "bundlesDesc": "Six specialized programs, each designed for specific needs and goals.",
     "bundles": [
       {
         "name": "Standard",
-        "desc": "Fitness di base e ricomposizione corporea"
+        "desc": "Foundation fitness and body recomposition"
       },
       {
         "name": "Advanced",
-        "desc": "Protocolli di allenamento ad alte prestazioni"
+        "desc": "High-performance training protocols"
       },
       {
         "name": "Premium",
-        "desc": "Coaching e test completi"
+        "desc": "Full-spectrum coaching and testing"
       },
       {
-        "name": "Post-Gravidanza",
-        "desc": "Ritorno sicuro e progressivo alla forza"
+        "name": "Post-Pregnancy",
+        "desc": "Safe, progressive return to strength"
       },
       {
-        "name": "Post-Operazioni",
-        "desc": "Riabilitazione e ricostruzione strutturate"
+        "name": "Post-Operations",
+        "desc": "Structured rehabilitation and rebuilding"
       },
       {
-        "name": "Mobilità Ridotta",
-        "desc": "Allenamento adattivo per tutte le capacità"
+        "name": "Reduced Mobility",
+        "desc": "Adaptive training for all abilities"
       }
     ],
-    "ctaTitle": "Inizia il tuo",
-    "ctaTitleHighlight": "Percorso",
-    "ctaDesc": "Richiedi un incontro introduttivo per scoprire come RESET90 può funzionare per te. Nessun impegno — solo una conversazione sui tuoi obiettivi.",
-    "ctaButton": "Richiedi un incontro introduttivo"
+    "ctaTitle": "Start Your",
+    "ctaTitleHighlight": "Journey",
+    "ctaDesc": "Request an introduction meeting to learn how RESET90 can work for you. No commitment — just a conversation about your goals.",
+    "ctaButton": "Request Introduction Meeting"
+  },
+  "online": {
+    "label": "Online Programs",
+    "heroTitle": "RESET90",
+    "heroTitleHighlight": "Online",
+    "heroDesc": "Six specialized bundles, each built on our 90-day cycle methodology. Tailored training, nutrition, and lifestyle optimization — delivered remotely with precision.",
+    "learnMore": "Learn More",
+    "flagship": "Flagship",
+    "ctaTitle": "Not Sure Which Bundle?",
+    "ctaDesc": "Request a free introduction meeting and we'll help you find the perfect fit for your goals.",
+    "ctaButton": "Request Introduction Meeting",
+    "bundles": {
+      "standard": {
+        "title": "RESET90 Standard",
+        "description": "Tailored 90-day training & nutrition with bi-weekly video consultations and 24/7 email support.",
+        "highlights": [
+          "30-min bi-weekly video consultations",
+          "Lifestyle Optimization System",
+          "24/7 email support",
+          "RESET90 Resistance Band Kit"
+        ]
+      },
+      "advanced": {
+        "title": "RESET90 Advanced",
+        "description": "Personalized 90-day plan with weekly consultations, multi-channel support, and full equipment kit.",
+        "highlights": [
+          "20-min weekly consultations",
+          "Lifestyle Optimization System",
+          "WhatsApp, phone & 24/7 email",
+          "Full Equipment Kit + walking pad"
+        ]
+      },
+      "premium": {
+        "title": "RESET90 Premium",
+        "description": "The flagship experience. Twice-weekly consultations, priority support, and our complete equipment kit.",
+        "highlights": [
+          "30-min twice-weekly consultations",
+          "Lifestyle Optimization System",
+          "Priority WhatsApp & phone",
+          "Full Equipment Kit + walking pad"
+        ]
+      },
+      "postPregnancy": {
+        "title": "RESET90 Post-Pregnancy",
+        "description": "Gentle-to-progressive plan after childbirth, designed for safe recovery and rebuilding strength.",
+        "highlights": [
+          "20-min weekly consultations",
+          "Lifestyle Optimization System",
+          "WhatsApp & phone support",
+          "Equipment Kit + walking pad (low-impact)"
+        ]
+      },
+      "postOperations": {
+        "title": "RESET90 Post-Operations",
+        "description": "Recovery-aware program post medical clearance. Controlled progression with professional monitoring.",
+        "highlights": [
+          "20-min weekly consultations",
+          "Lifestyle Optimization System",
+          "WhatsApp & phone support",
+          "Equipment Kit + walking pad (controlled)"
+        ]
+      },
+      "reducedMobility": {
+        "title": "RESET90 Reduced Mobility",
+        "description": "Adaptive training system — seated, assisted, or standing. Fully tailored to your capabilities.",
+        "highlights": [
+          "20-min weekly consultations",
+          "Lifestyle Optimization System",
+          "WhatsApp & phone support",
+          "RESET90 Fitness Equipment Kit"
+        ]
+      }
+    }
+  },
+  "onlineDetail": {
+    "programLabel": "Online Program",
+    "notFound": "Bundle Not Found",
+    "backToOnline": "Back to Online Programs",
+    "whatsIncluded": "What's Included",
+    "consultations": "Consultations",
+    "supportChannels": "Support Channels",
+    "equipment": "Equipment",
+    "readyTitle": "Ready to Get Started?",
+    "readyDesc": "Request your free introduction meeting. We'll walk you through the program and answer any questions.",
+    "readyButton": "Request Your Introduction Meeting",
+    "bundles": {
+      "standard": {
+        "title": "RESET90 Standard",
+        "tagline": "Your foundation for transformation",
+        "description": "Tailored 90-day training and nutrition plan with the Lifestyle Optimization System. Perfect for those ready to commit to structured change with professional guidance at every step.",
+        "details": [
+          "Personalized 90-day training program",
+          "Custom nutrition plan",
+          "Lifestyle Optimization System (stress, sleep, habits, mindset)",
+          "Progress tracking and program adjustments"
+        ],
+        "consultations": "30-minute bi-weekly video consultations",
+        "support": "24/7 email support",
+        "equipment": "RESET90 Resistance Band Kit (no walking pad)"
+      },
+      "advanced": {
+        "title": "RESET90 Advanced",
+        "tagline": "Elevated coaching, deeper support",
+        "description": "A personalized 90-day plan with weekly consultations and multi-channel support. For those who want closer guidance, faster feedback, and the full RESET90 equipment experience.",
+        "details": [
+          "Personalized 90-day training & nutrition plan",
+          "Lifestyle Optimization System",
+          "Weekly progress reviews and plan adjustments",
+          "Multi-channel support for real-time guidance"
+        ],
+        "consultations": "20-minute weekly video consultations",
+        "support": "WhatsApp (working hours), phone (CET), and 24/7 email support",
+        "equipment": "RESET90 Fitness Equipment Kit + walking pad"
+      },
+      "premium": {
+        "title": "RESET90 Premium",
+        "tagline": "The flagship RESET90 experience",
+        "description": "Our most comprehensive online program. Twice-weekly consultations, priority support, and the complete equipment kit. For those who accept nothing less than the best.",
+        "details": [
+          "Flagship 90-day training & nutrition program",
+          "Lifestyle Optimization System",
+          "Twice-weekly in-depth progress consultations",
+          "Priority access to your coaching team"
+        ],
+        "consultations": "30-minute twice-weekly video consultations",
+        "support": "Priority WhatsApp & phone support + 24/7 email",
+        "equipment": "RESET90 Fitness Equipment Kit + walking pad"
+      },
+      "post-pregnancy": {
+        "title": "RESET90 Post-Pregnancy",
+        "tagline": "Rebuild with care and confidence",
+        "description": "A gentle-to-progressive plan designed for after childbirth. We prioritize safe recovery, rebuilding core strength, and restoring energy — at your pace, with professional support.",
+        "details": [
+          "Gentle-to-progressive 90-day recovery plan",
+          "Postnatal nutrition and energy optimization",
+          "Lifestyle Optimization System",
+          "Core rebuilding and functional movement focus"
+        ],
+        "consultations": "20-minute weekly video consultations",
+        "support": "WhatsApp & phone (CET) + 24/7 email",
+        "equipment": "RESET90 Fitness Equipment Kit + walking pad (low-impact cardio)"
+      },
+      "post-operations": {
+        "title": "RESET90 Post-Operations",
+        "tagline": "Recovery meets performance",
+        "description": "Recovery-aware programming that begins after medical clearance. Controlled progression, professional monitoring, and a structured path back to full strength.",
+        "details": [
+          "Recovery-aware 90-day training program",
+          "Post-surgery nutrition strategy",
+          "Lifestyle Optimization System",
+          "Controlled cardio and strength progression"
+        ],
+        "consultations": "20-minute weekly video consultations",
+        "support": "WhatsApp & phone (CET) + 24/7 email",
+        "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
+      },
+      "reduced-mobility": {
+        "title": "RESET90 Reduced Mobility",
+        "tagline": "Adaptive. Inclusive. Effective.",
+        "description": "An adaptive training system — seated, assisted, or standing. Fully tailored to your capabilities, with the same precision and commitment as every RESET90 program.",
+        "details": [
+          "Adaptive 90-day training system",
+          "Modified nutrition and energy strategy",
+          "Lifestyle Optimization System",
+          "Seated, assisted, or standing exercise protocols"
+        ],
+        "consultations": "20-minute weekly video consultations",
+        "support": "WhatsApp & phone (CET) + 24/7 email",
+        "equipment": "RESET90 Fitness Equipment Kit (no walking pad)"
+      }
+    }
+  },
+  "professional": {
+    "label": "Professional Coaching — Worldwide",
+    "heroTitle": "RESET90",
+    "heroTitleHighlight": "Professional",
+    "heroDesc": "Designed for those who treat performance as more than a goal — it's their profession, their discipline, and their standard. Every case begins with a private video consultation.",
+    "learnMore": "Learn More",
+    "ctaTitle": "Begin Your Professional Journey",
+    "ctaDesc": "Prices are tailored to each case. Request a private consultation to discuss your specific needs and goals.",
+    "ctaButton": "Request Professional Consultation",
+    "segments": {
+      "athletes": {
+        "title": "Athletes",
+        "subtitle": "Compete at the highest level",
+        "description": "A one-to-one performance pathway for professionals and aspiring professionals. Whether it's fight prep, seasonal peak, or a comeback — pushing limits while maintaining balance and recovery.",
+        "features": [
+          "DEXA scans & metabolic testing",
+          "Personalized nutrition and supplementation",
+          "Mental conditioning for competition pressure",
+          "Performance plan aligned to competition calendars"
+        ]
+      },
+      "teams": {
+        "title": "Team Sports",
+        "subtitle": "Raise collective standards",
+        "description": "A complete framework for clubs and teams. We assess each player individually, then develop a tailored 90-day training cycle that builds stronger, sharper, more cohesive squads.",
+        "features": [
+          "Sport-specific strength & conditioning",
+          "Nutrition optimization for energy and recovery",
+          "Mental resilience training under pressure",
+          "Continuous monitoring and adaptation"
+        ]
+      }
+    }
+  },
+  "professionalDetail": {
+    "programLabel": "Professional Program",
+    "notFound": "Segment Not Found",
+    "backToPro": "Back to Professional Programs",
+    "cycleIncludes": "90-Day Cycle Includes",
+    "idealFor": "Ideal For",
+    "ctaTitle": "Start Your Professional Consultation",
+    "ctaDesc": "Prices are tailored to each case. Every journey begins with a private video consultation where we assess your specific needs.",
+    "ctaButton": "Request Professional Consultation",
+    "segments": {
+      "athletes": {
+        "title": "RESET90 Athletes",
+        "tagline": "Compete. Perform. Dominate.",
+        "description": [
+          "RESET90 Athletes is for professionals and aspiring professionals competing at the highest level. This is a one-to-one performance pathway, where the same level of testing and analysis applied to teams is focused on a single athlete.",
+          "Whether it's fight prep, seasonal peak, or a comeback, RESET90 Athletes is about pushing limits while maintaining balance, recovery, and long-term progression."
+        ],
+        "methodology": [
+          "DEXA scans & metabolic testing to track physiology and recovery capacity",
+          "Personalized nutrition and supplementation strategy",
+          "Mental conditioning to withstand competition pressure",
+          "Performance plan that evolves with competition calendars"
+        ],
+        "examples": [
+          "Fight preparation (boxing, MMA)",
+          "Seasonal peak performance",
+          "Comeback programs after injury",
+          "Athletics and speed sports"
+        ]
+      },
+      "teams": {
+        "title": "RESET90 Teams",
+        "tagline": "Build stronger, sharper squads",
+        "description": [
+          "For clubs and teams striving for peak performance, RESET90 Teams provides a complete framework to raise collective standards.",
+          "We start by understanding the team's sport, objectives, and current challenges. Each player is assessed individually through detailed performance stats, body composition scans (DEXA), metabolism testing, and functional benchmarks."
+        ],
+        "methodology": [
+          "Sport-specific strength & conditioning",
+          "Nutrition optimization for sustained energy and recovery",
+          "Mental resilience training to perform under pressure",
+          "Continuous monitoring and adaptation"
+        ],
+        "examples": [
+          "Football clubs — seasonal development",
+          "Basketball teams — endurance and agility",
+          "Rugby squads — strength and conditioning",
+          "Any team sport with competitive ambition"
+        ]
+      }
+    }
   },
   "contact": {
-    "label": "Contatti",
-    "heroTitle": "Richiedi il tuo",
-    "heroTitleHighlight": "Incontro introduttivo",
-    "heroDesc": "Compila il modulo qui sotto e ti contatteremo per programmare il tuo incontro introduttivo in videochiamata.",
-    "thankYou": "Grazie!",
-    "thankYouDesc": "Ti contatteremo a breve per programmare il tuo incontro introduttivo in videochiamata. Controlla la tua email per la conferma.",
-    "fullName": "Nome completo *",
-    "namePlaceholder": "Il tuo nome",
+    "label": "Contact",
+    "heroTitle": "Request Your",
+    "heroTitleHighlight": "Introduction",
+    "heroDesc": "Fill out the form below and we'll contact you to schedule your video introduction meeting.",
+    "thankYou": "Thank You!",
+    "thankYouDesc": "We'll contact you shortly to schedule your video introduction meeting. Check your email for confirmation.",
+    "fullName": "Full Name *",
+    "namePlaceholder": "Your name",
     "email": "Email *",
-    "emailPlaceholder": "tuo@email.com",
-    "phone": "Numero di telefono",
-    "phonePlaceholder": "+39 xxx xxx xxxx",
-    "interestedIn": "Sono interessato a *",
-    "selectProgram": "Seleziona un programma",
-    "onlinePrograms": "Programmi online",
-    "professionalPrograms": "Programmi professionali",
-    "notSure": "Non sono ancora sicuro — ho bisogno di una guida",
-    "yourGoals": "I tuoi obiettivi",
-    "goalsPlaceholder": "Raccontaci brevemente i tuoi obiettivi e cosa stai cercando...",
-    "preferredTime": "Orario preferito per l’incontro",
-    "timePlaceholder": "es. sere nei giorni feriali, mattine nel weekend",
-    "submitButton": "Richiedi un incontro introduttivo",
-    "noCommitment": "Nessun impegno richiesto. Ti contatteremo per programmare una videochiamata introduttiva gratuita."
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+32 xxx xxx xxx",
+    "interestedIn": "I'm Interested In *",
+    "selectProgram": "Select a program",
+    "onlinePrograms": "Online Programs",
+    "professionalPrograms": "Professional Programs",
+    "notSure": "Not sure yet — I need guidance",
+    "yourGoals": "Your Goals",
+    "goalsPlaceholder": "Tell us briefly about your goals and what you're looking for...",
+    "preferredTime": "Preferred Time for Meeting",
+    "timePlaceholder": "e.g. Weekday evenings, Weekend mornings",
+    "submitButton": "Request Introduction Meeting",
+    "noCommitment": "No commitment required. We'll contact you to schedule a free video introduction."
   },
   "faq": {
     "label": "FAQ",
-    "heroTitle": "Domande",
-    "heroTitleHighlight": "Frequenti",
-    "stillHaveQuestions": "Hai ancora domande?",
-    "stillDesc": "Richiedi un incontro introduttivo e risponderemo a tutto di persona.",
-    "ctaButton": "Richiedi un incontro introduttivo"
+    "heroTitle": "Frequently Asked",
+    "heroTitleHighlight": "Questions",
+    "stillHaveQuestions": "Still Have Questions?",
+    "stillDesc": "Request an introduction meeting and we'll answer everything in person.",
+    "ctaButton": "Request Introduction Meeting",
+    "items": [
+      {
+        "q": "What is RESET90?",
+        "a": "RESET90 is a precision transformation system built on structured 90-day cycles. Each program combines physical training, nutrition, and our Lifestyle Optimization System (stress, sleep, habits, mindset) to deliver measurable, sustainable results."
+      },
+      {
+        "q": "How does the 90-day cycle work?",
+        "a": "Each cycle follows a structured framework: assess, plan, execute, measure, and evolve. You start with a consultation, receive a tailored plan, and work through it with regular check-ins and adjustments. After 90 days, you can renew or step up to the next level."
+      },
+      {
+        "q": "What equipment do I need for online programs?",
+        "a": "Most online bundles include a RESET90 Fitness Equipment Kit and walking pad. The Standard bundle includes a Resistance Band Kit. The Reduced Mobility bundle does not include a walking pad. All equipment is provided as part of your program."
+      },
+      {
+        "q": "How do consultations work?",
+        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced/Post-Pregnancy/Post-Operations/Reduced Mobility, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
+      },
+      {
+        "q": "What support is available between consultations?",
+        "a": "All bundles include 24/7 email support. Advanced and above include WhatsApp and phone support during CET working hours. Premium members receive priority access across all channels."
+      },
+      {
+        "q": "What is the introduction meeting?",
+        "a": "Before committing to any program, you can request a free video introduction meeting with the RESET90 coaching team. It's a no-pressure conversation to understand your goals, explain the program, and ensure alignment."
+      },
+      {
+        "q": "Are prices displayed on the website?",
+        "a": "Prices are not emphasized upfront. We prioritize clarity and value first. Pricing is presented during the introduction meeting or at the purchase stage, once you have a clear understanding of the program."
+      },
+      {
+        "q": "What is RESET90 Professional?",
+        "a": "RESET90 Professional is our in-person coaching model. It serves athletes, team sports, and premium individuals through hands-on 90-day cycles with advanced testing (DEXA, metabolic) and face-to-face coaching."
+      },
+      {
+        "q": "Is RESET90 suitable for people with medical conditions?",
+        "a": "Our Post-Operations and Reduced Mobility programs are designed for recovery and adaptation. However, RESET90 is not a medical program. Post-Operations requires medical clearance before beginning. Always consult your doctor first."
+      },
+      {
+        "q": "Can I switch bundles mid-program?",
+        "a": "Yes, adjustments can be discussed during your consultations. We aim for flexibility within the 90-day structure to ensure the program remains aligned with your evolving needs."
+      }
+    ]
   },
   "policies": {
-    "heroTitle": "Politiche",
-    "heroDesc": "Informativa sulla privacy e Termini di servizio",
-    "privacyTitle": "Informativa sulla privacy",
-    "privacyIntro": "In RESET90 prendiamo seriamente la tua privacy. Questa politica descrive come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali.",
-    "infoCollectTitle": "Informazioni che raccogliamo",
-    "infoCollectDesc": "Raccogliamo le informazioni che fornisci direttamente: nome, email, numero di telefono, obiettivi e informazioni relative alla salute condivise durante le consulenze. Raccogliamo inoltre dati di utilizzo tramite cookie e strumenti di analisi.",
-    "howWeUseTitle": "Come utilizziamo le tue informazioni",
-    "howWeUseDesc": "Le tue informazioni vengono utilizzate per fornire e personalizzare il tuo programma, comunicare con te sui tuoi progressi e migliorare i nostri servizi. Non vendiamo mai i tuoi dati personali a terzi.",
-    "dataProtectionTitle": "Protezione dei dati",
-    "dataProtectionDesc": "Implementiamo misure di sicurezza appropriate per proteggere le tue informazioni personali. I dati relativi alla salute vengono trattati con particolare attenzione in conformità con le normative applicabili.",
-    "yourRightsTitle": "I tuoi diritti",
-    "yourRightsDesc": "Hai il diritto di accedere, correggere o eliminare i tuoi dati personali in qualsiasi momento. Contattaci a privacy@reset90.be per qualsiasi richiesta relativa ai dati.",
-    "tosTitle": "Termini di servizio",
-    "tosIntro": "Utilizzando i servizi RESET90, accetti i seguenti termini e condizioni.",
-    "disclaimerTitle": "Disclaimer del programma",
-    "disclaimerDesc": "RESET90 fornisce servizi di coaching fitness e ottimizzazione dello stile di vita. Non siamo un fornitore medico. I clienti con condizioni mediche devono ottenere l’autorizzazione dal proprio medico prima di iniziare qualsiasi programma.",
-    "paymentsTitle": "Impegno e pagamenti",
-    "paymentsDesc": "I programmi funzionano su cicli di 90 giorni. I termini di pagamento e le politiche di rimborso vengono discussi durante il tuo incontro introduttivo e dettagliati nel tuo accordo individuale.",
-    "ipTitle": "Proprietà intellettuale",
-    "ipDesc": "Tutti i piani di allenamento, i materiali e i contenuti RESET90 sono proprietari. Non possono essere condivisi, riprodotti o distribuiti senza autorizzazione scritta.",
-    "liabilityTitle": "Responsabilità",
-    "liabilityDesc": "RESET90 non è responsabile per eventuali infortuni o problemi di salute che potrebbero verificarsi durante l’allenamento. I clienti partecipano a proprio rischio e sono responsabili del rispetto delle pratiche di esercizio sicure."
+    "heroTitle": "Policies",
+    "heroDesc": "Privacy Policy & Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "At RESET90, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information.",
+    "infoCollectTitle": "Information We Collect",
+    "infoCollectDesc": "We collect information you provide directly: name, email, phone number, goals, and health-related information shared during consultations. We also collect usage data through cookies and analytics.",
+    "howWeUseTitle": "How We Use Your Information",
+    "howWeUseDesc": "Your information is used to deliver and personalize your program, communicate with you about your progress, and improve our services. We never sell your personal data to third parties.",
+    "dataProtectionTitle": "Data Protection",
+    "dataProtectionDesc": "We implement appropriate security measures to protect your personal information. Health-related data is handled with extra care in compliance with applicable regulations.",
+    "yourRightsTitle": "Your Rights",
+    "yourRightsDesc": "You have the right to access, correct, or delete your personal data at any time. Contact us at privacy@reset90.be for any data-related requests.",
+    "tosTitle": "Terms of Service",
+    "tosIntro": "By using RESET90 services, you agree to the following terms and conditions.",
+    "disclaimerTitle": "Program Disclaimer",
+    "disclaimerDesc": "RESET90 provides fitness coaching and lifestyle optimization services. We are not a medical provider. Clients with medical conditions must obtain clearance from their healthcare provider before starting any program.",
+    "paymentsTitle": "Commitment & Payments",
+    "paymentsDesc": "Programs run on 90-day cycles. Payment terms and refund policies are discussed during your introduction meeting and detailed in your individual agreement.",
+    "ipTitle": "Intellectual Property",
+    "ipDesc": "All RESET90 training plans, materials, and content are proprietary. They may not be shared, reproduced, or distributed without written permission.",
+    "liabilityTitle": "Liability",
+    "liabilityDesc": "RESET90 is not liable for injuries or health issues that may arise during training. Clients participate at their own risk and are responsible for following safe exercise practices."
   }
 }
