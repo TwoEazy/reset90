@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/advanced.png",
+        url: "/about.png",
         width: 1200,
         height: 630,
         alt: "RESET90 — The Shift Begins",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "RESET90 — The Shift Begins",
     description:
       "Premium 90-day transformation system. Physical conditioning, nutrition, and lifestyle optimization.",
-    images: ["/advanced.png"],
+    images: ["/about.png"],
   },
   icons: {
     icon: [
