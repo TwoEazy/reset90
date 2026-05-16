@@ -6,36 +6,13 @@ import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 import SectionHeading from "@/components/SectionHeading";
 import { images } from "@/lib/images";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
-const highlights = [
-  {
-    label: "The Problem",
-    title: "Performance breaks down under pressure.",
-    description:
-      "Most athletes and teams don't fail because of lack of effort. They fail because of hidden inefficiencies. Late-game drop-offs, recurring injuries, and inconsistent performance are not random. They are the result of unresolved gaps in how the body produces energy, generates force, and responds under fatigue.",
-    image: "/the problem.jpeg",
-  },
-  {
-    label: "The System",
-    title: "RESET90 replaces guesswork with structure.",
-    description:
-      "RESET90 is built as a 90-day performance cycle that connects diagnostics, intervention, and re-measurement into one continuous system. By integrating metabolic profiling, neuromuscular analysis, and performance feedback, it identifies exactly where performance breaks down and corrects it with precision.",
-    image: "/the systemcard.png",
-  },
-  {
-    label: "The Difference",
-    title: "Most train harder. Few train smarter.",
-    description:
-      "Traditional training focuses on volume. RESET90 focuses on efficiency. Instead of adding more workload, the system targets what actually limits performance: energy inefficiency, force imbalances, and fatigue-related decline. This creates measurable improvements in availability, repeat performance, and resilience.",
-    image: "/healthtracking.png",
-  },
-  {
-    label: "The Outcome",
-    title: "Performance you can rely on.",
-    description:
-      "RESET90 delivers measurable, repeatable performance under real competitive demands. Athletes sustain higher output, recover faster, and maintain efficiency under fatigue. Teams operate with greater availability, reduced non-contact injuries, and consistent physical performance across the season.",
-    image: "/the outcome.jpeg",
-  },
+const highlightImages = [
+  "/the problem.jpeg",
+  "/the systemcard.png",
+  "/healthtracking.png",
+  "/the outcome.jpeg",
 ];
 
 /* Centered container used by every section */
@@ -52,6 +29,14 @@ function SectionSeparator() {
 }
 
 export default function Home() {
+  const { dict, lang } = useDictionary();
+  const t = dict.home as any;
+
+  const highlights = (t.highlights as any[]).map((h: any, i: number) => ({
+    ...h,
+    image: highlightImages[i],
+  }));
+
   return (
     <>
       {/* ══════════ SECTION 1 — HERO ══════════ */}
@@ -80,8 +65,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight mb-6 sm:mb-8"
             >
-              A Data-Driven system for{" "}
-              <span className="text-gradient-gold">performance optimization</span>
+              {t.heroTitle}{" "}
+              <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </motion.h1>
 
             <motion.div
@@ -90,11 +75,11 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.55 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <CTAButton href="/online" size="large">
-                RESET90 Online
+              <CTAButton href={`/${lang}/online`} size="large">
+                {t.onlineCta}
               </CTAButton>
-              <CTAButton href="/professional" variant="outline" size="large">
-                RESET90 Professional
+              <CTAButton href={`/${lang}/professional`} variant="outline" size="large">
+                {t.professionalCta}
               </CTAButton>
             </motion.div>
           </div>
@@ -109,31 +94,25 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
               <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-3 sm:mb-4">
-                Not a training program. A performance system.
+                {t.aboutLabel}
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-7 leading-tight">
-                Performance is not random.{" "}
-                <span className="text-gradient-gold">It is engineered.</span>
+                {t.aboutTitle}{" "}
+                <span className="text-gradient-gold">{t.aboutTitleHighlight}</span>
               </h2>
               <div className="space-y-4 text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
-                <p>
-                  RESET90 is a structured performance system designed to optimize output at both the individual and team level. By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, it identifies inefficiencies that directly impact availability, resilience, and repeat performance.
-                 </p> <p>Over a structured 90-day cycle, athletes are assessed, analyzed, and systematically optimized across the key drivers of performance: energy production, force generation, and resilience under fatigue.
-                </p>
-                <p>
-                  By integrating metabolic profiling, neuromuscular analysis, and targeted intervention cycles, RESET90 identifies inefficiencies that directly impact availability, recovery, and repeat performance. Each phase follows a clear process: diagnose, correct, and re-measure.
-                </p>
-                <p className="text-white/65 font-medium">
-                  The result is not temporary improvement. It is controlled, repeatable performance under competitive conditions.
-                </p>
+                <p>{t.aboutP1}</p>
+                <p>{t.aboutP2}</p>
+                <p>{t.aboutP3}</p>
+                <p className="text-white/65 font-medium">{t.aboutP4}</p>
               </div>
 
               {/* Inline stats */}
               <div className="grid grid-cols-3 gap-4 mb-8 sm:mb-10">
                 {[
-                  { value: "Diagnose", desc: "Phase 1" },
-                  { value: "Correct", desc: "Phase 2" },
-                  { value: "Prove", desc: "Phase 3" },
+                  { value: t.diagnose, desc: t.phase1 },
+                  { value: t.correct, desc: t.phase2 },
+                  { value: t.prove, desc: t.phase3 },
                 ].map((s, i) => (
                   <div key={i} className="border-t border-gold/20 pt-3">
                     <p className="text-sm sm:text-base font-bold text-white">{s.value}</p>
@@ -142,8 +121,8 @@ export default function Home() {
                 ))}
               </div>
 
-              <CTAButton href="/contact">
-                Request Introduction Meeting
+              <CTAButton href={`/${lang}/contact`}>
+                {t.requestIntro}
               </CTAButton>
             </AnimatedSection>
 
@@ -173,12 +152,12 @@ export default function Home() {
       <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#080808]">
         <Container>
           <SectionHeading
-            title="Why RESET90"
-            subtitle="The gap between training and performance is where RESET90 operates."
+            title={t.whyTitle}
+            subtitle={t.whySubtitle}
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
-            {highlights.map((item, i) => (
+            {highlights.map((item: any, i: number) => (
               <AnimatedSection key={i} direction="up" delay={i * 0.15} className="w-full max-w-sm">
                 <div className="group relative rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-500 h-full hover:-translate-y-1 overflow-hidden shadow-lg shadow-black/30 flex flex-col">
                   <div className="relative h-28 sm:h-48 overflow-hidden flex-shrink-0">
@@ -208,8 +187,8 @@ export default function Home() {
       <section className="py-16 sm:py-20 md:py-28 lg:py-36 bg-[#0d0d0d]">
         <Container>
           <SectionHeading
-            title="Choose Your Path"
-            subtitle="Two distinct pathways. One shared commitment to transformation."
+            title={t.chooseTitle}
+            subtitle={t.chooseSubtitle}
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
@@ -226,23 +205,23 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent" />
                   <div className="absolute bottom-6 left-6">
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Online</p>
+                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">{t.onlineLabel}</p>
                   </div>
                 </div>
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Online</h3>
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">{t.onlineTitle}</h3>
                   <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
-                    Six tailored bundles, from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.
+                    {t.onlineDesc}
                   </p>
                   <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                    {["6 specialized bundles", "Video consultations included", "Equipment kit provided", "24/7 email support"].map((item, i) => (
+                    {(t.onlineFeatures as string[]).map((item: string, i: number) => (
                       <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <CTAButton href="/online">Explore Online Programs</CTAButton>
+                  <CTAButton href={`/${lang}/online`}>{t.exploreOnline}</CTAButton>
                 </div>
               </div>
             </AnimatedSection>
@@ -260,23 +239,23 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/70 to-transparent" />
                   <div className="absolute bottom-6 left-6">
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">Professional</p>
+                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold">{t.proLabel}</p>
                   </div>
                 </div>
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Professional</h3>
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">{t.proTitle}</h3>
                   <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
-                    In-person coaching for athletes, teams, and dedicated individuals with advanced testing.
+                    {t.proDesc}
                   </p>
                   <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                    {["Premium Individuals", "Athletes & Fight Prep", "Team Sports Programs", "DEXA & metabolic testing"].map((item, i) => (
+                    {(t.proFeatures as string[]).map((item: string, i: number) => (
                       <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
                         <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <CTAButton href="/professional" variant="outline">Explore Professional</CTAButton>
+                  <CTAButton href={`/${lang}/professional`} variant="outline">{t.explorePro}</CTAButton>
                 </div>
               </div>
             </AnimatedSection>
@@ -303,16 +282,14 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto">
             <AnimatedSection direction="up">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-                Ready to Start Your{" "}
-                <span className="text-gradient-gold">Transformation</span>?
+                {t.ctaTitle}{" "}
+                <span className="text-gradient-gold">{t.ctaTitleHighlight}</span>?
               </h2>
               <p className="text-white/50 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12">
-                Request your free introduction meeting. No commitment, no
-                pressure. Just a conversation about your goals and how RESET90
-                can help you achieve them.
+                {t.ctaDesc}
               </p>
-              <CTAButton href="/contact" size="large">
-                Schedule Your Free Consultation
+              <CTAButton href={`/${lang}/contact`} size="large">
+                {t.ctaButton}
               </CTAButton>
             </AnimatedSection>
           </div>

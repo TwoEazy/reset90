@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const { dict, lang } = useDictionary();
+  const t = dict.contact as any;
 
   return (
     <>
@@ -14,15 +17,14 @@ export default function ContactPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
-              Contact
+              {t.label}
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Request Your{" "}
-              <span className="text-gradient-gold">Introduction</span>
+              {t.heroTitle}{" "}
+              <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </h1>
             <p className="text-gray text-lg max-w-2xl mx-auto leading-relaxed">
-              Fill out the form below and we&apos;ll contact you to schedule your
-              video introduction meeting.
+              {t.heroDesc}
             </p>
           </AnimatedSection>
         </div>
@@ -50,11 +52,10 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Thank You!
+                  {t.thankYou}
                 </h3>
                 <p className="text-gray">
-                  We&apos;ll contact you shortly to schedule your video
-                  introduction meeting. Check your email for confirmation.
+                  {t.thankYouDesc}
                 </p>
               </div>
             ) : (
@@ -68,49 +69,49 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">
-                      Full Name *
+                      {t.fullName}
                     </label>
                     <input
                       type="text"
                       required
                       className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors"
-                      placeholder="Your name"
+                      placeholder={t.namePlaceholder}
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">
-                      Email *
+                      {t.email}
                     </label>
                     <input
                       type="email"
                       required
                       className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors"
-                      placeholder="your@email.com"
+                      placeholder={t.emailPlaceholder}
                     />
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
-                    Phone Number
+                    {t.phone}
                   </label>
                   <input
                     type="tel"
                     className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors"
-                    placeholder="+32 xxx xxx xxx"
+                    placeholder={t.phonePlaceholder}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
-                    I&apos;m Interested In *
+                    {t.interestedIn}
                   </label>
                   <select
                     required
                     className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors"
                   >
-                    <option value="">Select a program</option>
-                    <optgroup label="Online Programs">
+                    <option value="">{t.selectProgram}</option>
+                    <optgroup label={t.onlinePrograms}>
                       <option>RESET90 Standard</option>
                       <option>RESET90 Advanced</option>
                       <option>RESET90 Premium</option>
@@ -118,34 +119,34 @@ export default function ContactPage() {
                       <option>RESET90 Post-Operations</option>
                       <option>RESET90 Reduced Mobility</option>
                     </optgroup>
-                    <optgroup label="Professional Programs">
+                    <optgroup label={t.professionalPrograms}>
                       <option>RESET90 Premium Individuals</option>
                       <option>RESET90 Athletes</option>
                       <option>RESET90 Team Sports</option>
                     </optgroup>
-                    <option>Not sure yet — I need guidance</option>
+                    <option>{t.notSure}</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
-                    Your Goals
+                    {t.yourGoals}
                   </label>
                   <textarea
                     rows={4}
                     className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors resize-none"
-                    placeholder="Tell us briefly about your goals and what you're looking for..."
+                    placeholder={t.goalsPlaceholder}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
-                    Preferred Time for Meeting
+                    {t.preferredTime}
                   </label>
                   <input
                     type="text"
                     className="w-full bg-dark border border-white/10 rounded px-4 py-3 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors"
-                    placeholder="e.g. Weekday evenings, Weekend mornings"
+                    placeholder={t.timePlaceholder}
                   />
                 </div>
 
@@ -153,12 +154,11 @@ export default function ContactPage() {
                   type="submit"
                   className="btn-gold w-full bg-gold text-dark font-semibold text-sm px-8 py-4 rounded tracking-wider uppercase hover:bg-gold-light transition-all"
                 >
-                  Request Introduction Meeting
+                  {t.submitButton}
                 </button>
 
                 <p className="text-xs text-white/30 text-center">
-                  No commitment required. We&apos;ll contact you to schedule a
-                  free video introduction.
+                  {t.noCommitment}
                 </p>
               </form>
             )}

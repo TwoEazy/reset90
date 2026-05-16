@@ -5,14 +5,15 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 import { images } from "@/lib/images";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
-const bundles = [
-  { name: "Standard", desc: "Foundation fitness and body recomposition", image: images.standard },
-  { name: "Advanced", desc: "High-performance training protocols", image: images.advanced },
-  { name: "Premium", desc: "Full-spectrum coaching and testing", image: images.premium },
-  { name: "Post-Pregnancy", desc: "Safe, progressive return to strength", image: images.postPregnancy },
-  { name: "Post-Operations", desc: "Structured rehabilitation and rebuilding", image: images.postOperations },
-  { name: "Reduced Mobility", desc: "Adaptive training for all abilities", image: images.reducedMobility },
+const bundleImages = [
+  images.standard,
+  images.advanced,
+  images.premium,
+  images.postPregnancy,
+  images.postOperations,
+  images.reducedMobility,
 ];
 
 function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -24,6 +25,14 @@ function Container({ children, className = "" }: { children: React.ReactNode; cl
 }
 
 export default function AboutPage() {
+  const { dict, lang } = useDictionary();
+  const t = dict.about as any;
+
+  const bundles = (t.bundles as any[]).map((b: any, i: number) => ({
+    ...b,
+    image: bundleImages[i],
+  }));
+
   return (
     <>
       {/* Hero */}
@@ -49,7 +58,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4"
             >
-              Our Philosophy
+              {t.label}
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -57,8 +66,8 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
             >
-              The RESET90{" "}
-              <span className="text-gradient-gold">Philosophy</span>
+              {t.heroTitle}{" "}
+              <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -66,8 +75,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
             >
-              A precision system that combines physical training, nutrition, and
-              lifestyle optimization into measurable 90-day cycles.
+              {t.heroDesc}
             </motion.p>
           </div>
         </Container>
@@ -80,24 +88,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 xl:gap-24 items-center">
             <AnimatedSection direction="left">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
-                The Framework
+                {t.frameworkLabel}
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                Why <span className="text-gradient-gold">90 Days</span>?
+                {t.why90Title} <span className="text-gradient-gold">{t.why90Highlight}</span>?
               </h2>
               <div className="space-y-4 text-white/50 text-base sm:text-lg leading-relaxed">
-                <p>
-                  Research shows that meaningful, lasting transformation — both
-                  physical and mental — requires sustained effort over time. The
-                  90-day cycle is our proven framework for achieving real,
-                  measurable change.
-                </p>
-                <p>
-                  Every RESET90 program is structured around this cycle: assess,
-                  plan, execute, measure, and evolve. Whether you&apos;re training
-                  online or with our professional team, the 90-day
-                  structure ensures accountability, progression, and results.
-                </p>
+                <p>{t.why90P1}</p>
+                <p>{t.why90P2}</p>
               </div>
             </AnimatedSection>
 
@@ -124,19 +122,19 @@ export default function AboutPage() {
         <Container>
           <AnimatedSection direction="up" className="text-center mb-12 md:mb-16">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
-              Programs
+              {t.programsLabel}
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-              Online <span className="text-gradient-gold">Bundles</span>
+              {t.bundlesTitle} <span className="text-gradient-gold">{t.bundlesTitleHighlight}</span>
             </h2>
             <div className="gold-line mx-auto mb-5" />
             <p className="text-white/45 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              Six specialized programs, each designed for specific needs and goals.
+              {t.bundlesDesc}
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {bundles.map((b, i) => (
+            {bundles.map((b: any, i: number) => (
               <AnimatedSection key={i} direction="up" delay={i * 0.08}>
                 <div className="group relative rounded-lg border border-gold/10 hover:border-gold/25 overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-lg shadow-black/20">
                   <div className="relative h-40 sm:h-48 overflow-hidden">
@@ -181,15 +179,14 @@ export default function AboutPage() {
           <div className="text-center max-w-3xl mx-auto">
             <AnimatedSection direction="up">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                Start Your{" "}
-                <span className="text-gradient-gold">Journey</span>
+                {t.ctaTitle}{" "}
+                <span className="text-gradient-gold">{t.ctaTitleHighlight}</span>
               </h2>
               <p className="text-white/45 text-base sm:text-lg md:text-xl leading-relaxed mb-10">
-                Request an introduction meeting to learn how RESET90
-                can work for you. No commitment — just a conversation about your goals.
+                {t.ctaDesc}
               </p>
-              <CTAButton href="/contact" size="large">
-                Request Introduction Meeting
+              <CTAButton href={`/${lang}/contact`} size="large">
+                {t.ctaButton}
               </CTAButton>
             </AnimatedSection>
           </div>
