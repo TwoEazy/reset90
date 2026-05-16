@@ -16,12 +16,21 @@ export const metadata: Metadata = {
     siteName: "RESET90",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/advanced.png",
+        width: 1200,
+        height: 630,
+        alt: "RESET90 — The Shift Begins",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "RESET90 — The Shift Begins",
     description:
       "Premium 90-day transformation system. Physical conditioning, nutrition, and lifestyle optimization.",
+    images: ["/advanced.png"],
   },
   icons: {
     icon: [
