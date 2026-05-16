@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { getDictionary } from "@/i18n/dictionaries";
+import { DictionaryProvider } from "@/i18n/DictionaryContext";
+import { locales, rtlLocales } from "@/i18n/config";
+import type { Locale } from "@/i18n/config";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "RESET90 — The Shift Begins",
@@ -44,18 +49,41 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return locales.map((lang) => ({ lang }));
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
+
+  if (!locales.includes(lang as Locale)) {
+    notFound();
+  }
+
+  const locale = lang as Locale;
+  const dictionary = await getDictionary(locale);
+  const isRtl = rtlLocales.includes(locale);
+
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html
+      lang={locale}
+      dir={isRtl ? "rtl" : "ltr"}
+      className="h-full antialiased"
+      suppressHydrationWarning
+    >
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <Analytics />
+        <DictionaryProvider dictionary={dictionary} lang={locale}>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <Analytics />
+        </DictionaryProvider>
       </body>
     </html>
   );

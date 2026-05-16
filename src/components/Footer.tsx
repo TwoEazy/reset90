@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function Footer() {
+  const { dict, lang } = useDictionary();
+  const t = dict.footer as Record<string, string>;
+  const nav = dict.nav as Record<string, string>;
+
   return (
     <footer className="bg-dark border-t border-gold/10">
       <div className="w-[90%] max-w-[1200px] mx-auto py-16">
@@ -11,31 +18,30 @@ export default function Footer() {
               RESET90
             </h3>
             <p className="text-sm text-gray leading-relaxed">
-              A precision transformation system built on
-              structured 90-day cycles.
+              {t.tagline}
             </p>
           </div>
 
           {/* Programs */}
           <div>
             <h4 className="text-sm font-semibold tracking-wider uppercase text-white mb-4">
-              Programs
+              {t.programs}
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/online"
+                  href={`/${lang}/online`}
                   className="text-sm text-gray hover:text-gold transition-colors"
                 >
-                  RESET90 Online
+                  {t.onlineLink}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/professional"
+                  href={`/${lang}/professional`}
                   className="text-sm text-gray hover:text-gold transition-colors"
                 >
-                  RESET90 Professional
+                  {t.professionalLink}
                 </Link>
               </li>
             </ul>
@@ -44,14 +50,14 @@ export default function Footer() {
           {/* Company */}
           <div>
             <h4 className="text-sm font-semibold tracking-wider uppercase text-white mb-4">
-              Company
+              {t.company}
             </h4>
             <ul className="space-y-3">
               {[
-                { href: "/about", label: "About" },
-                { href: "/faq", label: "FAQ" },
-                { href: "/contact", label: "Contact" },
-                { href: "/policies", label: "Policies" },
+                { href: `/${lang}/about`, label: nav.about },
+                { href: `/${lang}/faq`, label: nav.faq },
+                { href: `/${lang}/contact`, label: nav.contact },
+                { href: `/${lang}/policies`, label: "Policies" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -68,16 +74,16 @@ export default function Footer() {
           {/* CTA */}
           <div className="col-span-2 md:col-span-1">
             <h4 className="text-sm font-semibold tracking-wider uppercase text-white mb-4">
-              Ready to Begin?
+              {t.readyToBegin}
             </h4>
             <p className="text-sm text-gray mb-6">
-              Request your introduction meeting and start your transformation.
+              {t.readyDesc}
             </p>
             <Link
-              href="/contact"
+              href={`/${lang}/contact`}
               className="btn-gold inline-block bg-gold text-dark font-semibold text-sm px-6 py-2.5 rounded tracking-wider uppercase hover:bg-gold-light transition-all"
             >
-              Get Started
+              {t.getStarted}
             </Link>
           </div>
         </div>
@@ -86,20 +92,20 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray">
-            &copy; {new Date().getFullYear()} RESET90. All rights reserved.
+            &copy; {new Date().getFullYear()} {t.copyright}
           </p>
           <div className="flex gap-6">
             <Link
-              href="/policies"
+              href={`/${lang}/policies`}
               className="text-xs text-gray hover:text-gold transition-colors"
             >
-              Privacy Policy
+              {t.privacyPolicy}
             </Link>
             <Link
-              href="/policies"
+              href={`/${lang}/policies`}
               className="text-xs text-gray hover:text-gold transition-colors"
             >
-              Terms of Service
+              {t.termsOfService}
             </Link>
           </div>
         </div>

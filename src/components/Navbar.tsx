@@ -4,17 +4,22 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/online", label: "Online" },
-  { href: "/professional", label: "Professional" },
-  { href: "/about", label: "About" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
+  const { dict, lang } = useDictionary();
+  const t = dict.nav as Record<string, string>;
+
+  const navLinks = [
+    { href: `/${lang}`, label: t.home },
+    { href: `/${lang}/online`, label: t.online },
+    { href: `/${lang}/professional`, label: t.professional },
+    { href: `/${lang}/about`, label: t.about },
+    { href: `/${lang}/faq`, label: t.faq },
+    { href: `/${lang}/contact`, label: t.contact },
+  ];
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -34,7 +39,7 @@ export default function Navbar() {
     >
       <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
         {/* Logo */}
-        <Link href="/" className="flex items-center group flex-shrink-0">
+        <Link href={`/${lang}`} className="flex items-center group flex-shrink-0">
           <Image
             src="/logoreset90.png"
             alt="RESET90 Logo"
@@ -62,13 +67,16 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Link
-          href="/contact"
-          className="hidden lg:inline-flex btn-gold bg-gold text-dark font-bold text-xs xl:text-[15px] 2xl:text-base px-5 xl:px-8 2xl:px-10 py-3 xl:py-3.5 2xl:py-4 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all flex-shrink-0 whitespace-nowrap"
-        >
-          Book A Free Consultation
-        </Link>
+        {/* Language Switcher + CTA Button */}
+        <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+          <LanguageSwitcher />
+          <Link
+            href={`/${lang}/contact`}
+            className="btn-gold bg-gold text-dark font-bold text-xs xl:text-[15px] 2xl:text-base px-5 xl:px-8 2xl:px-10 py-3 xl:py-3.5 2xl:py-4 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
+          >
+            {t.bookConsultation}
+          </Link>
+        </div>
 
         {/* Mobile Toggle */}
         <button
@@ -114,12 +122,13 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <LanguageSwitcher />
               <Link
-                href="/contact"
+                href={`/${lang}/contact`}
                 onClick={() => setMobileOpen(false)}
                 className="btn-gold bg-gold text-dark font-bold text-sm px-8 py-4 rounded-md tracking-wider uppercase mt-2 w-[80%] text-center"
               >
-                Book A Free Consultation
+                {t.bookConsultation}
               </Link>
             </div>
           </motion.div>
