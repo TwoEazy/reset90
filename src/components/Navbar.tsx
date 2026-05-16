@@ -37,7 +37,7 @@ export default function Navbar() {
           : "bg-dark/80 backdrop-blur-sm"
       }`}
     >
-      <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
+      <div className="w-full px-4 sm:px-6 xl:px-8 2xl:px-12 flex items-center justify-between gap-4 xl:gap-6 h-20 xl:h-24">
         {/* Logo */}
         <Link href={`/${lang}`} className="flex items-center group flex-shrink-0">
           <Image
@@ -45,20 +45,20 @@ export default function Navbar() {
             alt="RESET90 Logo"
             width={260}
             height={100}
-            className="lg:w-[240px] xl:w-[320px] 2xl:w-[380px] object-contain"
+            className="w-[180px] xl:w-[200px] 2xl:w-[240px] object-contain"
             priority
             unoptimized
           />
         </Link>
 
         {/* Desktop Nav — flex centered between logo and CTA */}
-        <div className="hidden lg:flex flex-1 justify-center mx-2 xl:mx-6">
-          <div className="flex items-center gap-3 xl:gap-6 2xl:gap-10">
+        <div className="hidden xl:flex flex-1 min-w-0 justify-center">
+          <div className="flex items-center gap-4 2xl:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs xl:text-[15px] 2xl:text-base font-medium tracking-wider uppercase text-white/80 hover:text-gold transition-colors duration-300 relative group whitespace-nowrap"
+                className="text-[11px] 2xl:text-[13px] font-medium tracking-wider uppercase text-white/80 hover:text-gold transition-colors duration-300 relative group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute -bottom-1.5 left-0 w-0 h-[2px] bg-gold transition-all duration-300 group-hover:w-full" />
@@ -68,11 +68,11 @@ export default function Navbar() {
         </div>
 
         {/* Language Switcher + CTA Button */}
-        <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+        <div className="hidden xl:flex items-center gap-3 flex-shrink-0">
           <LanguageSwitcher />
           <Link
             href={`/${lang}/contact`}
-            className="btn-gold bg-gold text-dark font-bold text-[10px] xl:text-xs 2xl:text-sm px-4 xl:px-6 2xl:px-8 py-2.5 xl:py-3 2xl:py-3.5 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
+            className="btn-gold bg-gold text-dark font-bold text-[10px] 2xl:text-xs px-4 2xl:px-6 py-2.5 2xl:py-3 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
           >
             {t.bookConsultation}
           </Link>
@@ -81,7 +81,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden flex flex-col gap-2 p-3"
+          className="xl:hidden flex flex-col gap-2 p-3"
           aria-label="Toggle menu"
         >
           <motion.span
@@ -109,7 +109,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-dark/98 backdrop-blur-md border-t border-gold/10 overflow-hidden"
+            className="xl:hidden bg-dark/98 backdrop-blur-md border-t border-gold/10 overflow-hidden"
           >
             <div className="flex flex-col items-center gap-7 py-10">
               {navLinks.map((link) => (
