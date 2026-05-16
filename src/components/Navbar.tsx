@@ -43,17 +43,17 @@ export default function Navbar() {
           <Image
             src="/logoreset90.png"
             alt="RESET90 Logo"
-            width={320}
-            height={120}
-            className="xl:w-[380px] xl:h-[140px] object-contain"
+            width={260}
+            height={100}
+            className="lg:w-[240px] xl:w-[320px] 2xl:w-[380px] object-contain"
             priority
             unoptimized
           />
         </Link>
 
         {/* Desktop Nav — flex centered between logo and CTA */}
-        <div className="hidden lg:flex flex-1 justify-center mx-4 xl:mx-8">
-          <div className="flex items-center gap-4 xl:gap-8 2xl:gap-12">
+        <div className="hidden lg:flex flex-1 justify-center mx-2 xl:mx-6">
+          <div className="flex items-center gap-3 xl:gap-6 2xl:gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -68,11 +68,11 @@ export default function Navbar() {
         </div>
 
         {/* Language Switcher + CTA Button */}
-        <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+        <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
           <LanguageSwitcher />
           <Link
             href={`/${lang}/contact`}
-            className="btn-gold bg-gold text-dark font-bold text-xs xl:text-[15px] 2xl:text-base px-5 xl:px-8 2xl:px-10 py-3 xl:py-3.5 2xl:py-4 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
+            className="btn-gold bg-gold text-dark font-bold text-[10px] xl:text-xs 2xl:text-sm px-4 xl:px-6 2xl:px-8 py-2.5 xl:py-3 2xl:py-3.5 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
           >
             {t.bookConsultation}
           </Link>
