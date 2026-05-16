@@ -13,28 +13,28 @@ const highlights = [
     title: "Performance breaks down under pressure.",
     description:
       "Most athletes and teams don't fail because of lack of effort. They fail because of hidden inefficiencies. Late-game drop-offs, recurring injuries, and inconsistent performance are not random. They are the result of unresolved gaps in how the body produces energy, generates force, and responds under fatigue.",
-    image: images.gymInterior,
+    image: "/the problem.jpeg",
   },
   {
     label: "The System",
     title: "RESET90 replaces guesswork with structure.",
     description:
       "RESET90 is built as a 90-day performance cycle that connects diagnostics, intervention, and re-measurement into one continuous system. By integrating metabolic profiling, neuromuscular analysis, and performance feedback, it identifies exactly where performance breaks down and corrects it with precision.",
-    image: images.strengthTraining,
+    image: "/the systemcard.png",
   },
   {
     label: "The Difference",
     title: "Most train harder. Few train smarter.",
     description:
       "Traditional training focuses on volume. RESET90 focuses on efficiency. Instead of adding more workload, the system targets what actually limits performance: energy inefficiency, force imbalances, and fatigue-related decline. This creates measurable improvements in availability, repeat performance, and resilience.",
-    image: images.nutrition,
+    image: "/healthtracking.png",
   },
   {
     label: "The Outcome",
     title: "Performance you can rely on.",
     description:
       "RESET90 delivers measurable, repeatable performance under real competitive demands. Athletes sustain higher output, recover faster, and maintain efficiency under fatigue. Teams operate with greater availability, reduced non-contact injuries, and consistent physical performance across the season.",
-    image: images.cardio,
+    image: "/the outcome.jpeg",
   },
 ];
 
@@ -193,7 +193,6 @@ export default function Home() {
                   </div>
                   <div className="p-4 sm:p-6 bg-[#111] flex-1">
                     <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-1.5 sm:mb-2">{item.label}</p>
-                    <h3 className="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-3 leading-snug">{item.title}</h3>
                     <p className="text-xs sm:text-sm text-white/50 leading-relaxed">{item.description}</p>
                   </div>
                 </div>

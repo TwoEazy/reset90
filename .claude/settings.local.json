@@ -14,7 +14,11 @@
       "mcp__plugin_playwright_playwright__browser_evaluate",
       "mcp__plugin_playwright_playwright__browser_resize",
       "Bash(npx skills *)",
-      "Bash(findstr \"LISTENING\")"
+      "Bash(findstr \"LISTENING\")",
+      "Bash(npm audit *)",
+      "Bash(node_modules/.bin/next --version)",
+      "Bash(node *)",
+      "Bash(npm install *)"
     ]
   }
 }
