@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "What is RESET90 Professional?",
-    a: "RESET90 Professional is our in-person coaching model based in Belgium. It serves athletes, team sports, and premium individuals through hands-on 90-day cycles with advanced testing (DEXA, metabolic) and face-to-face coaching.",
+    a: "RESET90 Professional is our in-person coaching model. It serves athletes, team sports, and premium individuals through hands-on 90-day cycles with advanced testing (DEXA, metabolic) and face-to-face coaching.",
   },
   {
     q: "Is RESET90 suitable for people with medical conditions?",

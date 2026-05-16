@@ -55,13 +55,13 @@ export default function Home() {
   return (
     <>
       {/* ══════════ SECTION 1 — HERO ══════════ */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[70vh] sm:min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={images.heroMain}
             alt="Gym training"
             fill
-            className="object-cover scale-[1]"
+            className="object-cover object-bottom sm:object-center"
             priority
             unoptimized
           />
@@ -266,7 +266,7 @@ export default function Home() {
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">RESET90 Professional</h3>
                   <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
-                    In-person coaching in Belgium for athletes, teams, and dedicated individuals with advanced testing.
+                    In-person coaching for athletes, teams, and dedicated individuals with advanced testing.
                   </p>
                   <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
                     {["Premium Individuals", "Athletes & Fight Prep", "Team Sports Programs", "DEXA & metabolic testing"].map((item, i) => (

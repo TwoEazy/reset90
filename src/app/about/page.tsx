@@ -43,17 +43,14 @@ export default function AboutPage() {
         </div>
         <Container className="relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <motion.div
+            <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2.5 border border-gold/25 bg-gold/[0.06] backdrop-blur-sm rounded-full px-4 py-2 mb-5"
+              className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-              <span className="text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-gold/90">
-                Our Philosophy
-              </span>
-            </motion.div>
+              Our Philosophy
+            </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,7 +95,7 @@ export default function AboutPage() {
                 <p>
                   Every RESET90 program is structured around this cycle: assess,
                   plan, execute, measure, and evolve. Whether you&apos;re training
-                  online or with our professional team in Belgium, the 90-day
+                  online or with our professional team, the 90-day
                   structure ensures accountability, progression, and results.
                 </p>
               </div>

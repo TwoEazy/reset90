@@ -56,7 +56,7 @@ export default function ProfessionalPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
-              In-Person Coaching — Belgium
+              Professional Coaching — Worldwide
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               RESET90{" "}
