@@ -4,90 +4,58 @@ import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 import { images } from "@/lib/images";
-
-const bundles = [
-  {
-    slug: "standard",
-    title: "RESET90 Standard",
-    description:
-      "Tailored 90-day training & nutrition with bi-weekly video consultations and 24/7 email support.",
-    highlights: [
-      "30-min bi-weekly video consultations",
-      "Lifestyle Optimization System",
-      "24/7 email support",
-      "RESET90 Resistance Band Kit",
-    ],
-    image: images.standard,
-  },
-  {
-    slug: "advanced",
-    title: "RESET90 Advanced",
-    description:
-      "Personalized 90-day plan with weekly consultations, multi-channel support, and full equipment kit.",
-    highlights: [
-      "20-min weekly consultations",
-      "Lifestyle Optimization System",
-      "WhatsApp, phone & 24/7 email",
-      "Full Equipment Kit + walking pad",
-    ],
-    image: images.advanced,
-  },
-  {
-    slug: "premium",
-    title: "RESET90 Premium",
-    description:
-      "The flagship experience. Twice-weekly consultations, priority support, and our complete equipment kit.",
-    highlights: [
-      "30-min twice-weekly consultations",
-      "Lifestyle Optimization System",
-      "Priority WhatsApp & phone",
-      "Full Equipment Kit + walking pad",
-    ],
-    featured: true,
-    image: images.premium,
-  },
-  {
-    slug: "post-pregnancy",
-    title: "RESET90 Post-Pregnancy",
-    description:
-      "Gentle-to-progressive plan after childbirth, designed for safe recovery and rebuilding strength.",
-    highlights: [
-      "20-min weekly consultations",
-      "Lifestyle Optimization System",
-      "WhatsApp & phone support",
-      "Equipment Kit + walking pad (low-impact)",
-    ],
-    image: images.postPregnancy,
-  },
-  {
-    slug: "post-operations",
-    title: "RESET90 Post-Operations",
-    description:
-      "Recovery-aware program post medical clearance. Controlled progression with professional monitoring.",
-    highlights: [
-      "20-min weekly consultations",
-      "Lifestyle Optimization System",
-      "WhatsApp & phone support",
-      "Equipment Kit + walking pad (controlled)",
-    ],
-    image: images.postOperations,
-  },
-  {
-    slug: "reduced-mobility",
-    title: "RESET90 Reduced Mobility",
-    description:
-      "Adaptive training system — seated, assisted, or standing. Fully tailored to your capabilities.",
-    highlights: [
-      "20-min weekly consultations",
-      "Lifestyle Optimization System",
-      "WhatsApp & phone support",
-      "RESET90 Fitness Equipment Kit",
-    ],
-    image: images.reducedMobility,
-  },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function OnlinePage() {
+  const { dict, lang } = useDictionary();
+  const t = dict.online as any;
+
+  const bundles = [
+    {
+      slug: "standard",
+      title: t.bundles.standard.title,
+      description: t.bundles.standard.description,
+      highlights: t.bundles.standard.highlights,
+      image: images.standard,
+    },
+    {
+      slug: "advanced",
+      title: t.bundles.advanced.title,
+      description: t.bundles.advanced.description,
+      highlights: t.bundles.advanced.highlights,
+      image: images.advanced,
+    },
+    {
+      slug: "premium",
+      title: t.bundles.premium.title,
+      description: t.bundles.premium.description,
+      highlights: t.bundles.premium.highlights,
+      featured: true,
+      image: images.premium,
+    },
+    {
+      slug: "post-pregnancy",
+      title: t.bundles.postPregnancy.title,
+      description: t.bundles.postPregnancy.description,
+      highlights: t.bundles.postPregnancy.highlights,
+      image: images.postPregnancy,
+    },
+    {
+      slug: "post-operations",
+      title: t.bundles.postOperations.title,
+      description: t.bundles.postOperations.description,
+      highlights: t.bundles.postOperations.highlights,
+      image: images.postOperations,
+    },
+    {
+      slug: "reduced-mobility",
+      title: t.bundles.reducedMobility.title,
+      description: t.bundles.reducedMobility.description,
+      highlights: t.bundles.reducedMobility.highlights,
+      image: images.reducedMobility,
+    },
+  ];
+
   return (
     <>
       {/* Hero */}
@@ -107,15 +75,13 @@ export default function OnlinePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
-              Online Programs
+              {t.label}
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              RESET90 <span className="text-gradient-gold">Online</span>
+              {t.heroTitle} <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
-              Six specialized bundles, each built on our 90-day cycle methodology.
-              Tailored training, nutrition, and lifestyle optimization —
-              delivered remotely with precision.
+              {t.heroDesc}
             </p>
           </AnimatedSection>
         </div>
@@ -136,7 +102,7 @@ export default function OnlinePage() {
                 >
                   {bundle.featured && (
                     <span className="absolute top-4 right-4 z-10 bg-gold text-dark text-xs font-bold px-3 py-1 rounded tracking-wider uppercase">
-                      Flagship
+                      {t.flagship}
                     </span>
                   )}
                   {/* Card image */}
@@ -159,7 +125,7 @@ export default function OnlinePage() {
                         {bundle.description}
                       </p>
                       <ul className="space-y-3 mb-8">
-                        {bundle.highlights.map((item, j) => (
+                        {bundle.highlights.map((item: string, j: number) => (
                           <li
                             key={j}
                             className="flex items-start gap-3 text-sm text-white/60"
@@ -171,11 +137,11 @@ export default function OnlinePage() {
                       </ul>
                     </div>
                     <CTAButton
-                      href={`/online/${bundle.slug}`}
+                      href={`/${lang}/online/${bundle.slug}`}
                       variant={bundle.featured ? "primary" : "outline"}
                       className="w-full text-center"
                     >
-                      Learn More
+                      {t.learnMore}
                     </CTAButton>
                   </div>
                 </div>
@@ -200,14 +166,13 @@ export default function OnlinePage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Not Sure Which Bundle?
+              {t.ctaTitle}
             </h2>
             <p className="text-white/50 text-lg leading-relaxed mb-10">
-              Request a free introduction meeting and we&apos;ll help you find
-              the perfect fit for your goals.
+              {t.ctaDesc}
             </p>
-            <CTAButton href="/contact" size="large">
-              Request Introduction Meeting
+            <CTAButton href={`/${lang}/contact`} size="large">
+              {t.ctaButton}
             </CTAButton>
           </AnimatedSection>
         </div>

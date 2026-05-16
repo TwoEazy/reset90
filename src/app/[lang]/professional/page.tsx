@@ -4,39 +4,31 @@ import Image from "next/image";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 import { images } from "@/lib/images";
-
-const segments = [
-  {
-    slug: "athletes",
-    title: "Athletes",
-    subtitle: "Compete at the highest level",
-    description:
-      "A one-to-one performance pathway for professionals and aspiring professionals. Whether it's fight prep, seasonal peak, or a comeback — pushing limits while maintaining balance and recovery.",
-    features: [
-      "DEXA scans & metabolic testing",
-      "Personalized nutrition and supplementation",
-      "Mental conditioning for competition pressure",
-      "Performance plan aligned to competition calendars",
-    ],
-    image: images.athlete,
-  },
-  {
-    slug: "teams",
-    title: "Team Sports",
-    subtitle: "Raise collective standards",
-    description:
-      "A complete framework for clubs and teams. We assess each player individually, then develop a tailored 90-day training cycle that builds stronger, sharper, more cohesive squads.",
-    features: [
-      "Sport-specific strength & conditioning",
-      "Nutrition optimization for energy and recovery",
-      "Mental resilience training under pressure",
-      "Continuous monitoring and adaptation",
-    ],
-    image: images.teamSport,
-  },
-];
+import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function ProfessionalPage() {
+  const { dict, lang } = useDictionary();
+  const t = dict.professional as any;
+
+  const segments = [
+    {
+      slug: "athletes",
+      title: t.segments.athletes.title,
+      subtitle: t.segments.athletes.subtitle,
+      description: t.segments.athletes.description,
+      features: t.segments.athletes.features,
+      image: images.athlete,
+    },
+    {
+      slug: "teams",
+      title: t.segments.teams.title,
+      subtitle: t.segments.teams.subtitle,
+      description: t.segments.teams.description,
+      features: t.segments.teams.features,
+      image: images.teamSport,
+    },
+  ];
+
   return (
     <>
       {/* Hero */}
@@ -56,16 +48,14 @@ export default function ProfessionalPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-4">
-              Professional Coaching — Worldwide
+              {t.label}
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              RESET90{" "}
-              <span className="text-gradient-gold">Professional</span>
+              {t.heroTitle}{" "}
+              <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
-              Designed for those who treat performance as more than a goal —
-              it&apos;s their profession, their discipline, and their standard.
-              Every case begins with a private video consultation.
+              {t.heroDesc}
             </p>
           </AnimatedSection>
         </div>
@@ -105,7 +95,7 @@ export default function ProfessionalPage() {
                       {seg.description}
                     </p>
                     <ul className="space-y-3 mb-8">
-                      {seg.features.map((f, j) => (
+                      {seg.features.map((f: string, j: number) => (
                         <li
                           key={j}
                           className="flex items-start gap-3 text-sm text-white/60"
@@ -115,8 +105,8 @@ export default function ProfessionalPage() {
                         </li>
                       ))}
                     </ul>
-                    <CTAButton href={`/professional/${seg.slug}`}>
-                      Learn More
+                    <CTAButton href={`/${lang}/professional/${seg.slug}`}>
+                      {t.learnMore}
                     </CTAButton>
                   </div>
                 </div>
@@ -141,14 +131,13 @@ export default function ProfessionalPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center">
           <AnimatedSection direction="up">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Begin Your Professional Journey
+              {t.ctaTitle}
             </h2>
             <p className="text-white/50 text-lg leading-relaxed mb-10">
-              Prices are tailored to each case. Request a private consultation
-              to discuss your specific needs and goals.
+              {t.ctaDesc}
             </p>
-            <CTAButton href="/contact" size="large">
-              Request Professional Consultation
+            <CTAButton href={`/${lang}/contact`} size="large">
+              {t.ctaButton}
             </CTAButton>
           </AnimatedSection>
         </div>
