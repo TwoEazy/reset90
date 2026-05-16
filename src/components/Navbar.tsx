@@ -32,7 +32,7 @@ export default function Navbar() {
           : "bg-dark/80 backdrop-blur-sm"
       }`}
     >
-      <div className="w-full px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 xl:h-24">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 flex items-center justify-between h-20 sm:h-24 xl:h-28">
         {/* Logo */}
         <Link href="/" className="flex items-center group flex-shrink-0">
           <Image
@@ -40,7 +40,7 @@ export default function Navbar() {
             alt="RESET90 Logo"
             width={320}
             height={120}
-            className="xl:w-[380px] xl:h-[140px] object-contain"
+            className="w-[220px] h-[82px] sm:w-[260px] sm:h-[98px] lg:w-[280px] lg:h-[105px] xl:w-[380px] xl:h-[140px] object-contain"
             unoptimized
           />
         </Link>
