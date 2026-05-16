@@ -21,7 +21,7 @@ export const images = {
   premium: "/premiumindv.png",
   postPregnancy: "/postpregnancy.png",
   postOperations: "/postop.jpeg",
-  reducedMobility: "/walking pad.png",
+  reducedMobility: "/reduced mobility.jpeg",
 
   // Professional segments
   athlete: "/reset90jump.png",

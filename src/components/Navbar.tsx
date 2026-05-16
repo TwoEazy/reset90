@@ -41,6 +41,7 @@ export default function Navbar() {
             width={320}
             height={120}
             className="xl:w-[380px] xl:h-[140px] object-contain"
+            priority
             unoptimized
           />
         </Link>
