@@ -103,8 +103,7 @@ export default function Home() {
               <div className="space-y-4 text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
                 <p>{t.aboutP1}</p>
                 <p>{t.aboutP2}</p>
-                <p>{t.aboutP3}</p>
-                <p className="text-white/65 font-medium">{t.aboutP4}</p>
+                <p className="text-white/65 font-medium">{t.aboutP3}</p>
               </div>
 
               {/* Inline stats */}
