@@ -28,6 +28,11 @@ export const images = {
   teamSport: "/team sports.png",
   premiumIndividual: "/premiumindv.png",
 
+  // Performance systems
+  athleteTesting: "/athlete-testing.jpeg",
+  athleteStats: "/athlete-stats.jpeg",
+  playerInsights: "/player-insights.jpeg",
+
   // CTA / lifestyle
   transformation: "/reset90hero.png",
   lifestyle: "/reset90jump.png",

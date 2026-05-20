@@ -7,13 +7,12 @@ import CTAButton from "@/components/CTAButton";
 import { images } from "@/lib/images";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
-const bundleImages = [
-  images.standard,
-  images.advanced,
-  images.premium,
-  images.postPregnancy,
-  images.postOperations,
-  images.reducedMobility,
+const systemImages = [
+  images.athleteTesting,
+  images.strengthTraining,
+  images.athleteStats,
+  images.athleteTesting,
+  images.playerInsights,
 ];
 
 function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -27,11 +26,6 @@ function Container({ children, className = "" }: { children: React.ReactNode; cl
 export default function AboutPage() {
   const { dict, lang } = useDictionary();
   const t = dict.about as any;
-
-  const bundles = (t.bundles as any[]).map((b: any, i: number) => ({
-    ...b,
-    image: bundleImages[i],
-  }));
 
   return (
     <>
@@ -84,8 +78,10 @@ export default function AboutPage() {
       {/* Why 90 Days */}
       <section className="py-16 sm:py-20 md:py-28 bg-[#0d0d0d] relative overflow-hidden">
         <div className="absolute left-0 top-0 w-1/3 h-full bg-[radial-gradient(ellipse_at_left,_rgba(200,168,78,0.03)_0%,_transparent_60%)]" />
+        <div className="absolute right-0 bottom-0 w-1/3 h-full bg-[radial-gradient(ellipse_at_right,_rgba(200,168,78,0.03)_0%,_transparent_60%)]" />
         <Container className="relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 xl:gap-24 items-center">
+          {/* Header */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 xl:gap-24 items-center mb-20 md:mb-28">
             <AnimatedSection direction="left">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
                 {t.frameworkLabel}
@@ -93,10 +89,9 @@ export default function AboutPage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                 {t.why90Title} <span className="text-gradient-gold">{t.why90Highlight}</span>?
               </h2>
-              <div className="space-y-4 text-white/50 text-base sm:text-lg leading-relaxed">
-                <p>{t.why90P1}</p>
-                <p>{t.why90P2}</p>
-              </div>
+              <p className="text-white/50 text-base sm:text-lg leading-relaxed">
+                {t.why90Intro}
+              </p>
             </AnimatedSection>
 
             <AnimatedSection direction="right" delay={0.2}>
@@ -112,51 +107,81 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
           </div>
-        </Container>
-      </section>
 
-      <div className="section-separator" />
-
-      {/* Online Bundles */}
-      <section className="py-16 sm:py-20 md:py-28 bg-[#0d0d0d]">
-        <Container>
-          <AnimatedSection direction="up" className="text-center mb-12 md:mb-16">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
-              {t.programsLabel}
-            </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-              {t.bundlesTitle} <span className="text-gradient-gold">{t.bundlesTitleHighlight}</span>
-            </h2>
-            <div className="gold-line mx-auto mb-5" />
-            <p className="text-white/45 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              {t.bundlesDesc}
-            </p>
+          {/* Core Systems Intro */}
+          <AnimatedSection direction="up">
+            <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold mb-3">
+                {t.why90CoreLabel}
+              </p>
+              <div className="gold-line mx-auto mb-5" />
+              <p className="text-white/50 text-base sm:text-lg leading-relaxed">
+                {t.why90CoreDesc}
+              </p>
+            </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {bundles.map((b: any, i: number) => (
-              <AnimatedSection key={i} direction="up" delay={i * 0.08}>
-                <div className="group relative rounded-lg border border-gold/10 hover:border-gold/25 overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-lg shadow-black/20">
-                  <div className="relative h-40 sm:h-48 overflow-hidden">
-                    <Image
-                      src={b.image}
-                      alt={b.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                      unoptimized
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/50 to-transparent" />
-                  </div>
-                  <div className="p-5 sm:p-6 bg-[#111]">
-                    <p className="text-sm sm:text-base font-bold text-white mb-1">
-                      RESET90 {b.name}
+          {/* Five Systems — alternating image + text rows */}
+          <div className="space-y-16 md:space-y-24 mb-16 md:mb-20">
+            {(t.why90Systems as any[]).map((system: any, i: number) => {
+              const isEven = i % 2 === 0;
+              return (
+                <div
+                  key={i}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-16 items-center"
+                >
+                  <AnimatedSection
+                    direction={isEven ? "left" : "right"}
+                    delay={0.1}
+                    className={!isEven ? "lg:order-2" : ""}
+                  >
+                    <div className="relative aspect-[16/10] rounded-lg overflow-hidden border border-gold/10">
+                      <Image
+                        src={systemImages[i]}
+                        alt={system.title}
+                        fill
+                        className="object-cover"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-dark/10 to-transparent" />
+                      <div className="absolute top-4 left-4 sm:top-5 sm:left-5">
+                        <span className="text-5xl sm:text-6xl md:text-7xl font-bold text-white/[0.07] leading-none select-none">
+                          {system.number}
+                        </span>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection
+                    direction={isEven ? "right" : "left"}
+                    delay={0.2}
+                    className={!isEven ? "lg:order-1" : ""}
+                  >
+                    <span className="text-xs font-bold tracking-[0.3em] text-gold/40 uppercase mb-3 block">
+                      System {system.number}
+                    </span>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+                      {system.title}
+                    </h3>
+                    <div className="w-12 h-[2px] bg-gradient-to-r from-gold/50 to-transparent mb-5" />
+                    <p className="text-white/45 text-sm sm:text-base leading-relaxed">
+                      {system.desc}
                     </p>
-                    <p className="text-xs text-white/40 leading-relaxed">{b.desc}</p>
-                  </div>
+                  </AnimatedSection>
                 </div>
-              </AnimatedSection>
-            ))}
+              );
+            })}
           </div>
+
+          {/* Outcome */}
+          <AnimatedSection direction="up" delay={0.3}>
+            <div className="relative rounded-lg border border-gold/10 bg-[#111]/80 p-6 sm:p-8 md:p-10 max-w-4xl mx-auto text-center">
+              <div className="absolute inset-0 rounded-lg bg-[radial-gradient(ellipse_at_center,_rgba(200,168,78,0.04)_0%,_transparent_70%)]" />
+              <p className="relative text-white/50 text-base sm:text-lg leading-relaxed">
+                {t.why90Outcome}
+              </p>
+            </div>
+          </AnimatedSection>
         </Container>
       </section>
 

@@ -89,8 +89,37 @@
     "frameworkLabel": "The Framework",
     "why90Title": "Why",
     "why90Highlight": "90 Days",
-    "why90P1": "Research shows that meaningful, lasting transformation \u2014 both physical and mental \u2014 requires sustained effort over time. The 90-day cycle is our proven framework for achieving real, measurable change.",
-    "why90P2": "Every RESET90 program is structured around this cycle: assess, plan, execute, measure, and evolve. Whether you're training online or with our professional team, the 90-day structure ensures accountability, progression, and results.",
+    "why90Intro": "Research shows that meaningful, lasting transformation \u2014 both physical and mental \u2014 requires sustained effort over time. The 90-day cycle is our proven framework for achieving real, measurable change.",
+    "why90CoreLabel": "Five Core Performance Systems",
+    "why90CoreDesc": "RESET90 is built on five core performance systems that work together to improve physical output, recovery, reaction ability, movement efficiency, and tactical performance.",
+    "why90Systems": [
+      {
+        "number": "01",
+        "title": "Metabolic & Respiratory Analysis",
+        "desc": "Advanced testing to measure how the body utilizes oxygen, produces energy, responds to fatigue, and manages recovery under physical stress."
+      },
+      {
+        "number": "02",
+        "title": "Force & Movement Diagnostics",
+        "desc": "Analysis of power output, asymmetries, balance, movement efficiency, and injury-risk indicators to identify hidden performance limitations."
+      },
+      {
+        "number": "03",
+        "title": "Visual & Cognitive-Reaction Training",
+        "desc": "Designed to improve eye\u2013hand coordination, reaction speed, peripheral awareness, focus, and decision-making under pressure."
+      },
+      {
+        "number": "04",
+        "title": "Reactive Neuromuscular Drills",
+        "desc": "Enhancing agility, responsiveness, coordination, and movement execution in dynamic environments where split-second reactions affect outcomes."
+      },
+      {
+        "number": "05",
+        "title": "Video & Tactical Analysis",
+        "desc": "Evaluating player movement, positioning, workload behavior, and team structure through detailed training and match review."
+      }
+    ],
+    "why90Outcome": "Together, these systems create a structured performance environment focused on improving athletic performance, reducing avoidable injuries, optimizing recovery, increasing physical efficiency, and sustaining high-level output under real competitive demands.",
     "programsLabel": "Programs",
     "bundlesTitle": "Online",
     "bundlesTitleHighlight": "Bundles",
