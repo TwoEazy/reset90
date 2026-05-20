@@ -30,8 +30,10 @@ export const images = {
 
   // Performance systems
   athleteTesting: "/athlete-testing.jpeg",
-  athleteStats: "/athlete-stats.jpeg",
+  athleteStats: "/athletestats.jpeg",
   playerInsights: "/player-insights.jpeg",
+  forceAndMovement: "/forceandmovement.jpeg",
+  visualAndCog: "/visualandcog.jpeg",
 
   // CTA / lifestyle
   transformation: "/reset90hero.png",
