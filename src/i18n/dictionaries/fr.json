@@ -499,5 +499,13 @@
     "ipDesc": "All RESET90 training plans, materials, and content are proprietary. They may not be shared, reproduced, or distributed without written permission.",
     "liabilityTitle": "Liability",
     "liabilityDesc": "RESET90 is not liable for injuries or health issues that may arise during training. Clients participate at their own risk and are responsible for following safe exercise practices."
+  },
+  "notFound": {
+    "label": "Erreur 404",
+    "title": "Page",
+    "titleHighlight": "introuvable.",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil",
+    "backHomeSub": "RESET90"
   }
 }

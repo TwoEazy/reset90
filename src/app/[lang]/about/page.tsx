@@ -8,11 +8,11 @@ import { images } from "@/lib/images";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
 const systemImages = [
-  images.athleteTesting,
-  images.strengthTraining,
-  images.athleteStats,
-  images.athleteTesting,
-  images.playerInsights,
+  images.athleteTesting,      // 01 Metabolic & Respiratory Analysis
+  images.forceAndMovement,    // 02 Force & Movement Diagnostics
+  images.visualAndCog,        // 03 Visual & Cognitive-Reaction Training
+  images.athleteStats,        // 04 Reactive Neuromuscular Drills
+  images.playerInsights,      // 05 Video & Tactical Analysis
 ];
 
 function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {
