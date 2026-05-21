@@ -72,7 +72,7 @@ export default function Navbar() {
           <LanguageSwitcher />
           <Link
             href={`/${lang}/contact`}
-            className="btn-gold bg-gold text-dark font-bold text-[10px] 2xl:text-xs px-4 2xl:px-6 py-2.5 2xl:py-3 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all whitespace-nowrap"
+            className="btn-gold btn-nav-glow bg-gold text-dark font-bold text-[10px] 2xl:text-xs px-4 2xl:px-6 py-2.5 2xl:py-3 rounded-md tracking-wider uppercase hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30 transition-all whitespace-nowrap"
           >
             {t.bookConsultation}
           </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
               <Link
                 href={`/${lang}/contact`}
                 onClick={() => setMobileOpen(false)}
-                className="btn-gold bg-gold text-dark font-bold text-sm px-8 py-4 rounded-md tracking-wider uppercase mt-2 w-[80%] text-center"
+                className="btn-gold btn-nav-glow bg-gold text-dark font-bold text-sm px-8 py-4 rounded-md tracking-wider uppercase mt-2 w-[80%] text-center"
               >
                 {t.bookConsultation}
               </Link>
