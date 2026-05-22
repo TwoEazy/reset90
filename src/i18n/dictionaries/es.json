@@ -128,8 +128,8 @@
     "ctaButton": "Solicitar Reunión Introductoria",
     "bundles": {
       "standard": {
-        "title": "RESET90 Estándar",
-        "description": "Entrenamiento y nutrición personalizados de 90 días con consultas por video quincenales y soporte por correo 24/7."
+        "title": "RESET90 STANDARD",
+        "description": "Sistema estructurado de 90 días diseñado para mejorar la eficiencia del movimiento, la recuperación, el acondicionamiento y el rendimiento físico sostenible."
       },
       "advanced": {
         "title": "RESET90 Avanzado",
@@ -162,9 +162,10 @@
     "readyButton": "Solicita Tu Reunión Introductoria",
     "bundles": {
       "standard": {
-        "title": "RESET90 Estándar",
-        "tagline": "Tu base para la transformación",
-        "description": "Plan personalizado de entrenamiento y nutrición de 90 días con el Sistema de Optimización del Estilo de Vida. Perfecto para quienes están listos para comprometerse con un cambio estructurado bajo guía profesional en cada paso.",
+        "title": "RESET90 STANDARD",
+        "tagline": "Optimización Fundamental del Rendimiento",
+        "price": "€1,200",
+        "description": "Sistema estructurado de 90 días diseñado para mejorar la eficiencia del movimiento, la recuperación, el acondicionamiento y el rendimiento físico sostenible.",
         "details": ["Programa de entrenamiento personalizado de 90 días", "Plan de nutrición personalizado", "Sistema de Optimización del Estilo de Vida (estrés, sueño, hábitos, mentalidad)", "Seguimiento de progreso y ajustes del programa"],
         "consultations": "Consultas por video quincenales de 30 minutos",
         "support": "Soporte por correo 24/7",

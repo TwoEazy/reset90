@@ -148,8 +148,8 @@
     "ctaButton": "Request Introduction Meeting",
     "bundles": {
       "standard": {
-        "title": "RESET90 Standard",
-        "description": "Tailored 90-day training & nutrition with bi-weekly video consultations and 24/7 email support."
+        "title": "RESET90 STANDARD",
+        "description": "Structured 90-day system designed to improve movement efficiency, recovery, conditioning, and sustainable physical performance."
       },
       "advanced": {
         "title": "RESET90 Advanced",
@@ -182,9 +182,10 @@
     "readyButton": "Request Your Introduction Meeting",
     "bundles": {
       "standard": {
-        "title": "RESET90 Standard",
-        "tagline": "Your foundation for transformation",
-        "description": "Tailored 90-day training and nutrition plan with the Lifestyle Optimization System. Perfect for those ready to commit to structured change with professional guidance at every step.",
+        "title": "RESET90 STANDARD",
+        "tagline": "Foundational Performance Optimization",
+        "price": "€1,200",
+        "description": "Structured 90-day system designed to improve movement efficiency, recovery, conditioning, and sustainable physical performance.",
         "details": ["Personalized 90-day training program", "Custom nutrition plan", "Lifestyle Optimization System (stress, sleep, habits, mindset)", "Progress tracking and program adjustments"],
         "consultations": "30-minute bi-weekly video consultations",
         "support": "24/7 email support",
