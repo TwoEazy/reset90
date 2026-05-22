@@ -133,11 +133,11 @@
       },
       "advanced": {
         "title": "RESET90 Avanzado",
-        "description": "Plan personalizado de 90 días con consultas semanales, soporte multicanal y kit de equipo completo."
+        "description": "Diseñado para personas que trabajan bajo cargas físicas y profesionales exigentes que requieren mayor eficiencia en la recuperación y gestión del rendimiento."
       },
       "premium": {
         "title": "RESET90 Premium",
-        "description": "La experiencia insignia. Consultas dos veces por semana, soporte prioritario y nuestro kit de equipo completo."
+        "description": "Supervisión integral del rendimiento diseñada para personas de alto rendimiento que buscan la máxima eficiencia física, resiliencia y rendimiento repetido."
       },
       "postPregnancy": {
         "title": "RESET90 Post-Embarazo",
@@ -172,8 +172,9 @@
       },
       "advanced": {
         "title": "RESET90 Avanzado",
-        "tagline": "Coaching elevado, soporte más profundo",
-        "description": "Un plan personalizado de 90 días con consultas semanales y soporte multicanal. Para quienes desean una guía más cercana, retroalimentación más rápida y la experiencia completa del equipo RESET90.",
+        "tagline": "Optimización de Alto Rendimiento",
+        "price": "€1,800",
+        "description": "Diseñado para personas que trabajan bajo cargas físicas y profesionales exigentes que requieren mayor eficiencia en la recuperación y gestión del rendimiento.",
         "details": ["Plan personalizado de entrenamiento y nutrición de 90 días", "Sistema de Optimización del Estilo de Vida", "Revisiones de progreso semanales y ajustes del plan", "Soporte multicanal para guía en tiempo real"],
         "consultations": "Consultas por video semanales de 20 minutos",
         "support": "WhatsApp (horario laboral), teléfono (CET) y soporte por correo 24/7",
@@ -181,8 +182,9 @@
       },
       "premium": {
         "title": "RESET90 Premium",
-        "tagline": "La experiencia insignia de RESET90",
-        "description": "Nuestro programa en línea más completo. Consultas dos veces por semana, soporte prioritario y el kit de equipo completo. Para quienes no aceptan nada menos que lo mejor.",
+        "tagline": "Gestión Elite del Rendimiento",
+        "price": "€2,500",
+        "description": "Supervisión integral del rendimiento diseñada para personas de alto rendimiento que buscan la máxima eficiencia física, resiliencia y rendimiento repetido.",
         "details": ["Programa insignia de entrenamiento y nutrición de 90 días", "Sistema de Optimización del Estilo de Vida", "Consultas de progreso en profundidad dos veces por semana", "Acceso prioritario a tu equipo de coaching"],
         "consultations": "Consultas por video dos veces por semana de 30 minutos",
         "support": "Soporte prioritario por WhatsApp y teléfono + correo 24/7",
