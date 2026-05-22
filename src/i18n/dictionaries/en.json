@@ -153,11 +153,11 @@
       },
       "advanced": {
         "title": "RESET90 Advanced",
-        "description": "Personalized 90-day plan with weekly consultations, multi-channel support, and full equipment kit."
+        "description": "Designed for individuals operating under demanding physical and professional workloads requiring higher recovery efficiency and performance management."
       },
       "premium": {
         "title": "RESET90 Premium",
-        "description": "The flagship experience. Twice-weekly consultations, priority support, and our complete equipment kit."
+        "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance."
       },
       "postPregnancy": {
         "title": "RESET90 Post-Pregnancy",
@@ -192,8 +192,9 @@
       },
       "advanced": {
         "title": "RESET90 Advanced",
-        "tagline": "Elevated coaching, deeper support",
-        "description": "A personalized 90-day plan with weekly consultations and multi-channel support. For those who want closer guidance, faster feedback, and the full RESET90 equipment experience.",
+        "tagline": "High-Performance Optimization",
+        "price": "€1,800",
+        "description": "Designed for individuals operating under demanding physical and professional workloads requiring higher recovery efficiency and performance management.",
         "details": ["Personalized 90-day training & nutrition plan", "Lifestyle Optimization System", "Weekly progress reviews and plan adjustments", "Multi-channel support for real-time guidance"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp (working hours), phone (CET), and 24/7 email support",
@@ -201,8 +202,9 @@
       },
       "premium": {
         "title": "RESET90 Premium",
-        "tagline": "The flagship RESET90 experience",
-        "description": "Our most comprehensive online program. Twice-weekly consultations, priority support, and the complete equipment kit. For those who accept nothing less than the best.",
+        "tagline": "Elite Performance Management",
+        "price": "€2,500",
+        "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance.",
         "details": ["Flagship 90-day training & nutrition program", "Lifestyle Optimization System", "Twice-weekly in-depth progress consultations", "Priority access to your coaching team"],
         "consultations": "30-minute twice-weekly video consultations",
         "support": "Priority WhatsApp & phone support + 24/7 email",
