@@ -15,21 +15,18 @@ export default function OnlinePage() {
       slug: "standard",
       title: t.bundles.standard.title,
       description: t.bundles.standard.description,
-      highlights: t.bundles.standard.highlights,
       image: images.standard,
     },
     {
       slug: "advanced",
       title: t.bundles.advanced.title,
       description: t.bundles.advanced.description,
-      highlights: t.bundles.advanced.highlights,
       image: images.advanced,
     },
     {
       slug: "premium",
       title: t.bundles.premium.title,
       description: t.bundles.premium.description,
-      highlights: t.bundles.premium.highlights,
       featured: true,
       image: images.premium,
     },
@@ -37,22 +34,13 @@ export default function OnlinePage() {
       slug: "post-pregnancy",
       title: t.bundles.postPregnancy.title,
       description: t.bundles.postPregnancy.description,
-      highlights: t.bundles.postPregnancy.highlights,
       image: images.postPregnancy,
     },
     {
       slug: "post-operations",
       title: t.bundles.postOperations.title,
       description: t.bundles.postOperations.description,
-      highlights: t.bundles.postOperations.highlights,
       image: images.postOperations,
-    },
-    {
-      slug: "reduced-mobility",
-      title: t.bundles.reducedMobility.title,
-      description: t.bundles.reducedMobility.description,
-      highlights: t.bundles.reducedMobility.highlights,
-      image: images.reducedMobility,
     },
   ];
 
@@ -121,20 +109,9 @@ export default function OnlinePage() {
                       <h3 className="text-xl font-bold text-white mb-3">
                         {bundle.title}
                       </h3>
-                      <p className="text-sm text-white/50 leading-relaxed mb-6">
+                      <p className="text-sm text-white/50 leading-relaxed mb-8">
                         {bundle.description}
                       </p>
-                      <ul className="space-y-3 mb-8">
-                        {bundle.highlights.map((item: string, j: number) => (
-                          <li
-                            key={j}
-                            className="flex items-start gap-3 text-sm text-white/60"
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-1.5" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                     <CTAButton
                       href={`/${lang}/online/${bundle.slug}`}

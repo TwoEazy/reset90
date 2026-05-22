@@ -148,7 +148,7 @@
     "label": "Online Programs",
     "heroTitle": "RESET90",
     "heroTitleHighlight": "Online",
-    "heroDesc": "Six specialized bundles, each built on our 90-day cycle methodology. Tailored training, nutrition, and lifestyle optimization — delivered remotely with precision.",
+    "heroDesc": "Five specialized bundles, each built on our 90-day cycle methodology. Tailored training, nutrition, and lifestyle optimization — delivered remotely with precision.",
     "learnMore": "Learn More",
     "flagship": "Flagship",
     "ctaTitle": "Not Sure Which Bundle?",
@@ -157,63 +157,23 @@
     "bundles": {
       "standard": {
         "title": "RESET90 Standard",
-        "description": "Tailored 90-day training & nutrition with bi-weekly video consultations and 24/7 email support.",
-        "highlights": [
-          "30-min bi-weekly video consultations",
-          "Lifestyle Optimization System",
-          "24/7 email support",
-          "RESET90 Resistance Band Kit"
-        ]
+        "description": "Tailored 90-day training & nutrition with bi-weekly video consultations and 24/7 email support."
       },
       "advanced": {
         "title": "RESET90 Advanced",
-        "description": "Personalized 90-day plan with weekly consultations, multi-channel support, and full equipment kit.",
-        "highlights": [
-          "20-min weekly consultations",
-          "Lifestyle Optimization System",
-          "WhatsApp, phone & 24/7 email",
-          "Full Equipment Kit + walking pad"
-        ]
+        "description": "Personalized 90-day plan with weekly consultations, multi-channel support, and full equipment kit."
       },
       "premium": {
         "title": "RESET90 Premium",
-        "description": "The flagship experience. Twice-weekly consultations, priority support, and our complete equipment kit.",
-        "highlights": [
-          "30-min twice-weekly consultations",
-          "Lifestyle Optimization System",
-          "Priority WhatsApp & phone",
-          "Full Equipment Kit + walking pad"
-        ]
+        "description": "The flagship experience. Twice-weekly consultations, priority support, and our complete equipment kit."
       },
       "postPregnancy": {
         "title": "RESET90 Post-Pregnancy",
-        "description": "Gentle-to-progressive plan after childbirth, designed for safe recovery and rebuilding strength.",
-        "highlights": [
-          "20-min weekly consultations",
-          "Lifestyle Optimization System",
-          "WhatsApp & phone support",
-          "Equipment Kit + walking pad (low-impact)"
-        ]
+        "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy."
       },
       "postOperations": {
         "title": "RESET90 Post-Operations",
-        "description": "Recovery-aware program post medical clearance. Controlled progression with professional monitoring.",
-        "highlights": [
-          "20-min weekly consultations",
-          "Lifestyle Optimization System",
-          "WhatsApp & phone support",
-          "Equipment Kit + walking pad (controlled)"
-        ]
-      },
-      "reducedMobility": {
-        "title": "RESET90 Reduced Mobility",
-        "description": "Adaptive training system — seated, assisted, or standing. Fully tailored to your capabilities.",
-        "highlights": [
-          "20-min weekly consultations",
-          "Lifestyle Optimization System",
-          "WhatsApp & phone support",
-          "RESET90 Fitness Equipment Kit"
-        ]
+        "description": "Recovery-aware program post medical clearance. Controlled progression with professional monitoring."
       }
     }
   },
@@ -274,44 +234,21 @@
       "post-pregnancy": {
         "title": "RESET90 Post-Pregnancy",
         "tagline": "Rebuild with care and confidence",
-        "description": "A gentle-to-progressive plan designed for after childbirth. We prioritize safe recovery, rebuilding core strength, and restoring energy — at your pace, with professional support.",
-        "details": [
-          "Gentle-to-progressive 90-day recovery plan",
-          "Postnatal nutrition and energy optimization",
-          "Lifestyle Optimization System",
-          "Core rebuilding and functional movement focus"
-        ],
+        "price": "€1,800",
+        "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy.",
+        "details": ["Controlled recovery", "Energy management", "Physical rebuilding", "Mobility restoration", "Low-impact progression", "Sustainable conditioning"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp & phone (CET) + 24/7 email",
-        "equipment": "RESET90 Fitness Equipment Kit + walking pad (low-impact cardio)"
+        "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
       },
       "post-operations": {
         "title": "RESET90 Post-Operations",
         "tagline": "Recovery meets performance",
         "description": "Recovery-aware programming that begins after medical clearance. Controlled progression, professional monitoring, and a structured path back to full strength.",
-        "details": [
-          "Recovery-aware 90-day training program",
-          "Post-surgery nutrition strategy",
-          "Lifestyle Optimization System",
-          "Controlled cardio and strength progression"
-        ],
+        "details": ["Recovery-aware 90-day training program", "Post-surgery nutrition strategy", "Lifestyle Optimization System", "Controlled cardio and strength progression"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp & phone (CET) + 24/7 email",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
-      },
-      "reduced-mobility": {
-        "title": "RESET90 Reduced Mobility",
-        "tagline": "Adaptive. Inclusive. Effective.",
-        "description": "An adaptive training system — seated, assisted, or standing. Fully tailored to your capabilities, with the same precision and commitment as every RESET90 program.",
-        "details": [
-          "Adaptive 90-day training system",
-          "Modified nutrition and energy strategy",
-          "Lifestyle Optimization System",
-          "Seated, assisted, or standing exercise protocols"
-        ],
-        "consultations": "20-minute weekly video consultations",
-        "support": "WhatsApp & phone (CET) + 24/7 email",
-        "equipment": "RESET90 Fitness Equipment Kit (no walking pad)"
       }
     }
   },

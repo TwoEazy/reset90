@@ -39,9 +39,16 @@ export default function BundleDetailPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               {bundle.title}
             </h1>
-            <p className="text-xl text-gold/80 tracking-wide">
+            <p className="text-xl text-gold/80 tracking-wide mb-4">
               {bundle.tagline}
             </p>
+            {bundle.price && (
+              <div className="inline-flex items-center gap-2 mt-2">
+                <span className="text-3xl sm:text-4xl font-bold text-gradient-gold">
+                  {bundle.price}
+                </span>
+              </div>
+            )}
           </AnimatedSection>
         </div>
       </section>

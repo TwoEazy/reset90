@@ -120,7 +120,7 @@
     "label": "Programas En Línea",
     "heroTitle": "RESET90",
     "heroTitleHighlight": "En Línea",
-    "heroDesc": "Seis paquetes especializados, cada uno construido sobre nuestra metodología de ciclo de 90 días. Entrenamiento personalizado, nutrición y optimización del estilo de vida —entregados a distancia con precisión.",
+    "heroDesc": "Cinco paquetes especializados, cada uno construido sobre nuestra metodología de ciclo de 90 días. Entrenamiento personalizado, nutrición y optimización del estilo de vida —entregados a distancia con precisión.",
     "learnMore": "Saber Más",
     "flagship": "Insignia",
     "ctaTitle": "¿No Sabes Qué Paquete Elegir?",
@@ -129,33 +129,23 @@
     "bundles": {
       "standard": {
         "title": "RESET90 Estándar",
-        "description": "Entrenamiento y nutrición personalizados de 90 días con consultas por video quincenales y soporte por correo 24/7.",
-        "highlights": ["Consultas por video quincenales de 30 min", "Sistema de Optimización del Estilo de Vida", "Soporte por correo 24/7", "Kit de Bandas de Resistencia RESET90"]
+        "description": "Entrenamiento y nutrición personalizados de 90 días con consultas por video quincenales y soporte por correo 24/7."
       },
       "advanced": {
         "title": "RESET90 Avanzado",
-        "description": "Plan personalizado de 90 días con consultas semanales, soporte multicanal y kit de equipo completo.",
-        "highlights": ["Consultas semanales de 20 min", "Sistema de Optimización del Estilo de Vida", "WhatsApp, teléfono y correo 24/7", "Kit de Equipo Completo + caminadora"]
+        "description": "Plan personalizado de 90 días con consultas semanales, soporte multicanal y kit de equipo completo."
       },
       "premium": {
         "title": "RESET90 Premium",
-        "description": "La experiencia insignia. Consultas dos veces por semana, soporte prioritario y nuestro kit de equipo completo.",
-        "highlights": ["Consultas dos veces por semana de 30 min", "Sistema de Optimización del Estilo de Vida", "WhatsApp y teléfono prioritarios", "Kit de Equipo Completo + caminadora"]
+        "description": "La experiencia insignia. Consultas dos veces por semana, soporte prioritario y nuestro kit de equipo completo."
       },
       "postPregnancy": {
         "title": "RESET90 Post-Embarazo",
-        "description": "Plan progresivo y suave después del parto, diseñado para una recuperación segura y la reconstrucción de la fuerza.",
-        "highlights": ["Consultas semanales de 20 min", "Sistema de Optimización del Estilo de Vida", "Soporte por WhatsApp y teléfono", "Kit de Equipo + caminadora (bajo impacto)"]
+        "description": "Recuperación y reacondicionamiento posparto estructurado diseñado para apoyar la reconstrucción física, la restauración de energía, la eficiencia del movimiento y el retorno sostenible al rendimiento tras el embarazo."
       },
       "postOperations": {
         "title": "RESET90 Post-Operación",
-        "description": "Programa consciente de la recuperación tras autorización médica. Progresión controlada con monitoreo profesional.",
-        "highlights": ["Consultas semanales de 20 min", "Sistema de Optimización del Estilo de Vida", "Soporte por WhatsApp y teléfono", "Kit de Equipo + caminadora (controlada)"]
-      },
-      "reducedMobility": {
-        "title": "RESET90 Movilidad Reducida",
-        "description": "Sistema de entrenamiento adaptativo —sentado, asistido o de pie. Totalmente adaptado a tus capacidades.",
-        "highlights": ["Consultas semanales de 20 min", "Sistema de Optimización del Estilo de Vida", "Soporte por WhatsApp y teléfono", "Kit de Equipo de Fitness RESET90"]
+        "description": "Programa consciente de la recuperación tras autorización médica. Progresión controlada con monitoreo profesional."
       }
     }
   },
@@ -201,11 +191,12 @@
       "post-pregnancy": {
         "title": "RESET90 Post-Embarazo",
         "tagline": "Reconstruye con cuidado y confianza",
-        "description": "Un plan progresivo y suave diseñado para después del parto. Priorizamos la recuperación segura, la reconstrucción de la fuerza del core y la restauración de la energía —a tu ritmo, con apoyo profesional.",
-        "details": ["Plan de recuperación progresivo y suave de 90 días", "Nutrición postnatal y optimización de la energía", "Sistema de Optimización del Estilo de Vida", "Enfoque en reconstrucción del core y movimiento funcional"],
+        "price": "€1,800",
+        "description": "Recuperación y reacondicionamiento posparto estructurado diseñado para apoyar la reconstrucción física, la restauración de energía, la eficiencia del movimiento y el retorno sostenible al rendimiento tras el embarazo.",
+        "details": ["Recuperación controlada", "Gestión de la energía", "Reconstrucción física", "Restauración de la movilidad", "Progresión de bajo impacto", "Acondicionamiento sostenible"],
         "consultations": "Consultas por video semanales de 20 minutos",
         "support": "WhatsApp y teléfono (CET) + correo 24/7",
-        "equipment": "Kit de Equipo de Fitness RESET90 + caminadora (cardio de bajo impacto)"
+        "equipment": "Kit de Equipo de Fitness RESET90 + caminadora (cardio controlado)"
       },
       "post-operations": {
         "title": "RESET90 Post-Operación",
@@ -215,15 +206,6 @@
         "consultations": "Consultas por video semanales de 20 minutos",
         "support": "WhatsApp y teléfono (CET) + correo 24/7",
         "equipment": "Kit de Equipo de Fitness RESET90 + caminadora (cardio controlado)"
-      },
-      "reduced-mobility": {
-        "title": "RESET90 Movilidad Reducida",
-        "tagline": "Adaptativo. Inclusivo. Efectivo.",
-        "description": "Un sistema de entrenamiento adaptativo —sentado, asistido o de pie. Totalmente adaptado a tus capacidades, con la misma precisión y compromiso que cada programa RESET90.",
-        "details": ["Sistema de entrenamiento adaptativo de 90 días", "Estrategia de nutrición y energía modificada", "Sistema de Optimización del Estilo de Vida", "Protocolos de ejercicio sentado, asistido o de pie"],
-        "consultations": "Consultas por video semanales de 20 minutos",
-        "support": "WhatsApp y teléfono (CET) + correo 24/7",
-        "equipment": "Kit de Equipo de Fitness RESET90 (sin caminadora)"
       }
     }
   },
