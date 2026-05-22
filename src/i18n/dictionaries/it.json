@@ -172,8 +172,8 @@
         "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy."
       },
       "postOperations": {
-        "title": "RESET90 Post-Operations",
-        "description": "Recovery-aware program post medical clearance. Controlled progression with professional monitoring."
+        "title": "RESET90 Reconditioning",
+        "description": "Designed for individuals rebuilding physical capacity, movement quality, and conditioning following periods of inactivity, physical limitation, or reduced performance capacity."
       }
     }
   },
@@ -242,10 +242,11 @@
         "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
       },
       "post-operations": {
-        "title": "RESET90 Post-Operations",
-        "tagline": "Recovery meets performance",
-        "description": "Recovery-aware programming that begins after medical clearance. Controlled progression, professional monitoring, and a structured path back to full strength.",
-        "details": ["Recovery-aware 90-day training program", "Post-surgery nutrition strategy", "Lifestyle Optimization System", "Controlled cardio and strength progression"],
+        "title": "RESET90 Reconditioning",
+        "tagline": "Rebuild. Restore. Perform.",
+        "price": "€1,600",
+        "description": "Designed for individuals rebuilding physical capacity, movement quality, and conditioning following periods of inactivity, physical limitation, or reduced performance capacity.",
+        "details": ["Movement restoration", "Conditioning progression", "Fatigue management", "Structured physical rebuilding", "Sustainable recovery support"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp & phone (CET) + 24/7 email",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"

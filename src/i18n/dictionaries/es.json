@@ -144,8 +144,8 @@
         "description": "Recuperación y reacondicionamiento posparto estructurado diseñado para apoyar la reconstrucción física, la restauración de energía, la eficiencia del movimiento y el retorno sostenible al rendimiento tras el embarazo."
       },
       "postOperations": {
-        "title": "RESET90 Post-Operación",
-        "description": "Programa consciente de la recuperación tras autorización médica. Progresión controlada con monitoreo profesional."
+        "title": "RESET90 Reconditioning",
+        "description": "Diseñado para personas que reconstruyen su capacidad física, calidad de movimiento y acondicionamiento tras periodos de inactividad, limitación física o reducción del rendimiento."
       }
     }
   },
@@ -199,10 +199,11 @@
         "equipment": "Kit de Equipo de Fitness RESET90 + caminadora (cardio controlado)"
       },
       "post-operations": {
-        "title": "RESET90 Post-Operación",
-        "tagline": "La recuperación se encuentra con el rendimiento",
-        "description": "Programación consciente de la recuperación que comienza después de la autorización médica. Progresión controlada, monitoreo profesional y un camino estructurado de regreso a la fuerza completa.",
-        "details": ["Programa de entrenamiento de 90 días consciente de la recuperación", "Estrategia de nutrición post-cirugía", "Sistema de Optimización del Estilo de Vida", "Progresión controlada de cardio y fuerza"],
+        "title": "RESET90 Reconditioning",
+        "tagline": "Reconstruir. Restaurar. Rendir.",
+        "price": "€1,600",
+        "description": "Diseñado para personas que reconstruyen su capacidad física, calidad de movimiento y acondicionamiento tras periodos de inactividad, limitación física o reducción del rendimiento.",
+        "details": ["Restauración del movimiento", "Progresión del acondicionamiento", "Gestión de la fatiga", "Reconstrucción física estructurada", "Soporte de recuperación sostenible"],
         "consultations": "Consultas por video semanales de 20 minutos",
         "support": "WhatsApp y teléfono (CET) + correo 24/7",
         "equipment": "Kit de Equipo de Fitness RESET90 + caminadora (cardio controlado)"
