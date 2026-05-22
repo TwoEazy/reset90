@@ -58,12 +58,12 @@ export default function Home() {
         </div>
 
         <Container className="relative z-10">
-          <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
+          <div className="py-24 sm:py-32 lg:py-40 max-w-2xl mx-auto lg:mx-0">
             <motion.h1
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight mb-6 sm:mb-8"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold leading-[1.1] tracking-tight mb-6 sm:mb-8"
             >
               {t.heroTitle}{" "}
               <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
