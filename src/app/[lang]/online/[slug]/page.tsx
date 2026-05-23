@@ -72,11 +72,9 @@ export default function BundleDetailPage() {
                 {bundle.details.map((d: string, i: number) => (
                   <li
                     key={i}
-                    className="flex items-baseline gap-5 sm:gap-7"
+                    className="flex items-start gap-4 sm:gap-5"
                   >
-                    <span className="text-sm font-semibold tracking-wider text-gold/60 tabular-nums shrink-0 w-7 sm:w-8">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
+                    <span className="w-2 h-2 rounded-full bg-gold shrink-0 mt-2.5 sm:mt-3" />
                     <span className="text-base sm:text-lg text-white/85 leading-snug">
                       {d}
                     </span>
