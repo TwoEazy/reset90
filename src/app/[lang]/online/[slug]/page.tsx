@@ -62,51 +62,29 @@ export default function BundleDetailPage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {/* What's included */}
-            <AnimatedSection direction="left" delay={0.1}>
-              <div className="p-8 bg-dark-card rounded-lg border border-white/5 h-full">
-                <h3 className="text-lg font-semibold text-white mb-6">
-                  {t.whatsIncluded}
-                </h3>
-                <ul className="space-y-4">
-                  {bundle.details.map((d: string, i: number) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-sm text-white/70"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-1.5" />
+          {/* What's Included — editorial numbered list */}
+          <AnimatedSection direction="up" delay={0.1}>
+            <div className="mb-12 sm:mb-16">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-gold mb-8 sm:mb-10">
+                {t.whatsIncluded}
+              </p>
+              <ul className="space-y-5 sm:space-y-6">
+                {bundle.details.map((d: string, i: number) => (
+                  <li
+                    key={i}
+                    className="flex items-baseline gap-5 sm:gap-7"
+                  >
+                    <span className="text-sm font-semibold tracking-wider text-gold/60 tabular-nums shrink-0 w-7 sm:w-8">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-base sm:text-lg text-white/85 leading-snug">
                       {d}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            {/* Support Details */}
-            <AnimatedSection direction="right" delay={0.2}>
-              <div className="p-8 bg-dark-card rounded-lg border border-white/5 h-full space-y-8">
-                <div>
-                  <h4 className="text-sm font-semibold tracking-wider uppercase text-gold mb-3">
-                    {t.consultations}
-                  </h4>
-                  <p className="text-sm text-white/70">{bundle.consultations}</p>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold tracking-wider uppercase text-gold mb-3">
-                    {t.supportChannels}
-                  </h4>
-                  <p className="text-sm text-white/70">{bundle.support}</p>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold tracking-wider uppercase text-gold mb-3">
-                    {t.equipment}
-                  </h4>
-                  <p className="text-sm text-white/70">{bundle.equipment}</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </AnimatedSection>
 
           {/* CTA */}
           <AnimatedSection direction="up" delay={0.3}>

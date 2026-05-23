@@ -194,12 +194,7 @@
         "tagline": "Foundational Performance Optimization",
         "price": "€1,200",
         "description": "Structured 90-day system designed to improve movement efficiency, recovery, conditioning, and sustainable physical performance.",
-        "details": [
-          "Personalized 90-day training program",
-          "Custom nutrition plan",
-          "Lifestyle Optimization System (stress, sleep, habits, mindset)",
-          "Progress tracking and program adjustments"
-        ],
+        "details": ["Foundational movement & conditioning", "Recovery structure & habit formation", "Fatigue management", "Sustainable performance progression", "Lifestyle optimization"],
         "consultations": "30-minute bi-weekly video consultations",
         "support": "24/7 email support",
         "equipment": "RESET90 Resistance Band Kit (no walking pad)"
@@ -209,12 +204,7 @@
         "tagline": "High-Performance Optimization",
         "price": "€1,800",
         "description": "Designed for individuals operating under demanding physical and professional workloads requiring higher recovery efficiency and performance management.",
-        "details": [
-          "Personalized 90-day training & nutrition plan",
-          "Lifestyle Optimization System",
-          "Weekly progress reviews and plan adjustments",
-          "Multi-channel support for real-time guidance"
-        ],
+        "details": ["Performance optimization under workload", "Recovery efficiency & fatigue control", "Stress & schedule management", "Resilience and consistency", "Structured lifestyle integration"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp (working hours), phone (CET), and 24/7 email support",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad"
@@ -224,12 +214,7 @@
         "tagline": "Elite Performance Management",
         "price": "€2,500",
         "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance.",
-        "details": [
-          "Flagship 90-day training & nutrition program",
-          "Lifestyle Optimization System",
-          "Twice-weekly in-depth progress consultations",
-          "Priority access to your coaching team"
-        ],
+        "details": ["Precision performance management", "High-output sustainability", "Advanced recovery optimization", "Direct support & performance oversight", "Maximum efficiency under pressure"],
         "consultations": "30-minute twice-weekly video consultations",
         "support": "Priority WhatsApp & phone support + 24/7 email",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad"
@@ -239,7 +224,7 @@
         "tagline": "Rebuild with care and confidence",
         "price": "€1,800",
         "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy.",
-        "details": ["Controlled recovery", "Energy management", "Physical rebuilding", "Mobility restoration", "Low-impact progression", "Sustainable conditioning"],
+        "details": ["Postpartum physical rebuilding", "Energy restoration & recovery support", "Mobility and movement confidence", "Controlled conditioning progression", "Sustainable return to performance"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp & phone (CET) + 24/7 email",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
@@ -249,7 +234,7 @@
         "tagline": "Rebuild. Restore. Perform.",
         "price": "€1,600",
         "description": "Designed for individuals rebuilding physical capacity, movement quality, and conditioning following periods of inactivity, physical limitation, or reduced performance capacity.",
-        "details": ["Movement restoration", "Conditioning progression", "Fatigue management", "Structured physical rebuilding", "Sustainable recovery support"],
+        "details": ["Movement restoration & mobility support", "Controlled physical rebuilding", "Recovery structure & progression", "Workload tolerance improvement", "Sustainable conditioning"],
         "consultations": "20-minute weekly video consultations",
         "support": "WhatsApp & phone (CET) + 24/7 email",
         "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
