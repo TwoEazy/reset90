@@ -13,21 +13,18 @@ export default function OnlinePage() {
   const bundles = [
     {
       slug: "standard",
-      number: "01",
       title: t.bundles.standard.title,
       description: t.bundles.standard.description,
       image: images.standard,
     },
     {
       slug: "advanced",
-      number: "02",
       title: t.bundles.advanced.title,
       description: t.bundles.advanced.description,
       image: images.advanced,
     },
     {
       slug: "premium",
-      number: "03",
       title: t.bundles.premium.title,
       description: t.bundles.premium.description,
       featured: true,
@@ -35,14 +32,12 @@ export default function OnlinePage() {
     },
     {
       slug: "post-pregnancy",
-      number: "04",
       title: t.bundles.postPregnancy.title,
       description: t.bundles.postPregnancy.description,
       image: images.postPregnancy,
     },
     {
       slug: "post-operations",
-      number: "05",
       title: t.bundles.postOperations.title,
       description: t.bundles.postOperations.description,
       image: images.postOperations,
@@ -129,9 +124,6 @@ export default function OnlinePage() {
                         : "bg-dark-card"
                     }`}
                   >
-                    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-gold mb-2">
-                      {bundle.number}
-                    </p>
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                       {bundle.title}
                     </h3>
