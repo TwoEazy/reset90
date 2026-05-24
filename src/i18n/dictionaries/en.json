@@ -67,13 +67,11 @@
     "chooseSubtitle": "Two distinct pathways. One shared commitment to transformation.",
     "onlineLabel": "Online",
     "onlineTitle": "RESET90 Online",
-    "onlineDesc": "Six tailored bundles, from Standard to Post-Pregnancy and Reduced Mobility. Train from anywhere, with precision.",
-    "onlineFeatures": ["6 specialized bundles", "Video consultations included", "Equipment kit provided", "24/7 email support"],
+    "onlineDesc": "Structured 90-day programs delivered remotely — from general fitness and body recomposition to post-pregnancy recovery and reduced mobility. Precision training, anywhere.",
     "exploreOnline": "Explore Online Programs",
     "proLabel": "Professional",
     "proTitle": "RESET90 Professional",
-    "proDesc": "In-person coaching for athletes, teams, and dedicated individuals with advanced testing.",
-    "proFeatures": ["Premium Individuals", "Athletes & Fight Prep", "Team Sports Programs", "DEXA & metabolic testing"],
+    "proDesc": "Science-backed performance systems that identify where athletes and teams underperform — and systematically correct it through diagnostics, targeted intervention, and measurable progress.",
     "explorePro": "Explore Professional",
     "ctaTitle": "Ready to Start Your",
     "ctaTitleHighlight": "Transformation",
@@ -246,13 +244,13 @@
       "athletes": {
         "title": "Athletes",
         "subtitle": "Compete at the highest level",
-        "description": "A one-to-one performance pathway for professionals and aspiring professionals. Whether it's fight prep, seasonal peak, or a comeback \u2014 pushing limits while maintaining balance and recovery.",
+        "description": "Performance breaks down long before results do. Most athletes do not struggle because they lack discipline or effort. They struggle because hidden inefficiencies in energy production, force generation, recovery, movement quality, and fatigue management go unidentified until performance drops, injuries appear, or consistency disappears.",
         "features": ["DEXA scans & metabolic testing", "Personalized nutrition and supplementation", "Mental conditioning for competition pressure", "Performance plan aligned to competition calendars"]
       },
       "teams": {
         "title": "Team Sports",
         "subtitle": "Raise collective standards",
-        "description": "A complete framework for clubs and teams. We assess each player individually, then develop a tailored 90-day training cycle that builds stronger, sharper, more cohesive squads.",
+        "description": "High-performing teams are built through systems, not assumptions. Across a competitive season, performance is influenced by more than talent, coaching, or workload. Physical output, recovery efficiency, fatigue accumulation, movement quality, player readiness, and availability all influence whether a squad sustains performance under pressure or declines over time.",
         "features": ["Sport-specific strength & conditioning", "Nutrition optimization for energy and recovery", "Mental resilience training under pressure", "Continuous monitoring and adaptation"]
       }
     }
@@ -271,8 +269,8 @@
         "title": "RESET90 Athletes",
         "tagline": "Compete. Perform. Dominate.",
         "description": [
-          "RESET90 Athletes is for professionals and aspiring professionals competing at the highest level. This is a one-to-one performance pathway, where the same level of testing and analysis applied to teams is focused on a single athlete.",
-          "Whether it's fight prep, seasonal peak, or a comeback, RESET90 Athletes is about pushing limits while maintaining balance, recovery, and long-term progression."
+          "RESET90 is a structured 90-day performance system designed to assess, identify, and improve the physical drivers that determine repeat performance under real competitive demands.",
+          "Through performance diagnostics, targeted intervention, and continuous re-evaluation, athletes are systematically optimized for greater resilience, availability, recovery, and sustainable high-level output."
         ],
         "methodology": [
           "DEXA scans & metabolic testing to track physiology and recovery capacity",
@@ -281,29 +279,27 @@
           "Performance plan that evolves with competition calendars"
         ],
         "examples": [
-          "Fight preparation (boxing, MMA)",
-          "Seasonal peak performance",
-          "Comeback programs after injury",
-          "Athletics and speed sports"
+          "All athletes seeking structured performance improvement"
         ]
       },
       "teams": {
         "title": "RESET90 Teams",
         "tagline": "Build stronger, sharper squads",
         "description": [
-          "For clubs and teams striving for peak performance, RESET90 Teams provides a complete framework to raise collective standards.",
-          "We start by understanding the team's sport, objectives, and current challenges. Each player is assessed individually through detailed performance stats, body composition scans (DEXA), metabolism testing, and functional benchmarks."
+          "RESET90 Teams is a structured 90-day performance system designed to strengthen the physical foundation of team performance through assessment, monitoring, and targeted intervention.",
+          "By integrating performance diagnostics, neuromuscular assessment, reaction-performance systems, and tactical analysis, RESET90 helps organizations better understand performance limitations, monitor player readiness, support recovery, and improve consistency across the squad.",
+          "The objective is clear: greater player availability, more resilient physical performance, reduced avoidable setbacks, and repeatable output across the competitive season."
         ],
         "methodology": [
-          "Sport-specific strength & conditioning",
-          "Nutrition optimization for sustained energy and recovery",
-          "Mental resilience training to perform under pressure",
-          "Continuous monitoring and adaptation"
+          "Performance diagnostics and neuromuscular assessment",
+          "Reaction-performance systems integration",
+          "Player readiness monitoring and recovery support",
+          "Tactical analysis and squad consistency optimization"
         ],
         "examples": [
-          "Football clubs \u2014 seasonal development",
-          "Basketball teams \u2014 endurance and agility",
-          "Rugby squads \u2014 strength and conditioning",
+          "Football clubs \u2014 seasonal performance systems",
+          "Basketball teams \u2014 readiness and recovery monitoring",
+          "Rugby squads \u2014 neuromuscular assessment programs",
           "Any team sport with competitive ambition"
         ]
       }

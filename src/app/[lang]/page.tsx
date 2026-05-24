@@ -209,17 +209,9 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">{t.onlineTitle}</h3>
-                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
+                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
                     {t.onlineDesc}
                   </p>
-                  <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                    {(t.onlineFeatures as string[]).map((item: string, i: number) => (
-                      <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
-                        <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
                   <CTAButton href={`/${lang}/online`}>{t.exploreOnline}</CTAButton>
                 </div>
               </div>
@@ -243,17 +235,9 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-6 sm:p-8 md:p-10 bg-[#111]">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-5">{t.proTitle}</h3>
-                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8">
+                  <p className="text-white/50 text-sm sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10">
                     {t.proDesc}
                   </p>
-                  <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10">
-                    {(t.proFeatures as string[]).map((item: string, i: number) => (
-                      <li key={i} className="flex items-center gap-3 text-sm sm:text-base text-white/60">
-                        <span className="w-2 h-2 rounded-full bg-gold flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
                   <CTAButton href={`/${lang}/professional`} variant="outline">{t.explorePro}</CTAButton>
                 </div>
               </div>

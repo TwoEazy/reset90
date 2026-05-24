@@ -75,48 +75,6 @@ export default function SegmentDetailPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {/* 90-Day Methodology */}
-            <AnimatedSection direction="left" delay={0.1}>
-              <div className="p-8 bg-dark-card rounded-lg border border-white/5 h-full">
-                <h3 className="text-lg font-semibold text-white mb-6">
-                  {t.cycleIncludes}
-                </h3>
-                <ul className="space-y-4">
-                  {segment.methodology.map((m: string, i: number) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-sm text-white/70"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-1.5" />
-                      {m}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-
-            {/* Examples */}
-            <AnimatedSection direction="right" delay={0.2}>
-              <div className="p-8 bg-dark-card rounded-lg border border-white/5 h-full">
-                <h3 className="text-lg font-semibold text-white mb-6">
-                  {t.idealFor}
-                </h3>
-                <ul className="space-y-4">
-                  {segment.examples.map((e: string, i: number) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-sm text-white/70"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-1.5" />
-                      {e}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-          </div>
-
           {/* CTA */}
           <AnimatedSection direction="up" delay={0.3}>
             <div className="text-center p-12 bg-dark-card rounded-lg border border-gold/10">

@@ -16,7 +16,6 @@ export default function ProfessionalPage() {
       title: t.segments.athletes.title,
       subtitle: t.segments.athletes.subtitle,
       description: t.segments.athletes.description,
-      features: t.segments.athletes.features,
       image: images.athlete,
     },
     {
@@ -24,7 +23,6 @@ export default function ProfessionalPage() {
       title: t.segments.teams.title,
       subtitle: t.segments.teams.subtitle,
       description: t.segments.teams.description,
-      features: t.segments.teams.features,
       image: images.teamSport,
     },
   ];
@@ -91,20 +89,9 @@ export default function ProfessionalPage() {
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                       {seg.title}
                     </h3>
-                    <p className="text-white/50 leading-relaxed mb-6">
+                    <p className="text-white/50 leading-relaxed mb-8">
                       {seg.description}
                     </p>
-                    <ul className="space-y-3 mb-8">
-                      {seg.features.map((f: string, j: number) => (
-                        <li
-                          key={j}
-                          className="flex items-start gap-3 text-sm text-white/60"
-                        >
-                          <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0 mt-1.5" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
                     <CTAButton href={`/${lang}/professional/${seg.slug}`}>
                       {t.learnMore}
                     </CTAButton>
