@@ -63,9 +63,10 @@ export default function Home() {
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight mb-6 sm:mb-8"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight mb-6 sm:mb-8"
             >
-              {t.heroTitle}{" "}
+              {t.heroTitle}
+              <br />
               <span className="text-gradient-gold">{t.heroTitleHighlight}</span>
             </motion.h1>
 
