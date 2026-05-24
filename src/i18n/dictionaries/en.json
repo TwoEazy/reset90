@@ -67,7 +67,7 @@
     "chooseSubtitle": "Two distinct pathways. One shared commitment to transformation.",
     "onlineLabel": "Online",
     "onlineTitle": "RESET90 Online",
-    "onlineDesc": "Structured 90-day programs delivered remotely — from general fitness and body recomposition to post-pregnancy recovery and reduced mobility. Precision training, anywhere.",
+    "onlineDesc": "Tailored bundles, from Standard to Reconditioning and Postpartum. Train from anywhere, with precision.",
     "exploreOnline": "Explore Online Programs",
     "proLabel": "Professional",
     "proTitle": "RESET90 Professional",
@@ -125,7 +125,7 @@
       { "name": "Standard", "desc": "Foundation fitness and body recomposition" },
       { "name": "Advanced", "desc": "High-performance training protocols" },
       { "name": "Premium", "desc": "Full-spectrum coaching and testing" },
-      { "name": "Post-Pregnancy", "desc": "Safe, progressive return to strength" },
+      { "name": "Postpartum", "desc": "Safe, progressive return to strength" },
       { "name": "Post-Operations", "desc": "Structured rehabilitation and rebuilding" },
       { "name": "Reduced Mobility", "desc": "Adaptive training for all abilities" }
     ],
@@ -158,7 +158,7 @@
         "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance."
       },
       "postPregnancy": {
-        "title": "RESET90 Post-Pregnancy",
+        "title": "RESET90 Postpartum",
         "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy."
       },
       "postOperations": {
@@ -210,7 +210,7 @@
         "equipment": "RESET90 Fitness Equipment Kit + walking pad"
       },
       "post-pregnancy": {
-        "title": "RESET90 Post-Pregnancy",
+        "title": "RESET90 Postpartum",
         "tagline": "Rebuild with care and confidence",
         "price": "\u20ac1,800",
         "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy.",
@@ -352,7 +352,7 @@
       },
       {
         "q": "How do consultations work?",
-        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced/Post-Pregnancy/Post-Operations/Reduced Mobility, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
+        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced/Postpartum/Post-Operations/Reduced Mobility, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
       },
       {
         "q": "What support is available between consultations?",
