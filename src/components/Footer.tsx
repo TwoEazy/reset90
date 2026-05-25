@@ -19,10 +19,12 @@ export default function Footer() {
     if (!email || submitting) return;
     setSubmitting(true);
     try {
+      const formData = new FormData();
+      formData.append("email_address", email);
       await fetch(`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email_address: email }),
+        body: formData,
+        mode: "no-cors",
       });
       setSubscribed(true);
       setEmail("");
