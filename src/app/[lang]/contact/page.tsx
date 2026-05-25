@@ -1,11 +1,22 @@
 "use client";
 
+import { useEffect } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
 export default function ContactPage() {
   const { dict } = useDictionary();
   const t = dict.contact as any;
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
