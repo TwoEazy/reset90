@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
-const KIT_FORM_ID = "9482704";
+const KLAVIYO_LIST_ID = "Wg8H23";
 
 export default function Footer() {
   const { dict, lang } = useDictionary();
@@ -19,13 +19,10 @@ export default function Footer() {
     if (!email || submitting) return;
     setSubmitting(true);
     try {
-      const formData = new FormData();
-      formData.append("email_address", email);
-      await fetch(`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      });
+      const w = window as any;
+      if (w.klaviyo) {
+        await w.klaviyo.identify({ email });
+      }
       setSubscribed(true);
       setEmail("");
     } catch {
