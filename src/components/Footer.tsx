@@ -1,36 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { useDictionary } from "@/i18n/DictionaryContext";
-
-const KLAVIYO_LIST_ID = "Wg8H23";
 
 export default function Footer() {
   const { dict, lang } = useDictionary();
   const t = dict.footer as Record<string, string>;
   const nav = dict.nav as Record<string, string>;
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-
-  async function handleSubscribe(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email || submitting) return;
-    setSubmitting(true);
-    try {
-      const w = window as any;
-      if (w.klaviyo) {
-        await w.klaviyo.identify({ email });
-      }
-      setSubscribed(true);
-      setEmail("");
-    } catch {
-      setSubscribed(true);
-    } finally {
-      setSubmitting(false);
-    }
-  }
 
   return (
     <footer className="bg-dark border-t border-gold/10">
@@ -103,27 +79,12 @@ export default function Footer() {
             <p className="text-sm text-gray mb-4">
               {t.readyDesc}
             </p>
-            {subscribed ? (
-              <p className="text-sm text-gold">Thank you! We&apos;ll be in touch.</p>
-            ) : (
-              <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
-                  className="w-full bg-dark-light border border-white/10 rounded px-4 py-2.5 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors placeholder:text-white/30"
-                />
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="btn-gold bg-gold text-dark font-semibold text-sm px-6 py-2.5 rounded tracking-wider uppercase hover:bg-gold-light transition-all disabled:opacity-50"
-                >
-                  {submitting ? "..." : t.getStarted}
-                </button>
-              </form>
-            )}
+            <Link
+              href={`/${lang}/contact`}
+              className="inline-block btn-gold bg-gold text-dark font-semibold text-sm px-6 py-2.5 rounded tracking-wider uppercase hover:bg-gold-light transition-all"
+            >
+              {t.getStarted}
+            </Link>
           </div>
         </div>
 
