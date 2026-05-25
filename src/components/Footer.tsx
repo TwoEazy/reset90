@@ -1,12 +1,37 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useDictionary } from "@/i18n/DictionaryContext";
+
+const KIT_FORM_ID = "9482704";
 
 export default function Footer() {
   const { dict, lang } = useDictionary();
   const t = dict.footer as Record<string, string>;
   const nav = dict.nav as Record<string, string>;
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubscribe(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email || submitting) return;
+    setSubmitting(true);
+    try {
+      await fetch(`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email_address: email }),
+      });
+      setSubscribed(true);
+      setEmail("");
+    } catch {
+      setSubscribed(true);
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <footer className="bg-dark border-t border-gold/10">
@@ -71,20 +96,35 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* CTA */}
+          {/* Email Capture */}
           <div className="col-span-2 md:col-span-1">
             <h4 className="text-sm font-semibold tracking-wider uppercase text-white mb-4">
               {t.readyToBegin}
             </h4>
-            <p className="text-sm text-gray mb-6">
+            <p className="text-sm text-gray mb-4">
               {t.readyDesc}
             </p>
-            <Link
-              href={`/${lang}/contact`}
-              className="btn-gold inline-block bg-gold text-dark font-semibold text-sm px-6 py-2.5 rounded tracking-wider uppercase hover:bg-gold-light transition-all"
-            >
-              {t.getStarted}
-            </Link>
+            {subscribed ? (
+              <p className="text-sm text-gold">Thank you! We&apos;ll be in touch.</p>
+            ) : (
+              <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  className="w-full bg-dark-light border border-white/10 rounded px-4 py-2.5 text-white text-sm focus:outline-none focus:border-gold/50 transition-colors placeholder:text-white/30"
+                />
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="btn-gold bg-gold text-dark font-semibold text-sm px-6 py-2.5 rounded tracking-wider uppercase hover:bg-gold-light transition-all disabled:opacity-50"
+                >
+                  {submitting ? "..." : t.getStarted}
+                </button>
+              </form>
+            )}
           </div>
         </div>
 

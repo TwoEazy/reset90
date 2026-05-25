@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-import Script from "next/script";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useDictionary } from "@/i18n/DictionaryContext";
 
@@ -37,10 +35,6 @@ export default function ContactPage() {
             className="calendly-inline-widget rounded-lg overflow-hidden"
             data-url="https://calendly.com/reset90project/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0a0a0a&text_color=ffffff&primary_color=c8a84e"
             style={{ minWidth: "320px", height: "700px" }}
-          />
-          <Script
-            src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="lazyOnload"
           />
         </div>
       </section>
