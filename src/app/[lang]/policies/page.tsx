@@ -41,6 +41,14 @@ export default function PoliciesPage() {
                 </h3>
                 <p>{t.howWeUseDesc}</p>
                 <h3 className="text-white font-semibold text-base mt-6">
+                  {t.cookiesTitle}
+                </h3>
+                <p>{t.cookiesDesc}</p>
+                <h3 className="text-white font-semibold text-base mt-6">
+                  {t.thirdPartyTitle}
+                </h3>
+                <p>{t.thirdPartyDesc}</p>
+                <h3 className="text-white font-semibold text-base mt-6">
                   {t.dataProtectionTitle}
                 </h3>
                 <p>{t.dataProtectionDesc}</p>
@@ -59,6 +67,10 @@ export default function PoliciesPage() {
               </h2>
               <div className="space-y-4 text-sm text-gray leading-relaxed">
                 <p>{t.tosIntro}</p>
+                <h3 className="text-white font-semibold text-base mt-6">
+                  {t.programsTitle}
+                </h3>
+                <p>{t.programsDesc}</p>
                 <h3 className="text-white font-semibold text-base mt-6">
                   {t.disclaimerTitle}
                 </h3>

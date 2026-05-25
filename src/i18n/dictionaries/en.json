@@ -120,14 +120,13 @@
     "programsLabel": "Programs",
     "bundlesTitle": "Online",
     "bundlesTitleHighlight": "Bundles",
-    "bundlesDesc": "Six specialized programs, each designed for specific needs and goals.",
+    "bundlesDesc": "Five specialized programs, each designed for specific needs and goals.",
     "bundles": [
       { "name": "Standard", "desc": "Foundation fitness and body recomposition" },
       { "name": "Advanced", "desc": "High-performance training protocols" },
       { "name": "Premium", "desc": "Full-spectrum coaching and testing" },
       { "name": "Postpartum", "desc": "Safe, progressive return to strength" },
-      { "name": "Post-Operations", "desc": "Structured rehabilitation and rebuilding" },
-      { "name": "Reduced Mobility", "desc": "Adaptive training for all abilities" }
+      { "name": "Reconditioning", "desc": "Rebuilding capacity after inactivity or limitation" }
     ],
     "ctaTitle": "Start Your",
     "ctaTitleHighlight": "Journey",
@@ -340,39 +339,43 @@
     "items": [
       {
         "q": "What is RESET90?",
-        "a": "RESET90 is a precision transformation system built on structured 90-day cycles. Each program combines physical training, nutrition, and our Lifestyle Optimization System (stress, sleep, habits, mindset) to deliver measurable, sustainable results."
+        "a": "RESET90 is a structured performance system built on 90-day cycles. It combines diagnostics, targeted intervention, and measurable progress across physical conditioning, nutrition, and lifestyle optimization. It is available as an online program for individuals or as a professional system for athletes and teams."
       },
       {
         "q": "How does the 90-day cycle work?",
-        "a": "Each cycle follows a structured framework: assess, plan, execute, measure, and evolve. You start with a consultation, receive a tailored plan, and work through it with regular check-ins and adjustments. After 90 days, you can renew or step up to the next level."
+        "a": "Each cycle follows three phases: Diagnose, Correct, and Prove. You begin with a free introduction meeting, receive a tailored plan based on your assessment, and work through it with regular consultations and adjustments. After 90 days, progress is measured and the next cycle is planned."
+      },
+      {
+        "q": "What online bundles are available?",
+        "a": "RESET90 Online offers five bundles: Standard (foundational conditioning), Advanced (high-performance optimization), Premium (elite performance management), Postpartum (structured recovery after pregnancy), and Reconditioning (rebuilding physical capacity after inactivity or limitation)."
       },
       {
         "q": "What equipment do I need for online programs?",
-        "a": "Most online bundles include a RESET90 Fitness Equipment Kit and walking pad. The Standard bundle includes a Resistance Band Kit. The Reduced Mobility bundle does not include a walking pad. All equipment is provided as part of your program."
+        "a": "Most bundles include a RESET90 Fitness Equipment Kit and walking pad. The Standard bundle includes a Resistance Band Kit without a walking pad. All equipment is provided as part of your program."
       },
       {
         "q": "How do consultations work?",
-        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced/Postpartum/Post-Operations/Reduced Mobility, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
+        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced, Postpartum, and Reconditioning, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
       },
       {
         "q": "What support is available between consultations?",
         "a": "All bundles include 24/7 email support. Advanced and above include WhatsApp and phone support during CET working hours. Premium members receive priority access across all channels."
       },
       {
-        "q": "What is the introduction meeting?",
-        "a": "Before committing to any program, you can request a free video introduction meeting with the RESET90 coaching team. It's a no-pressure conversation to understand your goals, explain the program, and ensure alignment."
+        "q": "How do I book an introduction meeting?",
+        "a": "You can book a free 30-minute video introduction meeting directly through our Contact page. Choose a time that works for you and we will discuss your goals, explain the program, and help you find the right fit."
       },
       {
         "q": "Are prices displayed on the website?",
-        "a": "Prices are not emphasized upfront. We prioritize clarity and value first. Pricing is presented during the introduction meeting or at the purchase stage, once you have a clear understanding of the program."
+        "a": "Online bundle pricing is shown on each program's detail page. Professional program pricing is tailored to each case and discussed during your private consultation."
       },
       {
         "q": "What is RESET90 Professional?",
-        "a": "RESET90 Professional is our in-person coaching model. It serves athletes, team sports, and premium individuals through hands-on 90-day cycles with advanced testing (DEXA, metabolic) and face-to-face coaching."
+        "a": "RESET90 Professional is a science-backed performance system for athletes and teams. It uses diagnostics including metabolic profiling, neuromuscular analysis, and performance testing to identify where performance breaks down and systematically correct it."
       },
       {
-        "q": "Is RESET90 suitable for people with medical conditions?",
-        "a": "Our Post-Operations and Reduced Mobility programs are designed for recovery and adaptation. However, RESET90 is not a medical program. Post-Operations requires medical clearance before beginning. Always consult your doctor first."
+        "q": "Is RESET90 suitable for recovery or postpartum?",
+        "a": "Yes. The Postpartum bundle supports physical rebuilding after pregnancy, and the Reconditioning bundle is designed for individuals recovering from inactivity or physical limitation. RESET90 is not a medical program — medical clearance is required where applicable."
       },
       {
         "q": "Can I switch bundles mid-program?",
@@ -386,21 +389,27 @@
     "privacyTitle": "Privacy Policy",
     "privacyIntro": "At RESET90, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information.",
     "infoCollectTitle": "Information We Collect",
-    "infoCollectDesc": "We collect information you provide directly: name, email, phone number, goals, and health-related information shared during consultations. We also collect usage data through cookies and analytics.",
+    "infoCollectDesc": "We collect information you provide directly: name, email address, and any details shared during consultations or through our booking system (Calendly). We also collect usage data through Google Tag Manager, Google Analytics, and Meta Pixel for website analytics and advertising purposes.",
     "howWeUseTitle": "How We Use Your Information",
-    "howWeUseDesc": "Your information is used to deliver and personalize your program, communicate with you about your progress, and improve our services. We never sell your personal data to third parties.",
+    "howWeUseDesc": "Your information is used to deliver and personalize your program, schedule and manage consultations, communicate with you about your progress, and improve our services. Analytics data helps us understand how visitors use our website. We never sell your personal data to third parties.",
+    "cookiesTitle": "Cookies & Tracking",
+    "cookiesDesc": "This website uses Google Tag Manager to manage analytics and advertising tags, including Google Analytics for website usage data and Meta Pixel for advertising measurement. These tools may place cookies on your device. You can manage cookie preferences through your browser settings.",
+    "thirdPartyTitle": "Third-Party Services",
+    "thirdPartyDesc": "We use Calendly for appointment scheduling, Google Tag Manager for analytics management, Meta (Facebook) for advertising measurement, and Vercel for website hosting. Each service has its own privacy policy governing data they process on our behalf.",
     "dataProtectionTitle": "Data Protection",
-    "dataProtectionDesc": "We implement appropriate security measures to protect your personal information. Health-related data is handled with extra care in compliance with applicable regulations.",
+    "dataProtectionDesc": "We implement appropriate security measures to protect your personal information. Health-related data shared during consultations is handled with extra care in compliance with applicable regulations.",
     "yourRightsTitle": "Your Rights",
     "yourRightsDesc": "You have the right to access, correct, or delete your personal data at any time. Contact us at privacy@reset90.be for any data-related requests.",
     "tosTitle": "Terms of Service",
     "tosIntro": "By using RESET90 services, you agree to the following terms and conditions.",
+    "programsTitle": "Programs & Services",
+    "programsDesc": "RESET90 offers online programs (Standard, Advanced, Premium, Postpartum, and Reconditioning bundles) and professional services for athletes and teams. All programs operate on structured 90-day cycles.",
     "disclaimerTitle": "Program Disclaimer",
-    "disclaimerDesc": "RESET90 provides fitness coaching and lifestyle optimization services. We are not a medical provider. Clients with medical conditions must obtain clearance from their healthcare provider before starting any program.",
+    "disclaimerDesc": "RESET90 provides performance coaching and lifestyle optimization services. We are not a medical provider. Clients with medical conditions must obtain clearance from their healthcare provider before starting any program. The Reconditioning and Postpartum programs are not substitutes for medical rehabilitation.",
     "paymentsTitle": "Commitment & Payments",
-    "paymentsDesc": "Programs run on 90-day cycles. Payment terms and refund policies are discussed during your introduction meeting and detailed in your individual agreement.",
+    "paymentsDesc": "Programs run on 90-day cycles. Online bundle pricing is listed on each program page. Professional program pricing is tailored to each case. Payment terms and refund policies are discussed during your introduction meeting and detailed in your individual agreement.",
     "ipTitle": "Intellectual Property",
-    "ipDesc": "All RESET90 training plans, materials, and content are proprietary. They may not be shared, reproduced, or distributed without written permission.",
+    "ipDesc": "All RESET90 training plans, methodologies, materials, and content are proprietary. They may not be shared, reproduced, or distributed without written permission.",
     "liabilityTitle": "Liability",
     "liabilityDesc": "RESET90 is not liable for injuries or health issues that may arise during training. Clients participate at their own risk and are responsible for following safe exercise practices."
   },
