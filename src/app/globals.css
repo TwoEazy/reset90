@@ -41,6 +41,12 @@ body {
   overflow-x: hidden;
 }
 
+body h1, body h2, body h3, body h4, body h5, body h6,
+body p, body a, body span, body li, body div,
+body button, body input, body select, body textarea {
+  font-family: inherit !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
