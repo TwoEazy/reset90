@@ -41,6 +41,12 @@ body {
   overflow-x: hidden;
 }
 
+/* Arabic (RTL) uses Cairo */
+html[lang="ar"] body,
+html[lang="ar"] .font-sans {
+  font-family: "Cairo", sans-serif;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

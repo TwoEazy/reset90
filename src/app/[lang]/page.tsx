@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         <Container className="relative z-10">
-          <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:mx-0">
+          <div className="py-24 sm:py-32 lg:py-40 max-w-3xl mx-auto lg:ml-0 lg:mr-auto text-left">
             <motion.h1
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -74,6 +74,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.55 }}
+              dir="ltr"
               className="flex flex-col sm:flex-row gap-4"
             >
               <CTAButton href={`/${lang}/online`} size="large">
@@ -267,7 +268,7 @@ export default function Home() {
             <AnimatedSection direction="up">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
                 {t.ctaTitle}{" "}
-                <span className="text-gradient-gold">{t.ctaTitleHighlight}</span>?
+                <span className="text-gradient-gold">{t.ctaTitleHighlight}</span>
               </h2>
               <p className="text-white/50 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-12">
                 {t.ctaDesc}

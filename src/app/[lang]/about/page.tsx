@@ -87,7 +87,7 @@ export default function AboutPage() {
                 {t.frameworkLabel}
               </p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                {t.why90Title} <span className="text-gradient-gold">{t.why90Highlight}</span>?
+                {t.why90Title} <span className="text-gradient-gold">{t.why90Highlight}</span>{lang === "ar" ? "؟" : "?"}
               </h2>
               <p className="text-white/50 text-base sm:text-lg leading-relaxed">
                 {t.why90Intro}

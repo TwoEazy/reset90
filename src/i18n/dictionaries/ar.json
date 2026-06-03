@@ -3,434 +3,395 @@
     "home": "الرئيسية",
     "online": "عبر الإنترنت",
     "professional": "احترافي",
-    "about": "حول",
+    "about": "من نحن",
     "faq": "الأسئلة الشائعة",
-    "contact": "اتصل بنا",
+    "contact": "تواصل معنا",
     "bookConsultation": "احجز استشارة مجانية"
   },
   "footer": {
-    "tagline": "نظام تحول دقيق مبني على دورات منظمة لمدة 90 يومًا.",
+    "tagline": "نظام تحوّل دقيق مبني على دورات مُحكمة مدتها 90 يومًا.",
     "programs": "البرامج",
     "onlineLink": "RESET90 عبر الإنترنت",
     "professionalLink": "RESET90 الاحترافي",
     "company": "الشركة",
     "readyToBegin": "جاهز للبدء؟",
-    "readyDesc": "اطلب اجتماعًا تعريفيًا وابدأ رحلة التحول الخاصة بك.",
+    "readyDesc": "اطلب اجتماعك التعريفي وابدأ رحلة تحوّلك.",
     "getStarted": "ابدأ الآن",
     "copyright": "RESET90. جميع الحقوق محفوظة.",
     "privacyPolicy": "سياسة الخصوصية",
     "termsOfService": "شروط الخدمة"
   },
   "home": {
-    "heroTitle": "أنظمة أداء منظمة",
-    "heroTitleHighlight": "للأفراد والرياضيين والفرق",
+    "heroTitle": "أداء مُقاس.",
+    "heroTitleHighlight": "صُنع ليدوم.",
     "onlineCta": "RESET90 عبر الإنترنت",
     "professionalCta": "RESET90 الاحترافي",
-    "aboutLabel": "ليس برنامج تدريب. بل نظام أداء.",
-    "aboutTitle": "الأداء ليس عشوائيًا.",
-    "aboutTitleHighlight": "بل يتم تصميمه بدقة.",
-    "aboutP1": "RESET90 هو نظام أداء منظم مصمم لتحسين النتائج على مستوى الأفراد والفرق. من خلال تحليل الأيض، والتحليل العصبي العضلي، وتشخيصات الأداء، يحدد النظام أوجه القصور الفسيولوجية والبدنية التي تؤثر بشكل مباشر على الجاهزية، والتعافي، والقدرة على التحمل، واستمرارية الأداء.",
-    "aboutP2": "يُبنى النظام حول دورة منظمة مدتها 90 يومًا، يتم خلالها تقييم الرياضيين وتحليلهم وتحسينهم بشكل منهجي عبر العوامل الأساسية للأداء: إنتاج الطاقة، وتوليد القوة، وكفاءة الحركة، وإدارة الإرهاق. تتبع كل مرحلة عملية واضحة — التشخيص، والتصحيح، وإعادة القياس — مما يسمح بتحسين التدخلات باستمرار من خلال بيانات قابلة للقياس بدلاً من التقدير.",
-    "aboutP3": "الهدف ليس تحسينًا قصير المدى، بل أداءً مستدامًا وقابلًا للتكرار تحت متطلبات المنافسة الحقيقية.",
+    "aboutLabel": "ليس مجرد برنامج تدريبي. بل نظام أداء متكامل.",
+    "aboutTitle": "الأداء لا يأتي صدفة.",
+    "aboutTitleHighlight": "بل يُهندَس بدقة.",
+    "aboutP1": "RESET90 نظام أداء متكامل صُمِّم لرفع مستوى النتائج لدى الأفراد والفرق على حدٍّ سواء. فمن خلال تحليل الأيض، والتقييم العصبي العضلي، وتشخيصات الأداء، يكشف النظام أوجه القصور الفسيولوجية والبدنية التي تؤثر مباشرةً في الجاهزية والتعافي والقدرة على التحمل وثبات الأداء.",
+    "aboutP2": "يقوم النظام على دورة مُحكمة مدتها 90 يومًا، يُقيَّم خلالها الرياضيون ويُحلَّلون ويُحسَّن أداؤهم بشكل منهجي عبر ركائز الأداء الأساسية: إنتاج الطاقة، وتوليد القوة، وكفاءة الحركة، وإدارة الإرهاق. وتسير كل مرحلة وفق منهج واضح (تشخيص، فتصحيح، فإعادة قياس) يتيح صقل التدخلات باستمرار اعتمادًا على بيانات قابلة للقياس لا على التخمين.",
+    "aboutP3": "الهدف ليس تحسّنًا عابرًا، بل أداءٌ مستدام وقابل للتكرار يصمد أمام متطلبات المنافسة الحقيقية.",
     "diagnose": "التشخيص",
     "correct": "التصحيح",
     "prove": "الإثبات",
     "phase1": "المرحلة 1",
     "phase2": "المرحلة 2",
     "phase3": "المرحلة 3",
-    "requestIntro": "طلب اجتماع تعريفي",
+    "requestIntro": "اطلب اجتماعًا تعريفيًا",
     "whyTitle": "لماذا RESET90",
-    "whySubtitle": "الفجوة بين التدريب والأداء هي حيث يعمل RESET90.",
+    "whySubtitle": "في المساحة الفاصلة بين التدريب والأداء، يصنع RESET90 الفارق.",
     "highlights": [
       {
         "label": "المشكلة",
         "title": "الأداء ينهار تحت الضغط.",
-        "description": "معظم الرياضيين والفرق لا يفشلون بسبب نقص الجهد، بل بسبب أوجه قصور خفية. التراجع في نهاية المباريات، والإصابات المتكررة، وعدم استقرار الأداء ليست أمورًا عشوائية، بل نتيجة فجوات غير معالجة في كيفية إنتاج الجسم للطاقة، وتوليد القوة، والاستجابة تحت الإرهاق."
+        "description": "لا يفشل معظم الرياضيين والفرق بسبب نقص الجهد، بل بسبب أوجه قصور خفية. فالتراجع في اللحظات الحاسمة، والإصابات المتكررة، وتذبذب الأداء ليست محض صدفة؛ إنها نتيجة ثغرات لم تُعالَج في طريقة إنتاج الجسم للطاقة، وتوليده للقوة، واستجابته تحت الإرهاق."
       },
       {
         "label": "النظام",
         "title": "RESET90 يستبدل التخمين بالمنهجية.",
-        "description": "تم بناء RESET90 كدورة أداء مدتها 90 يومًا تربط بين التشخيص، والتدخل، وإعادة القياس ضمن نظام متكامل. من خلال دمج تحليل الأيض، والتحليل العصبي العضلي، وملاحظات الأداء، يحدد النظام بدقة أين ينهار الأداء ويقوم بتصحيحه بدقة."
+        "description": "صُمِّم RESET90 كدورة أداء مدتها 90 يومًا تربط التشخيص بالتدخل بإعادة القياس في نظام واحد متصل. وبدمج تحليل الأيض، والتقييم العصبي العضلي، وقياسات الأداء، يحدد بدقة أين يتعثر الأداء ويصححه بدقة أكبر."
       },
       {
         "label": "الفرق",
-        "title": "معظم الناس يتدربون بجهد أكبر، والقليل يتدرب بذكاء أكبر.",
-        "description": "يركز التدريب التقليدي على الحجم، بينما يركز RESET90 على الكفاءة. بدلًا من زيادة العبء التدريبي، يستهدف النظام ما يحد الأداء فعليًا: ضعف كفاءة الطاقة، واختلالات القوة، والانخفاض المرتبط بالإرهاق. وهذا يؤدي إلى تحسينات قابلة للقياس في الجاهزية، واستمرارية الأداء، والقدرة على التحمل."
+        "title": "الكثيرون يتدربون بجهد أكبر، وقلّة يتدربون بذكاء أكبر.",
+        "description": "يركّز التدريب التقليدي على الكمّ، بينما يركّز RESET90 على الكفاءة. فبدلاً من مراكمة الأحمال، يستهدف النظام ما يحدّ الأداء فعلاً: ضعف كفاءة الطاقة، واختلال توازن القوة، وتراجع الأداء مع الإرهاق. والنتيجة تحسينات ملموسة في الجاهزية وتكرار الأداء والقدرة على التحمل."
       },
       {
         "label": "النتيجة",
-        "title": "أداء يمكنك الاعتماد عليه.",
-        "description": "يقدم RESET90 أداءً قابلًا للقياس والتكرار تحت متطلبات المنافسة الحقيقية. يحافظ الرياضيون على إنتاجية أعلى، ويتعافون بشكل أسرع، ويحافظون على الكفاءة تحت الإرهاق. كما تعمل الفرق بجاهزية أعلى، وإصابات غير احتكاكية أقل، وأداء بدني ثابت طوال الموسم."
+        "title": "أداء تثق به.",
+        "description": "يمنحك RESET90 أداءً قابلاً للقياس والتكرار تحت ضغط المنافسة الحقيقي. فيحافظ الرياضيون على إنتاجية أعلى، ويتعافون أسرع، ويصمد أداؤهم أمام الإرهاق. وتعمل الفرق بجاهزية أعلى، وإصابات غير احتكاكية أقل، وأداء بدني ثابت على مدار الموسم."
       }
     ],
     "chooseTitle": "اختر مسارك",
-    "chooseSubtitle": "مساران مختلفان. التزام واحد مشترك نحو التحول.",
+    "chooseSubtitle": "مساران مختلفان، والتزام واحد بالتحوّل.",
     "onlineLabel": "عبر الإنترنت",
     "onlineTitle": "RESET90 عبر الإنترنت",
-    "onlineDesc": "ست باقات مخصصة، من القياسي إلى ما بعد الحمل ومحدودية الحركة. تدرب من أي مكان بدقة عالية.",
-    "onlineFeatures": [
-      "6 باقات متخصصة",
-      "استشارات فيديو متضمنة",
-      "توفير حقيبة معدات",
-      "دعم عبر البريد الإلكتروني على مدار الساعة"
-    ],
+    "onlineDesc": "باقات مصمَّمة على مقاسك، من القياسي إلى إعادة التأهيل وما بعد الولادة. تدرّب من أي مكان وبالدقة نفسها.",
     "exploreOnline": "استكشف البرامج عبر الإنترنت",
     "proLabel": "احترافي",
     "proTitle": "RESET90 الاحترافي",
-    "proDesc": "تدريب حضوري للرياضيين، والفرق، والأفراد الملتزمين مع اختبارات متقدمة.",
-    "proFeatures": [
-      "برامج أفراد مميزة",
-      "الرياضيون وتحضير النزالات",
-      "برامج الرياضات الجماعية",
-      "اختبارات DEXA والأيض"
-    ],
+    "proDesc": "أنظمة أداء قائمة على العلم تكشف أين يتراجع أداء الرياضيين والفرق، ثم تعالجه بشكل منهجي عبر التشخيص والتدخل المُوجَّه والتقدّم القابل للقياس.",
     "explorePro": "استكشف البرامج الاحترافية",
     "ctaTitle": "جاهز لبدء",
-    "ctaTitleHighlight": "رحلة التحول؟",
-    "ctaDesc": "اطلب اجتماعك التعريفي المجاني. بدون التزام أو ضغط. مجرد محادثة حول أهدافك وكيف يمكن لـ RESET90 مساعدتك في تحقيقها.",
-    "ctaButton": "حدد موعد استشارتك المجانية"
+    "ctaTitleHighlight": "رحلة تحوّلك؟",
+    "ctaDesc": "اطلب اجتماعك التعريفي المجاني. بلا التزام ولا ضغط، مجرد حديث عن أهدافك وكيف يساعدك RESET90 على بلوغها.",
+    "ctaButton": "احجز استشارتك المجانية"
   },
   "about": {
     "label": "فلسفتنا",
     "heroTitle": "فلسفة",
     "heroTitleHighlight": "RESET90",
-    "heroDesc": "نظام دقيق يجمع بين التدريب البدني، والتغذية، وتحسين نمط الحياة ضمن دورات قابلة للقياس مدتها 90 يومًا.",
-    "frameworkLabel": "الإطار",
+    "heroDesc": "نظام دقيق يجمع التدريب البدني والتغذية وتحسين نمط الحياة في دورات قابلة للقياس مدتها 90 يومًا.",
+    "frameworkLabel": "إطار العمل",
     "why90Title": "لماذا",
     "why90Highlight": "90 يومًا",
-    "why90Intro": "تُظهر الأبحاث أن التحول الحقيقي والدائم — جسديًا وذهنيًا — يتطلب جهدًا مستمرًا مع مرور الوقت. دورة الـ90 يومًا هي إطارنا المثبت لتحقيق تغيير حقيقي وقابل للقياس.",
+    "why90Intro": "تؤكد الأبحاث أن أي تحوّل حقيقي ودائم، جسديًا كان أم ذهنيًا، يحتاج إلى جهد متواصل عبر الزمن. ودورة الـ90 يومًا هي إطارنا المُثبَت لإحداث تغيير حقيقي وقابل للقياس.",
     "why90CoreLabel": "خمسة أنظمة أداء أساسية",
-    "why90CoreDesc": "يعتمد RESET90 على خمسة أنظمة أداء أساسية تعمل معًا لتحسين الإنتاج البدني والتعافي وسرعة ردود الفعل وكفاءة الحركة والأداء التكتيكي.",
+    "why90CoreDesc": "يقوم RESET90 على خمسة أنظمة أداء أساسية تتكامل معًا لتحسين الإنتاج البدني والتعافي وسرعة الاستجابة وكفاءة الحركة والأداء التكتيكي.",
     "why90Systems": [
-      { "number": "01", "title": "تحليل التمثيل الغذائي والتنفسي", "desc": "اختبارات متقدمة لقياس كيفية استخدام الجسم للأكسجين وإنتاج الطاقة والاستجابة للإرهاق وإدارة التعافي تحت الضغط البدني." },
-      { "number": "02", "title": "تشخيص القوة والحركة", "desc": "تحليل إنتاج القوة وعدم التماثل والتوازن وكفاءة الحركة ومؤشرات خطر الإصابة لتحديد قيود الأداء الخفية." },
-      { "number": "03", "title": "تدريب ردود الفعل البصرية والمعرفية", "desc": "مصمم لتحسين التنسيق بين العين واليد وسرعة ردود الفعل والوعي المحيطي والتركيز واتخاذ القرارات تحت الضغط." },
-      { "number": "04", "title": "تمارين عصبية عضلية تفاعلية", "desc": "تعزيز الرشاقة والاستجابة والتنسيق وتنفيذ الحركة في بيئات ديناميكية حيث تؤثر ردود الفعل اللحظية على النتائج." },
-      { "number": "05", "title": "تحليل الفيديو والتكتيك", "desc": "تقييم حركة اللاعب والتموضع وسلوك عبء العمل وهيكل الفريق من خلال مراجعة تفصيلية للتدريب والمباريات." }
+      { "number": "01", "title": "تحليل الأيض والجهاز التنفسي", "desc": "اختبارات متقدمة تقيس كيف يستهلك الجسم الأكسجين، وينتج الطاقة، ويستجيب للإرهاق، ويدير التعافي تحت الضغط البدني." },
+      { "number": "02", "title": "تشخيص القوة والحركة", "desc": "تحليل إنتاج القوة، والاختلالات، والتوازن، وكفاءة الحركة، ومؤشرات خطر الإصابة لكشف ما يحدّ الأداء من قيود خفية." },
+      { "number": "03", "title": "تدريب الاستجابة البصرية والإدراكية", "desc": "مصمَّم لتحسين التناسق بين العين واليد، وسرعة رد الفعل، والوعي المحيطي، والتركيز، واتخاذ القرار تحت الضغط." },
+      { "number": "04", "title": "تمارين عصبية عضلية تفاعلية", "desc": "لتعزيز الرشاقة وسرعة الاستجابة والتناسق وإتقان الحركة في البيئات المتغيرة حيث تصنع ردود الفعل اللحظية الفارق." },
+      { "number": "05", "title": "التحليل بالفيديو والتحليل التكتيكي", "desc": "تقييم حركة اللاعب وتموضعه وسلوك حمله البدني وبنية الفريق عبر مراجعة تفصيلية للتدريبات والمباريات." }
     ],
-    "why90Outcome": "معًا، تُنشئ هذه الأنظمة بيئة أداء منظمة تركز على تحسين الأداء الرياضي وتقليل الإصابات التي يمكن تجنبها وتحسين التعافي وزيادة الكفاءة البدنية والحفاظ على مستوى عالٍ من الإنتاج في ظل المتطلبات التنافسية الحقيقية.",
+    "why90Outcome": "معًا، تصنع هذه الأنظمة بيئة أداء منظمة تركّز على رفع الأداء الرياضي، وتقليل الإصابات التي يمكن تجنبها، وتحسين التعافي، وزيادة الكفاءة البدنية، والحفاظ على إنتاجية عالية تصمد أمام متطلبات المنافسة الحقيقية.",
     "programsLabel": "البرامج",
     "bundlesTitle": "الباقات",
     "bundlesTitleHighlight": "عبر الإنترنت",
-    "bundlesDesc": "ستة برامج متخصصة، كل منها مصمم لاحتياجات وأهداف محددة.",
+    "bundlesDesc": "خمسة برامج متخصصة، صُمِّم كل منها لاحتياجات وأهداف محددة.",
     "bundles": [
-      {
-        "name": "القياسي",
-        "desc": "اللياقة الأساسية وإعادة تشكيل الجسم"
-      },
-      {
-        "name": "المتقدم",
-        "desc": "بروتوكولات تدريب عالية الأداء"
-      },
-      {
-        "name": "المميز",
-        "desc": "تدريب واختبارات شاملة"
-      },
-      {
-        "name": "ما بعد الحمل",
-        "desc": "عودة آمنة وتدريجية للقوة"
-      },
-      {
-        "name": "ما بعد العمليات",
-        "desc": "إعادة تأهيل وإعادة بناء منظمة"
-      },
-      {
-        "name": "محدودية الحركة",
-        "desc": "تدريب تكيفي لجميع القدرات"
-      }
+      { "name": "القياسي", "desc": "لياقة تأسيسية وإعادة تشكيل للجسم" },
+      { "name": "المتقدم", "desc": "بروتوكولات تدريب عالية الأداء" },
+      { "name": "المميز", "desc": "إشراف وتقييم شامل على الأداء" },
+      { "name": "ما بعد الولادة", "desc": "عودة آمنة ومتدرجة إلى القوة" },
+      { "name": "إعادة التأهيل", "desc": "إعادة بناء القدرات بعد الانقطاع أو القيود" }
     ],
     "ctaTitle": "ابدأ",
     "ctaTitleHighlight": "رحلتك",
-    "ctaDesc": "اطلب اجتماعًا تعريفيًا لمعرفة كيف يمكن لـ RESET90 أن يناسبك. بدون التزام — فقط محادثة حول أهدافك.",
-    "ctaButton": "طلب اجتماع تعريفي"
+    "ctaDesc": "اطلب اجتماعًا تعريفيًا لتكتشف كيف يعمل RESET90 من أجلك. بلا التزام، مجرد حديث عن أهدافك.",
+    "ctaButton": "اطلب اجتماعًا تعريفيًا"
   },
   "online": {
-    "label": "Online Programs",
+    "label": "البرامج عبر الإنترنت",
     "heroTitle": "RESET90",
-    "heroTitleHighlight": "Online",
-    "heroDesc": "Five specialized bundles, each built on our 90-day cycle methodology. Tailored training, nutrition, and lifestyle optimization — delivered remotely with precision.",
-    "learnMore": "Learn More",
-    "flagship": "Flagship",
-    "ctaTitle": "Not Sure Which Bundle?",
-    "ctaDesc": "Request a free introduction meeting and we'll help you find the perfect fit for your goals.",
-    "ctaButton": "Request Introduction Meeting",
+    "heroTitleHighlight": "عبر الإنترنت",
+    "heroDesc": "خمس باقات متخصصة، تقوم كلها على منهجية دورة الـ90 يومًا. تدريب وتغذية وتحسين لنمط الحياة مصمَّم على مقاسك، يصلك عن بُعد وبدقة عالية.",
+    "learnMore": "اعرف المزيد",
+    "flagship": "الأبرز",
+    "ctaTitle": "لست متأكدًا من الباقة المناسبة؟",
+    "ctaDesc": "اطلب اجتماعًا تعريفيًا مجانيًا وسنساعدك على اختيار الأنسب لأهدافك.",
+    "ctaButton": "اطلب اجتماعًا تعريفيًا",
     "bundles": {
       "standard": {
-        "title": "RESET90 STANDARD",
-        "description": "Structured 90-day system designed to improve movement efficiency, recovery, conditioning, and sustainable physical performance."
+        "title": "RESET90 قياسي",
+        "description": "نظام مُحكم مدته 90 يومًا مصمَّم لتحسين كفاءة الحركة والتعافي والإعداد البدني والأداء البدني المستدام."
       },
       "advanced": {
-        "title": "RESET90 Advanced",
-        "description": "Designed for individuals operating under demanding physical and professional workloads requiring higher recovery efficiency and performance management."
+        "title": "RESET90 المتقدم",
+        "description": "مصمَّم لمن يعملون تحت أعباء بدنية ومهنية متطلبة، ويحتاجون إلى كفاءة تعافٍ أعلى وإدارة أدقّ للأداء."
       },
       "premium": {
-        "title": "RESET90 Premium",
-        "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance."
+        "title": "RESET90 المميز",
+        "description": "إشراف شامل على الأداء مصمَّم لأصحاب الإنتاجية العالية الباحثين عن أقصى كفاءة بدنية وقدرة على التحمل وثبات في الأداء."
       },
       "postPregnancy": {
-        "title": "RESET90 Post-Pregnancy",
-        "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy."
+        "title": "RESET90 ما بعد الولادة",
+        "description": "برنامج تعافٍ وإعادة تأهيل مُحكم لما بعد الولادة، يدعم إعادة البناء البدني واستعادة الطاقة وكفاءة الحركة والعودة المستدامة إلى الأداء بعد الحمل."
       },
       "postOperations": {
-        "title": "RESET90 Reconditioning",
-        "description": "Designed for individuals rebuilding physical capacity, movement quality, and conditioning following periods of inactivity, physical limitation, or reduced performance capacity."
+        "title": "RESET90 إعادة التأهيل",
+        "description": "مصمَّم لمن يعيدون بناء قدرتهم البدنية وجودة حركتهم وإعدادهم البدني بعد فترات من الانقطاع أو القيود البدنية أو تراجع القدرة على الأداء."
       }
     }
   },
   "onlineDetail": {
-    "programLabel": "Online Program",
-    "notFound": "Bundle Not Found",
-    "backToOnline": "Back to Online Programs",
-    "whatsIncluded": "What's Included",
-    "consultations": "Consultations",
-    "supportChannels": "Support Channels",
-    "equipment": "Equipment",
-    "readyTitle": "Ready to Get Started?",
-    "readyDesc": "Request your free introduction meeting. We'll walk you through the program and answer any questions.",
-    "readyButton": "Request Your Introduction Meeting",
+    "programLabel": "البرنامج عبر الإنترنت",
+    "notFound": "الباقة غير موجودة",
+    "backToOnline": "العودة إلى البرامج عبر الإنترنت",
+    "whatsIncluded": "ما تتضمنه الباقة",
+    "consultations": "الاستشارات",
+    "supportChannels": "قنوات الدعم",
+    "equipment": "المعدات",
+    "readyTitle": "جاهز للبدء؟",
+    "readyDesc": "اطلب اجتماعك التعريفي المجاني، وسنأخذك في جولة على البرنامج ونجيب عن كل أسئلتك.",
+    "readyButton": "اطلب اجتماعك التعريفي",
     "bundles": {
       "standard": {
-        "title": "RESET90 STANDARD",
-        "tagline": "Foundational Performance Optimization",
+        "title": "RESET90 قياسي",
+        "tagline": "تأسيس الأداء وتحسينه",
         "price": "€1,200",
-        "description": "Structured 90-day system designed to improve movement efficiency, recovery, conditioning, and sustainable physical performance.",
-        "details": ["Foundational movement & conditioning", "Recovery structure & habit formation", "Fatigue management", "Sustainable performance progression", "Lifestyle optimization"],
-        "consultations": "30-minute bi-weekly video consultations",
-        "support": "24/7 email support",
-        "equipment": "RESET90 Resistance Band Kit (no walking pad)"
+        "description": "نظام مُحكم مدته 90 يومًا مصمَّم لتحسين كفاءة الحركة والتعافي والإعداد البدني والأداء البدني المستدام.",
+        "details": ["الحركة والإعداد البدني التأسيسي", "بناء التعافي وتكوين العادات", "إدارة الإرهاق", "تطور مستدام في الأداء", "تحسين نمط الحياة"],
+        "consultations": "استشارات فيديو مدتها 30 دقيقة كل أسبوعين",
+        "support": "دعم عبر البريد الإلكتروني على مدار الساعة",
+        "equipment": "حقيبة أحزمة المقاومة RESET90 (بدون جهاز مشي)"
       },
       "advanced": {
-        "title": "RESET90 Advanced",
-        "tagline": "High-Performance Optimization",
+        "title": "RESET90 المتقدم",
+        "tagline": "تحسين الأداء العالي",
         "price": "€1,800",
-        "description": "Designed for individuals operating under demanding physical and professional workloads requiring higher recovery efficiency and performance management.",
-        "details": ["Performance optimization under workload", "Recovery efficiency & fatigue control", "Stress & schedule management", "Resilience and consistency", "Structured lifestyle integration"],
-        "consultations": "20-minute weekly video consultations",
-        "support": "WhatsApp (working hours), phone (CET), and 24/7 email support",
-        "equipment": "RESET90 Fitness Equipment Kit + walking pad"
+        "description": "مصمَّم لمن يعملون تحت أعباء بدنية ومهنية متطلبة، ويحتاجون إلى كفاءة تعافٍ أعلى وإدارة أدقّ للأداء.",
+        "details": ["تحسين الأداء تحت ضغط الأحمال", "كفاءة التعافي والتحكم في الإرهاق", "إدارة التوتر والجدول اليومي", "القدرة على التحمل والثبات", "دمج منظَّم لنمط الحياة"],
+        "consultations": "استشارات فيديو أسبوعية مدتها 20 دقيقة",
+        "support": "واتساب (خلال ساعات العمل)، وهاتف (بتوقيت وسط أوروبا)، ودعم بريدي على مدار الساعة",
+        "equipment": "حقيبة معدات اللياقة RESET90 + جهاز مشي"
       },
       "premium": {
-        "title": "RESET90 Premium",
-        "tagline": "Elite Performance Management",
+        "title": "RESET90 المميز",
+        "tagline": "إدارة أداء النخبة",
         "price": "€2,500",
-        "description": "Comprehensive performance oversight built for high-output individuals seeking maximum physical efficiency, resilience, and repeat performance.",
-        "details": ["Precision performance management", "High-output sustainability", "Advanced recovery optimization", "Direct support & performance oversight", "Maximum efficiency under pressure"],
-        "consultations": "30-minute twice-weekly video consultations",
-        "support": "Priority WhatsApp & phone support + 24/7 email",
-        "equipment": "RESET90 Fitness Equipment Kit + walking pad"
+        "description": "إشراف شامل على الأداء مصمَّم لأصحاب الإنتاجية العالية الباحثين عن أقصى كفاءة بدنية وقدرة على التحمل وثبات في الأداء.",
+        "details": ["إدارة دقيقة للأداء", "استدامة الإنتاجية العالية", "تحسين متقدم للتعافي", "دعم مباشر وإشراف على الأداء", "أقصى كفاءة تحت الضغط"],
+        "consultations": "استشارات فيديو مدتها 30 دقيقة مرتين أسبوعيًا",
+        "support": "دعم أولوية عبر واتساب والهاتف + بريد إلكتروني على مدار الساعة",
+        "equipment": "حقيبة معدات اللياقة RESET90 + جهاز مشي"
       },
       "post-pregnancy": {
-        "title": "RESET90 Post-Pregnancy",
-        "tagline": "Rebuild with care and confidence",
+        "title": "RESET90 ما بعد الولادة",
+        "tagline": "أعيدي البناء بثقة وعناية",
         "price": "€1,800",
-        "description": "Structured postpartum recovery and reconditioning designed to support physical rebuilding, energy restoration, movement efficiency, and sustainable return to performance following pregnancy.",
-        "details": ["Postpartum physical rebuilding", "Energy restoration & recovery support", "Mobility and movement confidence", "Controlled conditioning progression", "Sustainable return to performance"],
-        "consultations": "20-minute weekly video consultations",
-        "support": "WhatsApp & phone (CET) + 24/7 email",
-        "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
+        "description": "برنامج تعافٍ وإعادة تأهيل مُحكم لما بعد الولادة، يدعم إعادة البناء البدني واستعادة الطاقة وكفاءة الحركة والعودة المستدامة إلى الأداء بعد الحمل.",
+        "details": ["إعادة البناء البدني بعد الولادة", "استعادة الطاقة ودعم التعافي", "استعادة المرونة والثقة في الحركة", "تدرّج مُتحكَّم في الإعداد البدني", "عودة مستدامة إلى الأداء"],
+        "consultations": "استشارات فيديو أسبوعية مدتها 20 دقيقة",
+        "support": "واتساب وهاتف (بتوقيت وسط أوروبا) + بريد إلكتروني على مدار الساعة",
+        "equipment": "حقيبة معدات اللياقة RESET90 + جهاز مشي (كارديو خفيف ومضبوط)"
       },
       "post-operations": {
-        "title": "RESET90 Reconditioning",
-        "tagline": "Rebuild. Restore. Perform.",
+        "title": "RESET90 إعادة التأهيل",
+        "tagline": "أعد البناء. استعد. عُد أقوى.",
         "price": "€1,600",
-        "description": "Designed for individuals rebuilding physical capacity, movement quality, and conditioning following periods of inactivity, physical limitation, or reduced performance capacity.",
-        "details": ["Movement restoration & mobility support", "Controlled physical rebuilding", "Recovery structure & progression", "Workload tolerance improvement", "Sustainable conditioning"],
-        "consultations": "20-minute weekly video consultations",
-        "support": "WhatsApp & phone (CET) + 24/7 email",
-        "equipment": "RESET90 Fitness Equipment Kit + walking pad (controlled cardio)"
+        "description": "مصمَّم لمن يعيدون بناء قدرتهم البدنية وجودة حركتهم وإعدادهم البدني بعد فترات من الانقطاع أو القيود البدنية أو تراجع القدرة على الأداء.",
+        "details": ["استعادة الحركة ودعم المرونة", "إعادة بناء بدني مُتحكَّم", "بناء التعافي والتدرّج فيه", "تحسين تحمّل الأحمال", "إعداد بدني مستدام"],
+        "consultations": "استشارات فيديو أسبوعية مدتها 20 دقيقة",
+        "support": "واتساب وهاتف (بتوقيت وسط أوروبا) + بريد إلكتروني على مدار الساعة",
+        "equipment": "حقيبة معدات اللياقة RESET90 + جهاز مشي (كارديو خفيف ومضبوط)"
       }
     }
   },
   "professional": {
-    "label": "Professional Coaching — Worldwide",
+    "label": "تدريب احترافي حول العالم",
     "heroTitle": "RESET90",
-    "heroTitleHighlight": "Professional",
-    "heroDesc": "Designed for those who treat performance as more than a goal — it's their profession, their discipline, and their standard. Every case begins with a private video consultation.",
-    "learnMore": "Learn More",
-    "ctaTitle": "Begin Your Professional Journey",
-    "ctaDesc": "Prices are tailored to each case. Request a private consultation to discuss your specific needs and goals.",
-    "ctaButton": "Request Professional Consultation",
+    "heroTitleHighlight": "الاحترافي",
+    "heroDesc": "مصمَّم لمن يرون في الأداء أكثر من مجرد هدف؛ فهو مهنتهم وانضباطهم ومعيارهم. تبدأ كل حالة باستشارة فيديو خاصة.",
+    "learnMore": "اعرف المزيد",
+    "ctaTitle": "ابدأ رحلتك الاحترافية",
+    "ctaDesc": "تُحدَّد الأسعار حسب كل حالة. اطلب استشارة خاصة لنناقش احتياجاتك وأهدافك بالتفصيل.",
+    "ctaButton": "اطلب استشارة احترافية",
     "segments": {
       "athletes": {
-        "title": "Athletes",
-        "subtitle": "Compete at the highest level",
-        "description": "A one-to-one performance pathway for professionals and aspiring professionals. Whether it's fight prep, seasonal peak, or a comeback — pushing limits while maintaining balance and recovery.",
-        "features": [
-          "DEXA scans & metabolic testing",
-          "Personalized nutrition and supplementation",
-          "Mental conditioning for competition pressure",
-          "Performance plan aligned to competition calendars"
-        ]
+        "title": "الرياضيون",
+        "subtitle": "نافس في القمة",
+        "description": "ينهار الأداء قبل أن تنهار النتائج بوقت طويل. ومعظم الرياضيين لا يتعثرون لنقص في الانضباط أو الجهد، بل لأن أوجه قصور خفية في إنتاج الطاقة وتوليد القوة والتعافي وجودة الحركة وإدارة الإرهاق تبقى دون اكتشاف، حتى يتراجع الأداء، أو تظهر الإصابات، أو يغيب الثبات.",
+        "features": ["فحوصات DEXA واختبارات الأيض", "تغذية ومكمّلات مخصّصة", "إعداد ذهني لمواجهة ضغط المنافسة", "خطة أداء متوائمة مع روزنامة المنافسات"]
       },
       "teams": {
-        "title": "Team Sports",
-        "subtitle": "Raise collective standards",
-        "description": "A complete framework for clubs and teams. We assess each player individually, then develop a tailored 90-day training cycle that builds stronger, sharper, more cohesive squads.",
-        "features": [
-          "Sport-specific strength & conditioning",
-          "Nutrition optimization for energy and recovery",
-          "Mental resilience training under pressure",
-          "Continuous monitoring and adaptation"
-        ]
+        "title": "الرياضات الجماعية",
+        "subtitle": "ارفع مستوى الفريق بأكمله",
+        "description": "تُبنى الفرق عالية الأداء بالأنظمة لا بالافتراضات. وعلى مدار موسم تنافسي، يتأثر الأداء بأكثر من الموهبة أو التدريب أو حجم الأحمال؛ فالإنتاج البدني، وكفاءة التعافي، وتراكم الإرهاق، وجودة الحركة، وجاهزية اللاعبين، وتوافرهم، كلها تحدد ما إذا كان الفريق سيصمد تحت الضغط أم سيتراجع مع الوقت.",
+        "features": ["تقوية وإعداد بدني خاص بكل رياضة", "تحسين التغذية لدعم الطاقة والتعافي", "تدريب على الصلابة الذهنية تحت الضغط", "متابعة وتكييف مستمران"]
       }
     }
   },
   "professionalDetail": {
-    "programLabel": "Professional Program",
-    "notFound": "Segment Not Found",
-    "backToPro": "Back to Professional Programs",
-    "cycleIncludes": "90-Day Cycle Includes",
-    "idealFor": "Ideal For",
-    "ctaTitle": "Start Your Professional Consultation",
-    "ctaDesc": "Prices are tailored to each case. Every journey begins with a private video consultation where we assess your specific needs.",
-    "ctaButton": "Request Professional Consultation",
+    "programLabel": "البرنامج الاحترافي",
+    "notFound": "القسم غير موجود",
+    "backToPro": "العودة إلى البرامج الاحترافية",
+    "cycleIncludes": "تشمل دورة الـ90 يومًا",
+    "idealFor": "الأنسب لـ",
+    "ctaTitle": "ابدأ استشارتك الاحترافية",
+    "ctaDesc": "تُحدَّد الأسعار حسب كل حالة. وتبدأ كل رحلة باستشارة فيديو خاصة نقيّم خلالها احتياجاتك بدقة.",
+    "ctaButton": "اطلب استشارة احترافية",
     "segments": {
       "athletes": {
-        "title": "RESET90 Athletes",
-        "tagline": "Compete. Perform. Dominate.",
+        "title": "RESET90 الرياضيون",
+        "tagline": "نافس. تألّق. تسيّد.",
         "description": [
-          "RESET90 Athletes is for professionals and aspiring professionals competing at the highest level. This is a one-to-one performance pathway, where the same level of testing and analysis applied to teams is focused on a single athlete.",
-          "Whether it's fight prep, seasonal peak, or a comeback, RESET90 Athletes is about pushing limits while maintaining balance, recovery, and long-term progression."
+          "RESET90 نظام أداء مُحكم مدته 90 يومًا، صُمِّم ليقيّم العوامل البدنية الحاسمة في تكرار الأداء تحت ضغط المنافسة الحقيقي، ويحددها، ويطوّرها.",
+          "ومن خلال تشخيصات الأداء، والتدخل المُوجَّه، وإعادة التقييم المستمرة، يُحسَّن أداء الرياضيين بشكل منهجي لبلوغ قدرة أكبر على التحمل، وجاهزية أعلى، وتعافٍ أفضل، وإنتاجية مستدامة على أعلى المستويات."
         ],
         "methodology": [
-          "DEXA scans & metabolic testing to track physiology and recovery capacity",
-          "Personalized nutrition and supplementation strategy",
-          "Mental conditioning to withstand competition pressure",
-          "Performance plan that evolves with competition calendars"
+          "فحوصات DEXA واختبارات الأيض لتتبّع الحالة الفسيولوجية وقدرة التعافي",
+          "استراتيجية تغذية ومكمّلات مخصّصة",
+          "إعداد ذهني لتحمّل ضغط المنافسة",
+          "خطة أداء تتطور مع روزنامة المنافسات"
         ],
         "examples": [
-          "Fight preparation (boxing, MMA)",
-          "Seasonal peak performance",
-          "Comeback programs after injury",
-          "Athletics and speed sports"
+          "كل رياضي يسعى إلى تطوير منظَّم لأدائه"
         ]
       },
       "teams": {
-        "title": "RESET90 Teams",
-        "tagline": "Build stronger, sharper squads",
+        "title": "RESET90 الفرق",
+        "tagline": "ابنِ فريقًا أقوى وأكثر حدّة",
         "description": [
-          "For clubs and teams striving for peak performance, RESET90 Teams provides a complete framework to raise collective standards.",
-          "We start by understanding the team's sport, objectives, and current challenges. Each player is assessed individually through detailed performance stats, body composition scans (DEXA), metabolism testing, and functional benchmarks."
+          "RESET90 الفرق نظام أداء مُحكم مدته 90 يومًا، صُمِّم لتعزيز الأساس البدني لأداء الفريق عبر التقييم والمتابعة والتدخل المُوجَّه.",
+          "وبدمج تشخيصات الأداء، والتقييم العصبي العضلي، وأنظمة الأداء التفاعلي، والتحليل التكتيكي، يساعد RESET90 الأندية على فهم حدود الأداء بشكل أعمق، ومتابعة جاهزية اللاعبين، ودعم التعافي، ورفع مستوى الثبات داخل الفريق.",
+          "والهدف واضح: جاهزية أكبر للاعبين، وأداء بدني أكثر صلابة، وانتكاسات أقل يمكن تجنبها، وإنتاجية قابلة للتكرار طوال الموسم التنافسي."
         ],
         "methodology": [
-          "Sport-specific strength & conditioning",
-          "Nutrition optimization for sustained energy and recovery",
-          "Mental resilience training to perform under pressure",
-          "Continuous monitoring and adaptation"
+          "تشخيصات الأداء والتقييم العصبي العضلي",
+          "دمج أنظمة الأداء التفاعلي",
+          "متابعة جاهزية اللاعبين ودعم التعافي",
+          "التحليل التكتيكي ورفع ثبات الفريق"
         ],
         "examples": [
-          "Football clubs — seasonal development",
-          "Basketball teams — endurance and agility",
-          "Rugby squads — strength and conditioning",
-          "Any team sport with competitive ambition"
+          "أندية كرة القدم: أنظمة أداء موسمية",
+          "فرق كرة السلة: متابعة الجاهزية والتعافي",
+          "فرق الرجبي: برامج تقييم عصبي عضلي",
+          "أي رياضة جماعية تحمل طموحًا تنافسيًا"
         ]
       }
     }
   },
   "contact": {
-    "label": "Contact",
-    "heroTitle": "Request Your",
-    "heroTitleHighlight": "Introduction",
-    "heroDesc": "Fill out the form below and we'll contact you to schedule your video introduction meeting.",
-    "thankYou": "Thank You!",
-    "thankYouDesc": "We'll contact you shortly to schedule your video introduction meeting. Check your email for confirmation.",
-    "fullName": "Full Name *",
-    "namePlaceholder": "Your name",
-    "email": "Email *",
+    "label": "تواصل معنا",
+    "heroTitle": "اطلب",
+    "heroTitleHighlight": "اجتماعك التعريفي",
+    "heroDesc": "احجز في الأسفل اجتماعك التعريفي المجاني عبر الفيديو (30 دقيقة)، واخطُ خطوتك الأولى.",
+    "thankYou": "شكرًا لك!",
+    "thankYouDesc": "سنتواصل معك قريبًا لتحديد موعد اجتماعك عبر الفيديو. تفقّد بريدك الإلكتروني للتأكيد.",
+    "fullName": "الاسم الكامل *",
+    "namePlaceholder": "اسمك",
+    "email": "البريد الإلكتروني *",
     "emailPlaceholder": "your@email.com",
-    "phone": "Phone Number",
+    "phone": "رقم الهاتف",
     "phonePlaceholder": "+32 xxx xxx xxx",
-    "interestedIn": "I'm Interested In *",
-    "selectProgram": "Select a program",
-    "onlinePrograms": "Online Programs",
-    "professionalPrograms": "Professional Programs",
-    "notSure": "Not sure yet — I need guidance",
-    "yourGoals": "Your Goals",
-    "goalsPlaceholder": "Tell us briefly about your goals and what you're looking for...",
-    "preferredTime": "Preferred Time for Meeting",
-    "timePlaceholder": "e.g. Weekday evenings, Weekend mornings",
-    "submitButton": "Request Introduction Meeting",
-    "noCommitment": "No commitment required. We'll contact you to schedule a free video introduction."
+    "interestedIn": "أنا مهتم بـ *",
+    "selectProgram": "اختر برنامجًا",
+    "onlinePrograms": "البرامج عبر الإنترنت",
+    "professionalPrograms": "البرامج الاحترافية",
+    "notSure": "لست متأكدًا بعد، أحتاج إلى استشارة",
+    "yourGoals": "أهدافك",
+    "goalsPlaceholder": "أخبرنا باختصار عن أهدافك وما الذي تبحث عنه...",
+    "preferredTime": "الوقت المفضل للاجتماع",
+    "timePlaceholder": "مثال: أمسيات أيام الأسبوع، صباحات عطلة نهاية الأسبوع",
+    "submitButton": "اطلب اجتماعًا تعريفيًا",
+    "noCommitment": "لا التزام مطلوب. سنتواصل معك لتحديد موعد جلسة تعريفية مجانية عبر الفيديو."
   },
   "faq": {
-    "label": "FAQ",
-    "heroTitle": "Frequently Asked",
-    "heroTitleHighlight": "Questions",
-    "stillHaveQuestions": "Still Have Questions?",
-    "stillDesc": "Request an introduction meeting and we'll answer everything in person.",
-    "ctaButton": "Request Introduction Meeting",
+    "label": "الأسئلة الشائعة",
+    "heroTitle": "الأسئلة",
+    "heroTitleHighlight": "الشائعة",
+    "stillHaveQuestions": "لا تزال لديك أسئلة؟",
+    "stillDesc": "اطلب اجتماعًا تعريفيًا وسنجيب عن كل تساؤلاتك مباشرةً.",
+    "ctaButton": "اطلب اجتماعًا تعريفيًا",
     "items": [
       {
-        "q": "What is RESET90?",
-        "a": "RESET90 is a precision transformation system built on structured 90-day cycles. Each program combines physical training, nutrition, and our Lifestyle Optimization System (stress, sleep, habits, mindset) to deliver measurable, sustainable results."
+        "q": "ما هو RESET90؟",
+        "a": "RESET90 نظام أداء مُحكم مبني على دورات مدتها 90 يومًا. يجمع بين التشخيص والتدخل المُوجَّه والتقدّم القابل للقياس عبر الإعداد البدني والتغذية وتحسين نمط الحياة. وهو متاح كبرنامج عبر الإنترنت للأفراد، أو كنظام احترافي للرياضيين والفرق."
       },
       {
-        "q": "How does the 90-day cycle work?",
-        "a": "Each cycle follows a structured framework: assess, plan, execute, measure, and evolve. You start with a consultation, receive a tailored plan, and work through it with regular check-ins and adjustments. After 90 days, you can renew or step up to the next level."
+        "q": "كيف تعمل دورة الـ90 يومًا؟",
+        "a": "تمرّ كل دورة بثلاث مراحل: التشخيص، فالتصحيح، فالإثبات. تبدأ باجتماع تعريفي مجاني، ثم تتلقى خطة مصمَّمة على أساس تقييمك، وتعمل عليها باستشارات وتعديلات منتظمة. وبعد 90 يومًا، تُقاس النتائج وتُخطَّط الدورة التالية."
       },
       {
-        "q": "What equipment do I need for online programs?",
-        "a": "Most online bundles include a RESET90 Fitness Equipment Kit and walking pad. The Standard bundle includes a Resistance Band Kit. The Reduced Mobility bundle does not include a walking pad. All equipment is provided as part of your program."
+        "q": "ما الباقات المتاحة عبر الإنترنت؟",
+        "a": "يقدّم RESET90 عبر الإنترنت خمس باقات: القياسي (إعداد بدني تأسيسي)، والمتقدم (تحسين الأداء العالي)، والمميز (إدارة أداء النخبة)، وما بعد الولادة (تعافٍ مُحكم بعد الحمل)، وإعادة التأهيل (إعادة بناء القدرة البدنية بعد الانقطاع أو القيود)."
       },
       {
-        "q": "How do consultations work?",
-        "a": "Consultations are held via video call. Frequency depends on your bundle: bi-weekly for Standard, weekly for Advanced/Post-Pregnancy/Post-Operations/Reduced Mobility, and twice-weekly for Premium. Each session reviews progress and adjusts your plan."
+        "q": "ما المعدات التي أحتاجها للبرامج عبر الإنترنت؟",
+        "a": "تتضمن معظم الباقات حقيبة معدات اللياقة RESET90 وجهاز مشي. أما الباقة القياسية فتأتي بحقيبة أحزمة مقاومة بدون جهاز مشي. وتُوفَّر جميع المعدات ضمن برنامجك."
       },
       {
-        "q": "What support is available between consultations?",
-        "a": "All bundles include 24/7 email support. Advanced and above include WhatsApp and phone support during CET working hours. Premium members receive priority access across all channels."
+        "q": "كيف تجري الاستشارات؟",
+        "a": "تُعقد الاستشارات عبر مكالمة فيديو، ويعتمد عددها على باقتك: كل أسبوعين للقياسي، وأسبوعيًا للمتقدم وما بعد الولادة وإعادة التأهيل، ومرتين أسبوعيًا للمميز. وتراجع كل جلسة تقدّمك وتعدّل خطتك."
       },
       {
-        "q": "What is the introduction meeting?",
-        "a": "Before committing to any program, you can request a free video introduction meeting with the RESET90 coaching team. It's a no-pressure conversation to understand your goals, explain the program, and ensure alignment."
+        "q": "ما الدعم المتاح بين الاستشارات؟",
+        "a": "تشمل جميع الباقات دعمًا عبر البريد الإلكتروني على مدار الساعة. ومن المتقدم وما فوقه يتوفر دعم عبر واتساب والهاتف خلال ساعات العمل بتوقيت وسط أوروبا. ويحظى أعضاء المميز بأولوية في الوصول عبر جميع القنوات."
       },
       {
-        "q": "Are prices displayed on the website?",
-        "a": "Prices are not emphasized upfront. We prioritize clarity and value first. Pricing is presented during the introduction meeting or at the purchase stage, once you have a clear understanding of the program."
+        "q": "كيف أحجز اجتماعًا تعريفيًا؟",
+        "a": "يمكنك حجز اجتماع تعريفي مجاني عبر الفيديو مدته 30 دقيقة مباشرةً من صفحة التواصل. اختر الوقت الذي يناسبك، وسنناقش أهدافك، ونشرح لك البرنامج، ونساعدك على اختيار الأنسب لك."
       },
       {
-        "q": "What is RESET90 Professional?",
-        "a": "RESET90 Professional is our in-person coaching model. It serves athletes, team sports, and premium individuals through hands-on 90-day cycles with advanced testing (DEXA, metabolic) and face-to-face coaching."
+        "q": "هل تُعرض الأسعار على الموقع؟",
+        "a": "تظهر أسعار الباقات عبر الإنترنت في صفحة تفاصيل كل برنامج. أما أسعار البرامج الاحترافية فتُحدَّد حسب كل حالة، وتُناقَش خلال استشارتك الخاصة."
       },
       {
-        "q": "Is RESET90 suitable for people with medical conditions?",
-        "a": "Our Post-Operations and Reduced Mobility programs are designed for recovery and adaptation. However, RESET90 is not a medical program. Post-Operations requires medical clearance before beginning. Always consult your doctor first."
+        "q": "ما هو RESET90 الاحترافي؟",
+        "a": "RESET90 الاحترافي نظام أداء قائم على العلم موجَّه للرياضيين والفرق. يستعين بتشخيصات تشمل تحليل الأيض والتقييم العصبي العضلي واختبار الأداء، ليحدد أين يتراجع الأداء ويعالجه بشكل منهجي."
       },
       {
-        "q": "Can I switch bundles mid-program?",
-        "a": "Yes, adjustments can be discussed during your consultations. We aim for flexibility within the 90-day structure to ensure the program remains aligned with your evolving needs."
+        "q": "هل يناسب RESET90 مرحلة التعافي أو ما بعد الولادة؟",
+        "a": "نعم. تدعم باقة ما بعد الولادة إعادة البناء البدني بعد الحمل، وباقة إعادة التأهيل مصمَّمة لمن يتعافون من الانقطاع أو القيود البدنية. وRESET90 ليس برنامجًا طبيًا؛ لذا يلزم الحصول على إذن طبي عند الحاجة."
+      },
+      {
+        "q": "هل يمكنني تغيير الباقة في منتصف البرنامج؟",
+        "a": "نعم، يمكن مناقشة التعديلات خلال استشاراتك. فنحن نحرص على المرونة ضمن إطار الـ90 يومًا ليبقى البرنامج متوائمًا مع احتياجاتك المتغيرة."
       }
     ]
   },
   "policies": {
-    "heroTitle": "Policies",
-    "heroDesc": "Privacy Policy & Terms of Service",
-    "privacyTitle": "Privacy Policy",
-    "privacyIntro": "At RESET90, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information.",
-    "infoCollectTitle": "Information We Collect",
-    "infoCollectDesc": "We collect information you provide directly: name, email address, and any details shared during consultations or through our booking system (Calendly). We also collect usage data through Google Tag Manager, Google Analytics, and Meta Pixel for website analytics and advertising purposes.",
-    "howWeUseTitle": "How We Use Your Information",
-    "howWeUseDesc": "Your information is used to deliver and personalize your program, schedule and manage consultations, communicate with you about your progress, and improve our services. Analytics data helps us understand how visitors use our website. We never sell your personal data to third parties.",
-    "cookiesTitle": "Cookies & Tracking",
-    "cookiesDesc": "This website uses Google Tag Manager to manage analytics and advertising tags, including Google Analytics for website usage data and Meta Pixel for advertising measurement. These tools may place cookies on your device. You can manage cookie preferences through your browser settings.",
-    "thirdPartyTitle": "Third-Party Services",
-    "thirdPartyDesc": "We use Calendly for appointment scheduling, Google Tag Manager for analytics management, Meta (Facebook) for advertising measurement, and Vercel for website hosting. Each service has its own privacy policy governing data they process on our behalf.",
-    "dataProtectionTitle": "Data Protection",
-    "dataProtectionDesc": "We implement appropriate security measures to protect your personal information. Health-related data shared during consultations is handled with extra care in compliance with applicable regulations.",
-    "yourRightsTitle": "Your Rights",
-    "yourRightsDesc": "You have the right to access, correct, or delete your personal data at any time. Contact us at privacy@reset90.be for any data-related requests.",
-    "tosTitle": "Terms of Service",
-    "tosIntro": "By using RESET90 services, you agree to the following terms and conditions.",
-    "programsTitle": "Programs & Services",
-    "programsDesc": "RESET90 offers online programs (Standard, Advanced, Premium, Postpartum, and Reconditioning bundles) and professional services for athletes and teams. All programs operate on structured 90-day cycles.",
-    "disclaimerTitle": "Program Disclaimer",
-    "disclaimerDesc": "RESET90 provides performance coaching and lifestyle optimization services. We are not a medical provider. Clients with medical conditions must obtain clearance from their healthcare provider before starting any program. The Reconditioning and Postpartum programs are not substitutes for medical rehabilitation.",
-    "paymentsTitle": "Commitment & Payments",
-    "paymentsDesc": "Programs run on 90-day cycles. Online bundle pricing is listed on each program page. Professional program pricing is tailored to each case. Payment terms and refund policies are discussed during your introduction meeting and detailed in your individual agreement.",
-    "ipTitle": "Intellectual Property",
-    "ipDesc": "All RESET90 training plans, methodologies, materials, and content are proprietary. They may not be shared, reproduced, or distributed without written permission.",
-    "liabilityTitle": "Liability",
-    "liabilityDesc": "RESET90 is not liable for injuries or health issues that may arise during training. Clients participate at their own risk and are responsible for following safe exercise practices."
+    "heroTitle": "السياسات",
+    "heroDesc": "سياسة الخصوصية وشروط الخدمة",
+    "privacyTitle": "سياسة الخصوصية",
+    "privacyIntro": "في RESET90، نأخذ خصوصيتك على محمل الجد. وتوضح هذه السياسة كيف نجمع معلوماتك الشخصية ونستخدمها ونحميها.",
+    "infoCollectTitle": "المعلومات التي نجمعها",
+    "infoCollectDesc": "نجمع المعلومات التي تقدّمها مباشرةً: الاسم، وعنوان البريد الإلكتروني، وأي تفاصيل تشاركها أثناء الاستشارات أو عبر نظام الحجز لدينا (Calendly). كما نجمع بيانات الاستخدام عبر Google Tag Manager وGoogle Analytics وMeta Pixel لأغراض تحليلات الموقع والإعلانات.",
+    "howWeUseTitle": "كيف نستخدم معلوماتك",
+    "howWeUseDesc": "نستخدم معلوماتك لتقديم برنامجك وتخصيصه، وجدولة الاستشارات وإدارتها، والتواصل معك بشأن تقدّمك، وتحسين خدماتنا. وتساعدنا بيانات التحليلات على فهم كيفية استخدام الزوار لموقعنا. ولا نبيع بياناتك الشخصية لأي طرف ثالث إطلاقًا.",
+    "cookiesTitle": "ملفات تعريف الارتباط والتتبع",
+    "cookiesDesc": "يستخدم هذا الموقع Google Tag Manager لإدارة علامات التحليلات والإعلانات، بما في ذلك Google Analytics لبيانات استخدام الموقع وMeta Pixel لقياس الإعلانات. وقد تضع هذه الأدوات ملفات تعريف ارتباط على جهازك، ويمكنك إدارة تفضيلاتها من إعدادات متصفحك.",
+    "thirdPartyTitle": "خدمات الأطراف الثالثة",
+    "thirdPartyDesc": "نستخدم Calendly لجدولة المواعيد، وGoogle Tag Manager لإدارة التحليلات، وMeta (Facebook) لقياس الإعلانات، وVercel لاستضافة الموقع. ولكل خدمة سياسة خصوصية خاصة بها تحكم البيانات التي تعالجها نيابةً عنا.",
+    "dataProtectionTitle": "حماية البيانات",
+    "dataProtectionDesc": "نطبّق تدابير أمنية مناسبة لحماية معلوماتك الشخصية. وتُعالَج البيانات المتعلقة بالصحة التي تُشارَك أثناء الاستشارات بعناية إضافية وفقًا للوائح المعمول بها.",
+    "yourRightsTitle": "حقوقك",
+    "yourRightsDesc": "لك الحق في الوصول إلى بياناتك الشخصية أو تصحيحها أو حذفها في أي وقت. تواصل معنا على privacy@reset90.be لأي طلب يتعلق بالبيانات.",
+    "tosTitle": "شروط الخدمة",
+    "tosIntro": "باستخدامك خدمات RESET90، فإنك توافق على الشروط والأحكام التالية.",
+    "programsTitle": "البرامج والخدمات",
+    "programsDesc": "يقدّم RESET90 برامج عبر الإنترنت (باقات القياسي والمتقدم والمميز وما بعد الولادة وإعادة التأهيل) وخدمات احترافية للرياضيين والفرق. وتعمل جميع البرامج وفق دورات مُحكمة مدتها 90 يومًا.",
+    "disclaimerTitle": "إخلاء مسؤولية البرنامج",
+    "disclaimerDesc": "يقدّم RESET90 خدمات تدريب الأداء وتحسين نمط الحياة، ولسنا جهة طبية. وعلى أصحاب الحالات الطبية الحصول على إذن من مقدّم الرعاية الصحية قبل بدء أي برنامج. ولا يُعدّ برنامجا إعادة التأهيل وما بعد الولادة بديلين عن إعادة التأهيل الطبي.",
+    "paymentsTitle": "الالتزام والمدفوعات",
+    "paymentsDesc": "تعمل البرامج وفق دورات مدتها 90 يومًا. وتظهر أسعار الباقات عبر الإنترنت في صفحة كل برنامج، بينما تُحدَّد أسعار البرامج الاحترافية حسب كل حالة. وتُناقَش شروط الدفع وسياسات الاسترداد خلال اجتماعك التعريفي، وتُفصَّل في اتفاقيتك الفردية.",
+    "ipTitle": "الملكية الفكرية",
+    "ipDesc": "جميع خطط التدريب والمنهجيات والمواد والمحتوى الخاص بـ RESET90 مملوكة حصريًا، ولا يجوز مشاركتها أو إعادة إنتاجها أو توزيعها دون إذن كتابي.",
+    "liabilityTitle": "المسؤولية",
+    "liabilityDesc": "لا يتحمل RESET90 مسؤولية الإصابات أو المشكلات الصحية التي قد تنشأ أثناء التدريب. ويشارك العملاء على مسؤوليتهم الخاصة، وهم مسؤولون عن اتباع ممارسات التمارين الآمنة."
   },
   "notFound": {
     "label": "خطأ 404",
